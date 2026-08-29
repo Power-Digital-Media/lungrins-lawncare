@@ -142,45 +142,48 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-3 group">
-          <img src="public/images/logos/lungrins-logo.jpg" alt="Lungrin's Lawncare Logo" class="w-14 h-14 rounded-xl shadow-md shadow-brand-700/20 group-hover:scale-105 transition duration-200 object-contain" />
+        <a href="#" class="flex items-center gap-3 group shrink-0">
+          <img src="public/images/logos/lungrins-logo.jpg" alt="Lungrin's Lawncare Logo" class="w-12 h-12 rounded-xl shadow-md shadow-brand-700/20 group-hover:scale-105 transition duration-200 object-contain" />
           <div>
-            <div class="font-extrabold text-xl sm:text-2xl text-slate-900 tracking-tight leading-none group-hover:text-brand-700 transition">
+            <div class="font-extrabold text-lg xl:text-xl text-slate-900 tracking-tight leading-none group-hover:text-brand-700 transition">
               Lungrin's <span class="text-brand-600">Lawncare</span>
             </div>
-            <div class="text-xs text-slate-500 font-medium tracking-wide uppercase mt-0.5">
+            <div class="text-[10px] text-slate-500 font-medium tracking-wide uppercase mt-0.5 hidden sm:block">
               Luke Lungrin Services • Flora, MS
             </div>
           </div>
         </a>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
-          <a href="#services" class="hover:text-brand-600 transition">Services</a>
-          <a href="#calculator" class="hover:text-brand-600 transition flex items-center gap-1">
-            <span class="text-brand-600"><i class="fa-solid fa-calculator"></i></span> Instant Estimate
+        <!-- Desktop Navigation (xl and up only) -->
+        <nav class="hidden xl:flex items-center gap-5 text-sm font-medium text-slate-700">
+          <a href="#services" class="hover:text-brand-600 transition whitespace-nowrap">Services</a>
+          <a href="#calculator" class="hover:text-brand-600 transition flex items-center gap-1 whitespace-nowrap">
+            <span class="text-brand-600"><i class="fa-solid fa-calculator"></i></span> Estimate
           </a>
-          <a href="#gallery" class="hover:text-brand-600 transition">Recent Jobs</a>
-          <a href="#why-us" class="hover:text-brand-600 transition">Why Luke?</a>
-          <a href="#service-areas" class="hover:text-brand-600 transition">Service Areas</a>
-          <a href="#reviews" class="hover:text-brand-600 transition">Reviews</a>
-          <a href="#contact" class="hover:text-brand-600 transition">Contact</a>
+          <a href="#gallery" class="hover:text-brand-600 transition whitespace-nowrap">Jobs</a>
+          <a href="#why-us" class="hover:text-brand-600 transition whitespace-nowrap">Why Luke?</a>
+          <a href="#service-areas" class="hover:text-brand-600 transition whitespace-nowrap">Areas</a>
+          <a href="#reviews" class="hover:text-brand-600 transition whitespace-nowrap">Reviews</a>
+          <a href="#contact" class="hover:text-brand-600 transition whitespace-nowrap">Contact</a>
         </nav>
 
-        <!-- Desktop Action Buttons -->
-        <div class="hidden sm:flex items-center gap-3">
-          <a href="tel:6019061281" class="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:border-brand-600 hover:text-brand-700 font-semibold text-sm transition">
+        <!-- Desktop Action Buttons (xl and up only) -->
+        <div class="hidden xl:flex items-center gap-3 shrink-0">
+          <a href="tel:6019061281" class="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:border-brand-600 hover:text-brand-700 font-semibold text-sm transition whitespace-nowrap">
             <i class="fa-solid fa-phone text-brand-600"></i>
             <span>(601) 906-1281</span>
           </a>
-          <a href="#calculator" class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white font-semibold text-sm shadow-md shadow-brand-600/20 hover:shadow-lg hover:shadow-brand-600/30 transition transform hover:-translate-y-0.5">
+          <a href="#calculator" class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white font-semibold text-sm shadow-md shadow-brand-600/20 hover:shadow-lg hover:shadow-brand-600/30 transition transform hover:-translate-y-0.5 whitespace-nowrap">
             <i class="fa-solid fa-clipboard-check"></i>
             <span>Free Estimate</span>
           </a>
         </div>
 
-        <!-- Mobile Menu Toggle Button -->
-        <div class="flex items-center lg:hidden">
+        <!-- Mobile Menu Toggle Button (below xl) -->
+        <div class="flex items-center xl:hidden">
+          <a href="tel:6019061281" class="mr-3 p-2.5 rounded-lg text-brand-600 hover:bg-brand-50 transition sm:hidden">
+            <i class="fa-solid fa-phone text-lg"></i>
+          </a>
           <button id="mobile-menu-btn" aria-label="Toggle navigation menu" class="p-2.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">
             <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
           </button>
@@ -189,7 +192,7 @@
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-xl">
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-xl">
       <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Services</a>
       <a href="#calculator" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Instant Estimate Calculator</a>
       <a href="#gallery" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Recent Facebook Jobs</a>
