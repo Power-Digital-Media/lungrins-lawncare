@@ -1,0 +1,49 @@
+{
+  "business": {
+    "name": "Lungrin's Lawncare",
+    "owner": "Luke Lungrin",
+    "phones": ["(601) 906-1281", "(601) 906-1282"],
+    "serviceAreas": ["Flora, MS", "Pocahontas, MS", "Madison County, MS"],
+    "facebookUrl": "https://www.facebook.com/people/Luke-Lungrins-lawn-care-services/100063628795893/"
+  },
+  "jobCategories": [
+    {
+      "id": "residential-mulch-bed",
+      "title": "Residential Mulch & Pine Straw",
+      "tag": "Mulch & Beds",
+      "description": "Fresh pine straw, dark hardwood mulch, weed removal, and clean trench edging.",
+      "location": "Pocahontas, MS",
+      "primaryImage": "public/images/jobs/residential-mulch-bed/after.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1584467746872-98ff9a061456?auto=format&fit=crop&w=800&q=80",
+      "beforeImage": "public/images/jobs/residential-mulch-bed/before.jpg",
+      "afterImage": "public/images/jobs/residential-mulch-bed/after.jpg"
+    },
+    {
+      "id": "residential-mowing",
+      "title": "Precision Mowing & Stripe Cuts",
+      "tag": "Weekly / Bi-Weekly",
+      "description": "Precision mowing at optimal height, fence line trimming, and 90-degree driveway edging.",
+      "location": "Flora, MS",
+      "primaryImage": "public/images/jobs/residential-mowing/mowing-stripe.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "overgrowth-recovery",
+      "title": "Pond Perimeter & Overgrowth Recovery",
+      "tag": "Heavy Clearing",
+      "description": "Heavy brush cutting, pond water-bank weed clearing, and ditch line reclamation.",
+      "location": "Madison County, MS",
+      "primaryImage": "public/images/jobs/overgrowth-recovery/pond-after.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1590682680695-43b964a3ae17?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "equipment-fleet",
+      "title": "Commercial Equipment Setup",
+      "tag": "Commercial Fleet",
+      "description": "Commercial zero-turn mowers, trimmers, blowers, and professional hauling setup.",
+      "location": "Flora, MS",
+      "primaryImage": "public/images/jobs/equipment-fleet/trailer-setup.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1617886322207-6f504e7472c5?auto=format&fit=crop&w=800&q=80"
+    }
+  ]
+}

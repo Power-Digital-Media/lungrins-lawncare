@@ -1,0 +1,110 @@
+/* Custom Styling for Lungrin's Lawncare Website */
+
+/* Smooth scroll & base tweaks */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+}
+
+/* Background Subtle Patterns */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(22, 163, 74, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(22, 163, 74, 0.15) 1px, transparent 1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #15803d;
+}
+
+/* Interactive Calculator Active Button States */
+.lot-btn.active {
+  border-color: #22c55e !important;
+  background-color: rgba(5, 46, 22, 0.75) !important;
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.25);
+}
+
+.lot-btn.active span:first-child {
+  color: #86efac !important;
+}
+
+.freq-btn.active {
+  border-color: #22c55e !important;
+  background-color: rgba(5, 46, 22, 0.75) !important;
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.25);
+}
+
+/* Checkbox Card Active state */
+.service-checkbox.selected {
+  border-color: #22c55e !important;
+  background-color: rgba(5, 46, 22, 0.6) !important;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.2);
+}
+
+/* Before & After Interactive Slider Styles */
+#before-after-container {
+  touch-action: pan-y;
+  cursor: ew-resize;
+}
+
+#before-after-container img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#before-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  will-change: width;
+}
+
+#slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  will-change: left;
+  transition: transform 0.05s ease-out;
+}
+
+#slider-handle:hover > div {
+  transform: translateY(-50%) translateX(-50%) scale(1.1);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+}
+
+/* FAQ Accordion Transitions */
+.faq-btn i {
+  transition: transform 0.25s ease-in-out;
+}
+
+.faq-btn.active i {
+  transform: rotate(180deg);
+}
+
+/* Pulse highlight animation for lock button */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.95; transform: scale(1.02); }
+}
+
+.pulse-glow {
+  animation: pulse-subtle 2s infinite ease-in-out;
+}
