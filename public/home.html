@@ -161,6 +161,9 @@
             <span class="text-brand-600"><i class="fa-solid fa-calculator"></i></span> Estimate
           </a>
           <a href="#gallery" class="hover:text-brand-600 transition whitespace-nowrap">Jobs</a>
+          <a href="/pins/" class="hover:text-brand-600 transition whitespace-nowrap flex items-center gap-1">
+            <span class="text-brand-600"><i class="fa-solid fa-map-pin"></i></span> Project Pins
+          </a>
           <a href="#why-us" class="hover:text-brand-600 transition whitespace-nowrap">Why Luke?</a>
           <a href="#service-areas" class="hover:text-brand-600 transition whitespace-nowrap">Areas</a>
           <a href="#reviews" class="hover:text-brand-600 transition whitespace-nowrap">Reviews</a>
@@ -196,6 +199,7 @@
       <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Services</a>
       <a href="#calculator" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Instant Estimate Calculator</a>
       <a href="#gallery" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Recent Facebook Jobs</a>
+      <a href="/pins/" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">📍 Project Pins Map</a>
       <a href="#why-us" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Why Luke Lungrin</a>
       <a href="#service-areas" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Service Areas</a>
       <a href="#reviews" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700">Customer Reviews</a>
@@ -1105,6 +1109,43 @@
           </button>
         </div>
         <div id="area-check-result" class="text-xs text-center min-h-[20px] text-slate-400 font-medium"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RECENT PROJECT PINS CAROUSEL -->
+  <section id="project-pins" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
+        <p class="uppercase tracking-[.2em] text-brand-600 font-bold text-xs">Live From The Field</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">Recent Project Pins</h2>
+        <p class="text-slate-500 text-lg leading-relaxed">
+          Every job Luke completes gets pinned on the map with photos and details. See the latest work across Flora, Pocahontas, and surrounding areas.
+        </p>
+      </div>
+
+      <!-- Carousel Embed -->
+      <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900" style="min-height: 420px;">
+        <iframe 
+          src="/embed/carousel/" 
+          width="100%" 
+          height="420" 
+          frameborder="0" 
+          style="border: none; display: block;"
+          title="Lungrin's Lawncare Recent Project Pins"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- CTA to full pins page -->
+      <div class="text-center mt-8">
+        <a href="/pins/" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-brand-600 to-brand-700 text-white font-bold text-sm shadow-lg hover:shadow-xl hover:from-brand-700 hover:to-brand-800 transition-all">
+          <i class="fa-solid fa-map-pin"></i>
+          View All Project Pins & Map
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
 
     </div>
