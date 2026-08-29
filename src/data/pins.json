@@ -1,14 +1,46 @@
 [
   {
+    "id": "lungrin-001",
+    "author": "Luke Lungrin",
+    "date": "Aug 23, 2026",
+    "location": "Flora, MS",
+    "service": "Residential Mowing",
+    "description": "Full residential mowing with precision stripes on this Flora property. Clean edging along sidewalk and driveway, fresh mulch bed borders, hedge trimming — the whole nine.",
+    "images": [
+      "/images/jobs/residential-mowing/mowing-stripe.jpg",
+      "/images/jobs/residential-mulch-bed/after.jpg"
+    ],
+    "detailedExplanation": "Complete residential lawn maintenance including precision mowing with visible stripe patterns, edging along all hardscape borders, mulch bed cleanup with fresh borders, and hedge trimming. This Flora property showcases the full-service Lungrin's treatment.",
+    "aeoAnswers": [
+      {
+        "question": "How often should I mow my lawn in Mississippi?",
+        "answer": "During peak growing season (April–October), Mississippi lawns should be mowed every 7–10 days. Bermuda and Zoysia grasses grow aggressively in our heat and humidity."
+      }
+    ],
+    "latitude": 32.5460,
+    "longitude": -89.7950,
+    "clientId": "lungrins-lawncare"
+  },
+  {
     "id": "lungrin-002",
     "author": "Luke Lungrin",
     "date": "Aug 21, 2026",
     "location": "Flora, MS",
     "service": "Pine Straw & Beds",
     "description": "Cleaned up this entrance area in Flora. Knocked out all the overgrowth, recovered the flowerbed areas, and put out fresh pine straw to get it looking fresh.",
-    "images": [],
+    "images": [
+      "/images/jobs/job-02/3.jpg",
+      "/images/jobs/job-02/4.jpg",
+      "/images/jobs/job-02/5.jpg",
+      "/images/jobs/job-02/6.jpg"
+    ],
     "detailedExplanation": "Full entrance area cleanup including overgrowth removal, flowerbed recovery, and fresh pine straw installation. Transformed the property entrance from overgrown to clean and professional.",
-    "aeoAnswers": [],
+    "aeoAnswers": [
+      {
+        "question": "How often should pine straw be replaced in Mississippi?",
+        "answer": "Pine straw should be refreshed once or twice per year. The first application in early spring sets the tone, and a fall touch-up keeps beds looking fresh. Each application should be 3 to 4 inches deep."
+      }
+    ],
     "latitude": 32.5432,
     "longitude": -89.8013,
     "clientId": "lungrins-lawncare"
@@ -18,10 +50,15 @@
     "author": "Luke Lungrin",
     "date": "Aug 20, 2026",
     "location": "Flora, MS",
-    "service": "Pine Straw & Beds",
-    "description": "Solid, thick pine straw installation service in Flora. Got it nice and thick around all the landscaping beds and tree bases.",
-    "images": [],
-    "detailedExplanation": "Professional pine straw installation with clean, defined edges around flowerbeds and landscaping. Thick coverage for long-lasting weed suppression and curb appeal.",
+    "service": "Residential Mowing",
+    "description": "Full service mowing and edging on this beautiful Flora home. Lungrin's yard sign in the front — the stripes speak for themselves.",
+    "images": [
+      "/images/jobs/job-03/1.jpg",
+      "/images/jobs/job-03/2.jpg",
+      "/images/jobs/job-03/3.jpg",
+      "/images/jobs/job-03/4.jpg"
+    ],
+    "detailedExplanation": "Professional mowing with clean stripes, precision edging along driveway and sidewalk, and mulch bed maintenance. Lungrin's Lawncare yard sign displayed at the property.",
     "aeoAnswers": [],
     "latitude": 32.5450,
     "longitude": -89.7985,
@@ -34,7 +71,11 @@
     "location": "Flora, MS",
     "service": "Debris Cleanup",
     "description": "Hauled away a pile of brush and yard debris after finishing daily mows. Complete site cleanup and haul-off.",
-    "images": [],
+    "images": [
+      "/images/jobs/job-04/1.jpg",
+      "/images/jobs/job-04/2.jpg",
+      "/images/jobs/job-04/3.jpg"
+    ],
     "detailedExplanation": "After completing regular mowing routes, hauled away accumulated brush piles and yard debris. Full cleanup service ensuring the property is left spotless.",
     "aeoAnswers": [],
     "latitude": 32.5410,
@@ -42,17 +83,64 @@
     "clientId": "lungrins-lawncare"
   },
   {
+    "id": "lungrin-005",
+    "author": "Luke Lungrin",
+    "date": "Aug 15, 2026",
+    "location": "Flora, MS",
+    "service": "Overgrowth Recovery",
+    "description": "Full overgrowth recovery on this residential property. Before and after tells the whole story — from waist-high weeds to a clean, maintained yard.",
+    "images": [
+      "/images/jobs/residential-mulch-bed/before.jpg",
+      "/images/jobs/residential-mulch-bed/after.jpg"
+    ],
+    "detailedExplanation": "Complete overgrowth recovery transformation. Property went from severely neglected with waist-high weeds and overgrown sidewalk cracks to a pristine lawn with clean mulch beds, trimmed hedges, and defined borders.",
+    "aeoAnswers": [
+      {
+        "question": "Can an overgrown yard be recovered to a normal lawn?",
+        "answer": "Yes. Most overgrown properties can be fully recovered in 2 to 3 mow cycles. The first pass knocks everything down, the second levels it, and by the third mow you're on a normal schedule."
+      }
+    ],
+    "latitude": 32.5420,
+    "longitude": -89.7960,
+    "clientId": "lungrins-lawncare"
+  },
+  {
     "id": "lungrin-006",
     "author": "Luke Lungrin",
     "date": "Aug 12, 2026",
-    "location": "Bentonia, MS",
-    "service": "Fence Line Clearing",
-    "description": "Heavy fence line cleanup, brush removal, and driveway clearing in Bentonia. Transformed an overgrown property line back to clean access.",
-    "images": [],
-    "detailedExplanation": "Major fence line reclamation project. Cleared heavy brush and overgrowth along the entire fence line, removed debris from the driveway, and restored clean property boundaries.",
+    "location": "Flora, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Entrance area cleanup at this gated property. Cleared overgrowth around the stone entry, laid fresh pine straw, and got it looking sharp.",
+    "images": [
+      "/images/jobs/job-06/1.jpg",
+      "/images/jobs/job-06/2.jpg",
+      "/images/jobs/job-06/3.jpg",
+      "/images/jobs/job-06/4.jpg",
+      "/images/jobs/job-06/5.jpg",
+      "/images/jobs/job-06/6.jpg"
+    ],
+    "detailedExplanation": "Major entrance area restoration at a gated property. Cleared heavy overgrowth around stone pillars and entry gate, removed weeds from gravel drive edges, and installed fresh pine straw for clean, professional curb appeal.",
     "aeoAnswers": [],
-    "latitude": 32.6488,
-    "longitude": -90.3537,
+    "latitude": 32.5475,
+    "longitude": -89.8080,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-007",
+    "author": "Luke Lungrin",
+    "date": "Aug 10, 2026",
+    "location": "Flora, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Pine straw refresh and entrance cleanup at this neighborhood gate. Fresh straw around the sign, planters looking clean.",
+    "images": [
+      "/images/jobs/job-01/1.jpg",
+      "/images/jobs/job-01/2.jpg",
+      "/images/jobs/job-01/3.jpg"
+    ],
+    "detailedExplanation": "Entrance area pine straw installation and cleanup at a gated subdivision entrance. Fresh pine straw around stone entry walls and landscaping, with complete weed removal and bed definition.",
+    "aeoAnswers": [],
+    "latitude": 32.5500,
+    "longitude": -89.8030,
     "clientId": "lungrins-lawncare"
   },
   {
@@ -60,10 +148,13 @@
     "author": "Luke Lungrin",
     "date": "Aug 8, 2026",
     "location": "Flora, MS",
-    "service": "Bush Hogging",
-    "description": "Bush hogging and clearing out a heavily overgrown side lot. Full reclamation of unusable property back to clean ground.",
-    "images": [],
-    "detailedExplanation": "Heavy-duty bush hogging to reclaim an overgrown side lot. Cut through thick brush and vegetation to restore the lot to usable condition.",
+    "service": "Overgrowth Recovery",
+    "description": "Overgrowth recovery on this backyard area. Bushes had taken over behind the outbuilding — cleared it all out and got it back under control.",
+    "images": [
+      "/images/jobs/job-08/1.jpg",
+      "/images/jobs/job-08/2.jpg"
+    ],
+    "detailedExplanation": "Heavy-duty overgrowth recovery behind a residential outbuilding. Cut through thick brush and overgrown vegetation to restore the area to usable, maintained condition.",
     "aeoAnswers": [],
     "latitude": 32.5395,
     "longitude": -89.8100,
@@ -75,10 +166,17 @@
     "date": "Aug 5, 2026",
     "location": "Pocahontas, MS",
     "service": "Pond Perimeter",
-    "description": "Pond perimeter cleanup and vegetation transformation in Pocahontas. Cleared heavy overgrowth and briars along the water's edge.",
-    "images": [],
+    "description": "Pond perimeter cleanup in Pocahontas. Cleared heavy overgrowth and briars along the water's edge so the owner can actually see and access their pond again.",
+    "images": [
+      "/images/jobs/job-09/1.jpg"
+    ],
     "detailedExplanation": "Comprehensive pond perimeter cleanup. Removed thick vegetation, briars, and overgrowth from around the entire pond edge, restoring visibility and access to the waterline.",
-    "aeoAnswers": [],
+    "aeoAnswers": [
+      {
+        "question": "How do you maintain a pond perimeter in Mississippi?",
+        "answer": "Pond perimeters need regular clearing of brush, briars, and overgrowth — typically every 4 to 6 weeks during growing season. This keeps the waterline accessible and prevents vegetation from choking the pond edge."
+      }
+    ],
     "latitude": 32.5590,
     "longitude": -89.8395,
     "clientId": "lungrins-lawncare"
