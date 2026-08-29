@@ -1114,83 +1114,255 @@
     </div>
   </section>
 
-  <!-- RECENT PROJECT PINS CAROUSEL -->
-  <section id="project-pins" class="py-20 bg-white border-t border-slate-200">
+  <!-- RECENT PROJECT PINS SHOWCASE -->
+  <section id="project-pins" class="py-24 bg-slate-50 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
-        <p class="uppercase tracking-[.2em] text-brand-600 font-bold text-xs">Live From The Field</p>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">Recent Project Pins</h2>
-        <p class="text-slate-500 text-lg leading-relaxed">
-          Every job Luke completes gets pinned on the map with photos and details. See the latest work across Flora, Pocahontas, and surrounding areas.
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <span class="px-3.5 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-extrabold uppercase tracking-wider inline-flex items-center gap-1.5">
+          <i class="fa-solid fa-map-pin text-brand-600"></i> Field Drop-Pins
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
+          Recent Project Pins Near You
+        </h2>
+        <p class="text-slate-600 text-base">
+          Every yard Luke services gets pinned with photos and job details so neighbors can verify our workmanship in real-time.
         </p>
       </div>
 
-      <!-- Carousel Embed -->
-      <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900" style="min-height: 420px;">
-        <iframe 
-          src="/embed/carousel/" 
-          width="100%" 
-          height="420" 
-          frameborder="0" 
-          style="border: none; display: block;"
-          title="Lungrin's Lawncare Recent Project Pins"
-          loading="lazy"
-        ></iframe>
+      <!-- Native Project Pins Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        
+        <!-- Pin 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col justify-between">
+          <div>
+            <div class="h-56 overflow-hidden relative bg-slate-900">
+              <img src="/images/jobs/residential-mowing/mowing-stripe.jpg" alt="Precision residential mowing stripes in Flora MS" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <span class="absolute top-3.5 left-3.5 bg-brand-800/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full shadow flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-brand-300"></i> Flora, MS
+              </span>
+              <span class="absolute bottom-3.5 right-3.5 bg-black/75 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-lg">
+                Residential Mowing
+              </span>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-400 font-semibold">
+                <span>By Luke Lungrin</span>
+                <span>Aug 23, 2026</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-700 transition leading-snug">
+                Precision Lawn Striping &amp; Edge Maintenance
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Full residential cut with crisp blade lines, sidewalk edging, and clean flower bed borders for a pristine curb appeal.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+            <a href="/pins/" class="text-xs font-bold text-brand-700 hover:text-brand-800 inline-flex items-center gap-1">
+              View on Map <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+            <span class="text-[11px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-bold">Verified Field Job</span>
+          </div>
+        </div>
+
+        <!-- Pin 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col justify-between">
+          <div>
+            <div class="h-56 overflow-hidden relative bg-slate-900">
+              <img src="/images/jobs/job-02/3.jpg" alt="Entrance area cleanup with fresh pine straw in Flora MS" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <span class="absolute top-3.5 left-3.5 bg-amber-800/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full shadow flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-amber-300"></i> Flora, MS
+              </span>
+              <span class="absolute bottom-3.5 right-3.5 bg-black/75 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-lg">
+                Pine Straw &amp; Beds
+              </span>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-400 font-semibold">
+                <span>By Luke Lungrin</span>
+                <span>Aug 21, 2026</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-700 transition leading-snug">
+                Subdivision Entrance Recovery &amp; Pine Straw
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Knocked out heavy weed overgrowth, cleaned out and tucked fresh longleaf pine straw across all main entrance beds.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+            <a href="/pins/" class="text-xs font-bold text-brand-700 hover:text-brand-800 inline-flex items-center gap-1">
+              View on Map <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+            <span class="text-[11px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-bold">Verified Field Job</span>
+          </div>
+        </div>
+
+        <!-- Pin 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col justify-between">
+          <div>
+            <div class="h-56 overflow-hidden relative bg-slate-900">
+              <img src="/images/jobs/residential-mulch-bed/after.jpg" alt="Overgrowth recovery and mulch bed installation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <span class="absolute top-3.5 left-3.5 bg-emerald-800/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full shadow flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-emerald-300"></i> Pocahontas, MS
+              </span>
+              <span class="absolute bottom-3.5 right-3.5 bg-black/75 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-lg">
+                Mulch &amp; Recovery
+              </span>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-400 font-semibold">
+                <span>By Luke Lungrin</span>
+                <span>Aug 19, 2026</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-700 transition leading-snug">
+                Complete Overgrowth Recovery &amp; Bed Refresh
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Tackled heavy waist-high weeds along walkways, edged stone pavers, and laid rich dark mulch throughout flower beds.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+            <a href="/pins/" class="text-xs font-bold text-brand-700 hover:text-brand-800 inline-flex items-center gap-1">
+              View on Map <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+            <span class="text-[11px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-bold">Verified Field Job</span>
+          </div>
+        </div>
+
       </div>
 
-      <!-- CTA to full pins page -->
-      <div class="text-center mt-8">
-        <a href="/pins/" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-brand-600 to-brand-700 text-white font-bold text-sm shadow-lg hover:shadow-xl hover:from-brand-700 hover:to-brand-800 transition-all">
-          <i class="fa-solid fa-map-pin"></i>
-          View All Project Pins & Map
-          <i class="fa-solid fa-arrow-right"></i>
+      <!-- Action Banner to Map -->
+      <div class="text-center">
+        <a href="/pins/" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-slate-900 hover:bg-brand-700 text-white font-bold text-sm shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5">
+          <i class="fa-solid fa-map-location-dot text-brand-400 text-base"></i>
+          <span>Open Interactive Project Pins Map</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
         </a>
       </div>
 
     </div>
   </section>
 
-  <!-- TESTIMONIALS & REPUTATION -->
+  <!-- VERIFIED GOOGLE REVIEWS SECTION -->
   <section id="reviews" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
-        <div class="flex items-center justify-center gap-1 text-amber-400 text-lg">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+      <!-- Trust Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-bold">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          <span>Official Google Business Reviews</span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
-          Verified Google Reviews
+          What Neighbors Say About Luke
         </h2>
-        <p class="text-slate-600 text-base">
-          Real reviews from real customers — pulled live from our Google Business Profile.
-        </p>
+        
+        <!-- Score Bar -->
+        <div class="flex items-center justify-center gap-3 pt-2">
+          <span class="text-4xl font-black text-slate-900" id="google-rating-val">5.0</span>
+          <div class="text-left">
+            <div class="flex text-amber-400 text-base">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-500 font-semibold" id="google-count-val">Based on 18 Google reviews</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Live Google Reviews Embed -->
-      <div class="rounded-2xl overflow-hidden border border-slate-200 bg-white" style="min-height: 500px;">
-        <iframe 
-          src="/embed/google-reviews/" 
-          width="100%" 
-          height="600" 
-          frameborder="0" 
-          style="border: none; display: block;"
-          title="Lungrin's Lawncare Google Reviews"
-          loading="lazy"
-        ></iframe>
+      <!-- Reviews Cards Grid (Real Google Reviews) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14" id="google-reviews-container">
+        
+        <!-- Review 1: Krissy Beattie -->
+        <div class="bg-slate-50 rounded-2xl p-7 border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] text-slate-400 font-medium">1 month ago</span>
+            </div>
+            <p class="text-sm text-slate-700 italic leading-relaxed">
+              &ldquo;I can't recommend Luke enough! He did an amazing job on my flower beds and made the whole process so easy. He responded quickly, got me an estimate the same day, and showed up ready to work. His attention to detail is incredible.&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJZjgrzXxUjUjhLjmD3-zYurMvJNT4nzr-w_1eUmXegi7d3dQ=s128-c0x00000000-cc-rp-mo" alt="Krissy Beattie" class="w-10 h-10 rounded-full object-cover border border-slate-200" onerror="this.style.display='none'" />
+            <div>
+              <div class="text-sm font-bold text-slate-900">Krissy Beattie</div>
+              <div class="text-[11px] text-slate-500 flex items-center gap-1">
+                <i class="fa-brands fa-google text-brand-600"></i> Verified Google Review
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2: Amy Passons-Steib -->
+        <div class="bg-slate-50 rounded-2xl p-7 border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] text-slate-400 font-medium">3 months ago</span>
+            </div>
+            <p class="text-sm text-slate-700 italic leading-relaxed">
+              &ldquo;Excellent service, communication, and pricing. Is willing to go above and beyond and work with you if more than the basic mowing package is desired. Extremely clear pricing, and makes sure you are satisfied with the job!&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVAWKytcy20HFeiBAkbe17YgykFFm-XzDCaO7R9s7HdWonm7UY=s128-c0x00000000-cc-rp-mo-ba2" alt="Amy Passons-Steib" class="w-10 h-10 rounded-full object-cover border border-slate-200" onerror="this.style.display='none'" />
+            <div>
+              <div class="text-sm font-bold text-slate-900">Amy Passons- Steib</div>
+              <div class="text-[11px] text-slate-500 flex items-center gap-1">
+                <i class="fa-brands fa-google text-brand-600"></i> Verified Google Review
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3: Gloria Martin -->
+        <div class="bg-slate-50 rounded-2xl p-7 border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] text-slate-400 font-medium">2 months ago</span>
+            </div>
+            <p class="text-sm text-slate-700 italic leading-relaxed">
+              &ldquo;Luke is always very professional. He does exactly what I need him to do. He always goes above and beyond and makes sure I am totally satisfied with the work he has done.&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIUaLC1us3BOT5Q8fY0UjFqLMf8Tyv9etbttL6T_r5Ix2-OPA=s128-c0x00000000-cc-rp-mo" alt="Gloria Martin" class="w-10 h-10 rounded-full object-cover border border-slate-200" onerror="this.style.display='none'" />
+            <div>
+              <div class="text-sm font-bold text-slate-900">Gloria Martin</div>
+              <div class="text-[11px] text-slate-500 flex items-center gap-1">
+                <i class="fa-brands fa-google text-brand-600"></i> Verified Google Review
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Leave a Review CTA -->
-      <div class="text-center mt-10 space-y-3">
-        <p class="text-sm text-slate-500">Had a great experience? Help Luke build his reputation:</p>
-        <a href="https://search.google.com/local/writereview?placeid=ChIJvYxgYy-ipy0ReT6NyUfsbCM" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white border-2 border-slate-300 text-slate-800 font-bold text-sm shadow-sm hover:border-brand-500 hover:text-brand-700 hover:shadow-md transition-all">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      <!-- Google CTAs Bar -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="https://search.google.com/local/writereview?placeid=ChIJvYxgYy-ipy0ReT6NyUfsbCM" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md hover:shadow-lg transition">
+          <i class="fa-solid fa-pen-to-square"></i>
           Leave a Google Review
-          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJvYxgYy-ipy0ReT6NyUfsbCM" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-bold text-sm shadow-sm hover:shadow transition">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Read All 18 Reviews on Google Maps
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
         </a>
       </div>
 

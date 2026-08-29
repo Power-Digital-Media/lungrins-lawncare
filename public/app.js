@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
   initContactForm();
   initCopyrightYear();
+  initLiveGoogleData();
 });
 
 /* -------------------------------------------------------------
@@ -398,4 +399,81 @@ function initCopyrightYear() {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+}
+
+/* -------------------------------------------------------------
+ * 8. Live Google Business Profile Hydration
+ * ----------------------------------------------------------- */
+function initLiveGoogleData() {
+  fetch('/api/google-business/')
+    .then(res => {
+      if (!res.ok) throw new Error('API fetch failed');
+      return res.json();
+    })
+    .then(data => {
+      if (!data) return;
+
+      // Update rating score and review count badge
+      const ratingVal = document.getElementById('google-rating-val');
+      const countVal = document.getElementById('google-count-val');
+
+      if (ratingVal && data.rating) {
+        ratingVal.textContent = Number(data.rating).toFixed(1);
+      }
+      if (countVal && data.reviewCount) {
+        countVal.textContent = `Based on ${data.reviewCount} Google reviews`;
+      }
+
+      // If live reviews are returned, update cards
+      if (Array.isArray(data.reviews) && data.reviews.length > 0) {
+        const container = document.getElementById('google-reviews-container');
+        if (!container) return;
+
+        // Render top 3 reviews
+        const topReviews = data.reviews.slice(0, 3);
+        container.innerHTML = topReviews.map(rev => `
+          <div class="bg-slate-50 rounded-2xl p-7 border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm">
+                  ${'<i class="fa-solid fa-star"></i>'.repeat(Math.round(rev.rating || 5))}
+                </div>
+                <span class="text-[11px] text-slate-400 font-medium">${rev.relativeTime || ''}</span>
+              </div>
+              <p class="text-sm text-slate-700 italic leading-relaxed">
+                &ldquo;${escapeHtml(rev.text)}&rdquo;
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+              ${rev.authorPhoto ? `
+                <img src="${rev.authorPhoto}" alt="${escapeHtml(rev.authorName)}" class="w-10 h-10 rounded-full object-cover border border-slate-200" onerror="this.style.display='none'" />
+              ` : `
+                <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold text-sm flex items-center justify-center">
+                  ${(rev.authorName || 'G')[0]}
+                </div>
+              `}
+              <div>
+                <div class="text-sm font-bold text-slate-900">${escapeHtml(rev.authorName || 'Google Customer')}</div>
+                <div class="text-[11px] text-slate-500 flex items-center gap-1">
+                  <i class="fa-brands fa-google text-brand-600"></i> Verified Google Review
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    })
+    .catch(err => {
+      console.log('Google business profile data loaded from static cache.', err);
+    });
+}
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
