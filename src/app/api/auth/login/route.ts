@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const firebaseProjectId = process.env.FIREBASE_PROJECT_ID || "pdm-pindrop-central";
-const clientId = process.env.PDM_CLIENT_ID || "generic-tenant";
+const clientId = process.env.PDM_CLIENT_ID || "lungrins-lawncare";
 const firestoreUrl = `https://firestore.googleapis.com/v1/projects/${firebaseProjectId}/databases/(default)/documents/settings/${clientId}`;
 
 export async function POST(req: NextRequest) {
@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Passcode is required" }, { status: 400 });
     }
 
-    const activeClientId = clientId || process.env.PDM_CLIENT_ID || "generic-tenant";
+    const activeClientId = clientId || process.env.PDM_CLIENT_ID || "lungrins-lawncare";
     const firestoreUrl = `https://firestore.googleapis.com/v1/projects/${firebaseProjectId}/databases/(default)/documents/settings/${activeClientId}`;
 
     let correctPasscode = "";

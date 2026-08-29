@@ -244,7 +244,7 @@ export default function DropPinPage() {
   };
   const handleProfileNameChange = (val: string) => {
     setProfileCompanyName(val);
-    if (activeClientId === "generic-tenant") {
+    if (activeClientId === "lungrins-lawncare") {
       const slug = val
         .toLowerCase()
         .replace(/[^a-z0-9\s-]/g, "")
@@ -469,10 +469,10 @@ export default function DropPinPage() {
       await fetchTranspondSettings(resolvedCid);
 
       const cachedAuth = sessionStorage.getItem("roofer_pin_auth");
-      if (cachedAuth === "true" || resolvedCid === "generic-tenant") {
+      if (cachedAuth === "true" || resolvedCid === "lungrins-lawncare") {
         setIsAuthenticated(true);
         const tourSeen = localStorage.getItem("pindrop_tour_seen");
-        if (!tourSeen && resolvedCid === "generic-tenant") {
+        if (!tourSeen && resolvedCid === "lungrins-lawncare") {
           setTimeout(() => {
             setTourStep(1);
             setExpandedTab("company");
@@ -490,15 +490,15 @@ export default function DropPinPage() {
           const res = await fetch("/api/config");
           if (res.ok) {
             const data = await res.json();
-            const resolvedCid = data.clientId || "generic-tenant";
+            const resolvedCid = data.clientId || "lungrins-lawncare";
             sessionStorage.setItem("pindrop_client_id", resolvedCid);
             initConfig(resolvedCid);
           } else {
-            initConfig("generic-tenant");
+            initConfig("lungrins-lawncare");
           }
         } catch (err) {
           console.error("Failed to load default server config:", err);
-          initConfig("generic-tenant");
+          initConfig("lungrins-lawncare");
         }
       };
       loadDefaultConfig();
@@ -529,7 +529,7 @@ export default function DropPinPage() {
         setIsAuthenticated(true);
         fetchTranspondSettings(activeClientId || undefined);
         const tourSeen = localStorage.getItem("pindrop_tour_seen");
-        if (!tourSeen && activeClientId === "generic-tenant") {
+        if (!tourSeen && activeClientId === "lungrins-lawncare") {
           setTimeout(() => setTourStep(1), 800);
         }
       } else {
@@ -877,7 +877,7 @@ export default function DropPinPage() {
           <p className="subtitle">{profileTagline || "Submit recent project photographs and details from the field"}</p>
         </div>
 
-        {activeClientId === "generic-tenant" && (
+        {activeClientId === "lungrins-lawncare" && (
           <div style={{
             background: "rgba(226, 176, 71, 0.08)",
             border: "1px solid #e2b047",
@@ -1408,7 +1408,7 @@ export default function DropPinPage() {
                         <span>🏢</span> Company Profile Settings
                       </span>
                       <span style={{ color: "#e2b047", fontSize: "0.7rem", fontWeight: "700", display: "flex", alignItems: "center", gap: "4px" }}>
-                        {activeClientId === "generic-tenant" ? "⚠️ Configure" : "✓ Active"} {expandedTab === "company" ? "▲" : "▼"}
+                        {activeClientId === "lungrins-lawncare" ? "⚠️ Configure" : "✓ Active"} {expandedTab === "company" ? "▲" : "▼"}
                       </span>
                     </div>
 
@@ -1746,7 +1746,7 @@ export default function DropPinPage() {
                     <div style={{ background: "rgba(255, 255, 255, 0.02)", padding: "12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.05)" }}>
                       <strong style={{ color: "#e2b047", display: "block", marginBottom: "4px" }}>Step 3: Create OAuth Credentials</strong>
                       Go to <strong>APIs & Services &gt; Credentials</strong>. Create an "OAuth Client ID" (select "Web Application"). 
-                      Add your deployment domains (e.g., `https://bornagainroofing.com` and `http://localhost:3000`) under **Authorized Javascript Origins** and **Authorized Redirect URIs**.
+                      Add your deployment domains (e.g., `https://lungrinslawncare.com` and `http://localhost:3000`) under **Authorized Javascript Origins** and **Authorized Redirect URIs**.
                     </div>
 
                     <div style={{ background: "rgba(255, 255, 255, 0.02)", padding: "12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.05)" }}>
@@ -1898,7 +1898,7 @@ export default function DropPinPage() {
                 <div style={{ fontSize: "0.82rem", color: "#ffffff", lineHeight: "1.5", marginBottom: "1.25rem" }}>
                   {tourStep === 1 && (
                     <div>
-                      {activeClientId === "generic-tenant" ? (
+                      {activeClientId === "lungrins-lawncare" ? (
                         <>
                           <strong>🏢 Step 1: Add Your Business</strong><br/><br/>
                           To launch a private map and embed widgets on your own website, you must register your company. Scroll down and fill out the fields in the <strong>Company Profile Settings</strong> tab, or click the <strong>Register Your Business</strong> button at the top!

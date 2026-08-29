@@ -1,74 +1,4 @@
 {
-  "generic-tenant": {
-    "clientId": "generic-tenant",
-    "companyName": "PDM PinDrop",
-    "portalPasscode": "PinDrop2026",
-    "reviewUrl": "",
-    "mapCenter": [
-      37.0902,
-      -95.7129
-    ],
-    "theme": {
-      "primaryRgb": "11, 12, 16",
-      "secondaryRgb": "209, 164, 83",
-      "accentRgb": "36, 40, 50",
-      "bgRgb": "11, 12, 16",
-      "cardBgRgb": "21, 23, 30"
-    },
-    "brand": {
-      "phone": "",
-      "email": "",
-      "tagline": "Real-time Field Pin Drop & Local SEO Mapping",
-      "logoText": "PDM",
-      "logoSubtext": "PinDrop",
-      "logoImg": ""
-    },
-    "authorList": [],
-    "serviceList": [
-      "Residential Service",
-      "Commercial Service",
-      "Maintenance & Repair",
-      "Custom Service..."
-    ],
-    "cityCoords": {}
-  },
-  "geaux-pro-outdoors": {
-    "clientId": "geaux-pro-outdoors",
-    "companyName": "Geaux Pro Outdoors",
-    "rooferPasscode": "GPO-2026",
-    "googleReviewUrl": "https://search.google.com/local/writereview?placeid=ChIJDSSLVuZbKIYR6pqapnhI1Ws",
-    "mapCenter": [
-      32.2729,
-      -90.1312
-    ],
-    "theme": {
-      "primaryRgb": "37, 99, 235",
-      "secondaryRgb": "30, 41, 59",
-      "accentRgb": "245, 158, 11",
-      "bgRgb": "11, 12, 16",
-      "cardBgRgb": "21, 23, 30"
-    },
-    "brand": {
-      "phone": "601-896-2664",
-      "email": "slowery64@aol.com",
-      "tagline": "Earth Moved Done Right",
-      "logoText": "Geaux Pro Outdoors",
-      "logoSubtext": ""
-    },
-    "technicians": [
-      "Scott Lowery"
-    ],
-    "serviceList": [
-      "Pond Construction",
-      "Pond Dam Repair",
-      "Land Clearing",
-      "Grading & Dirt Work",
-      "Duck Hole Construction",
-      "Commercial Excavation",
-      "Residential Excavation",
-      "Industrial Excavation"
-    ]
-  },
   "lungrins-lawncare": {
     "clientId": "lungrins-lawncare",
     "companyName": "Lungrin's Lawncare",
@@ -96,14 +26,21 @@
       "Luke Lungrin"
     ],
     "serviceList": [
-      "Mowing & Edging",
-      "Pine Straw & Beds",
-      "Heavy Clearing",
-      "Debris Cleanup",
+      "Residential Mowing",
+      "Commercial Mowing",
+      "Edging & Trimming",
+      "Pine Straw Installation",
+      "Mulch Bed Maintenance",
+      "Leaf Removal & Cleanup",
+      "Gutter Cleaning",
       "Bush & Hedge Trimming",
-      "Pond Perimeter",
+      "Overgrowth Recovery",
+      "Pond Perimeter Mowing",
+      "Acreage Mowing",
       "Bush Hogging",
       "Fence Line Clearing",
+      "Debris Hauling",
+      "Property Cleanout",
       "Custom Service..."
     ]
   }

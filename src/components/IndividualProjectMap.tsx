@@ -54,7 +54,7 @@ export default function IndividualProjectMap({ pin, onEnlarge, clientId }: Indiv
     if (pin.latitude && pin.longitude) {
       pinCoords = [pin.latitude, pin.longitude];
     } else {
-      const baseCoords = cityCoords[pin.location] || mapCenter;
+      const baseCoords = cityCoords?.[pin.location] || mapCenter;
       const seed = parseInt(pin.id, 10) || 1;
       const latJitter = Math.sin(seed) * 0.016;
       const lngJitter = Math.cos(seed) * 0.016;

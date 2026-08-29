@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
-    const clientId = searchParams.get("clientId") || "generic-tenant";
+    const clientId = searchParams.get("clientId") || "lungrins-lawncare";
 
     const googleClientId = process.env.GOOGLE_CLIENT_ID;
     if (!googleClientId) {

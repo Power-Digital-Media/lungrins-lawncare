@@ -36,7 +36,7 @@ export async function GET(request: Request) {
     
     const response = await fetch(url, {
       headers: {
-        "User-Agent": "BornAgainRoofingApp/1.0 (info@bornagainroofing.com)",
+        "User-Agent": "LungrinsLawncareApp/1.0 (info@lungrinslawncare.com)",
         "Accept-Language": "en-US,en;q=0.9"
       }
     });

@@ -68,11 +68,11 @@ export async function POST(request: NextRequest) {
       },
       technicians: technicians.length ? technicians : [],
       serviceList: serviceList.length ? serviceList : [
-        "Residential Roofing",
-        "Metal Roofing",
-        "Commercial Roofing",
-        "Roof Inspection & Tarping",
-        "General Remodeling"
+        "Residential Mowing",
+        "Edging & Trimming",
+        "Pine Straw Installation",
+        "Gutter Cleaning",
+        "Overgrowth Recovery"
       ]
     };
 

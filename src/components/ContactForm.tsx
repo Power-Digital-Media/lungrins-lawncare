@@ -378,11 +378,11 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
                       required
                     >
                       <option value="">Select a service...</option>
-                      <option value="Roof Replacement">Roof Replacement</option>
-                      <option value="Roof Repair">Roof Repair</option>
-                      <option value="Metal Roofing">Metal Roofing</option>
-                      <option value="Storm Damage Restoration">Storm Damage Restoration</option>
-                      <option value="Home Remodeling / Additions">Home Remodeling / Additions</option>
+                      <option value="Residential Mowing">Residential Mowing</option>
+                      <option value="Pine Straw Installation">Pine Straw Installation</option>
+                      <option value="Gutter Cleaning">Gutter Cleaning</option>
+                      <option value="Overgrowth Recovery">Overgrowth Recovery</option>
+                      <option value="Property Cleanout">Property Cleanout</option>
                     </select>
                   </div>
                 </div>
@@ -495,7 +495,7 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder={type === "emergency" 
                   ? "Describe where the leak is or what was damaged by storm winds/hail..."
-                  : "Tell us about your roofing or remodeling needs..."
+                  : "Tell us about your lawn care needs..."
                 }
               />
             </div>

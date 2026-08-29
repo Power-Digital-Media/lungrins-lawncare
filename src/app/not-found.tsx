@@ -36,11 +36,8 @@ export default function NotFound() {
             <Link href="/" className="btn btn-primary">
               Go to Homepage
             </Link>
-            <Link href="/residential-roofing/" className="btn btn-secondary">
-              Our Services
-            </Link>
-            <Link href="/contact-us/" className="btn btn-secondary">
-              Contact Us
+            <Link href="/pins" className="btn btn-secondary">
+              Recent Jobs
             </Link>
           </div>
         </div>

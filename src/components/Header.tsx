@@ -36,7 +36,7 @@ function HeaderContent() {
             </div>
           )}
           <div className="logo-text-wrapper">
-            <span className="logo-title">{config.brand?.logoText || config.companyName || "PDM PinDrop"}</span>
+            <span className="logo-title">{config.brand?.logoText || config.companyName || "Lungrin's Lawncare"}</span>
             {config.brand?.logoSubtext && (
               <span className="logo-subtitle">{config.brand.logoSubtext}</span>
             )}
@@ -95,7 +95,7 @@ export default function Header() {
       <header className="glass header-container">
         <div className="container header-inner">
           <div className="logo-text-wrapper">
-            <span className="logo-title">PDM PinDrop</span>
+            <span className="logo-title">Lungrin's Lawncare</span>
           </div>
         </div>
       </header>

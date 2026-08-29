@@ -7,7 +7,7 @@ const firebaseProjectId = process.env.FIREBASE_PROJECT_ID || "pdm-pindrop-centra
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const code = searchParams.get("code");
-  const clientId = searchParams.get("state") || "generic-tenant";
+  const clientId = searchParams.get("state") || "lungrins-lawncare";
   const error = searchParams.get("error");
   const errorDescription = searchParams.get("error_description");
 

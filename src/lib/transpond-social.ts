@@ -32,7 +32,7 @@ async function getTranspondSettings(clientId: string, firebaseProjectId: string)
 export async function publishPinToTranspondSocial(pin: PinType): Promise<boolean> {
   try {
     const firebaseProjectId = process.env.FIREBASE_PROJECT_ID || "pdm-pindrop-central";
-    const clientId = process.env.PDM_CLIENT_ID || "generic-tenant";
+    const clientId = process.env.PDM_CLIENT_ID || "lungrins-lawncare";
 
     // A. Resolve API Key
     let apiKey = "";

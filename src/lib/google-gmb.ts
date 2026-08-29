@@ -150,7 +150,7 @@ async function getGmbLocationName(accessToken: string): Promise<string | null> {
 export async function publishPinToGmb(pin: PinType): Promise<boolean> {
   try {
     const firebaseProjectId = process.env.FIREBASE_PROJECT_ID || "pdm-pindrop-central";
-    const clientId = process.env.PDM_CLIENT_ID || "generic-tenant";
+    const clientId = process.env.PDM_CLIENT_ID || "lungrins-lawncare";
     
     // Fetch stored OAuth credentials from Firestore
     const credentials = await getGoogleAuthSettings(clientId, firebaseProjectId);

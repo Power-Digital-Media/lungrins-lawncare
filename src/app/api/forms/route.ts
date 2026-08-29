@@ -76,7 +76,7 @@ export async function POST(request: NextRequest) {
 
     // ── Load CRM Settings ──
     const firebaseProjectId = process.env.FIREBASE_PROJECT_ID || "pdm-pindrop-central";
-    const clientId = body.clientId || process.env.PDM_CLIENT_ID || "generic-tenant";
+    const clientId = body.clientId || process.env.PDM_CLIENT_ID || "lungrins-lawncare";
     
     let transpondKey = "";
     let groupId = 0;
@@ -262,16 +262,16 @@ export async function POST(request: NextRequest) {
       const tagMap: Record<string, number> = {
         "estimate-request": 625032,
         "emergency-request": 625033,
-        "storm-damage-emergency": 625033,
+        "lawn-care-estimate": 625033,
         "quick-callback": 625034,
-        "roof-replacement": 625088,
-        "roof-repair": 625089,
-        "metal-roofing": 625090,
-        "storm-damage-restoration": 625091,
-        "home-remodeling-additions": 625092,
+        "mowing-service": 625088,
+        "pine-straw-install": 625089,
+        "gutter-cleaning": 625090,
+        "overgrowth-recovery": 625091,
+        "property-cleanout": 625092,
         "schedule-call": 625097,
         "schedule-meeting": 625099,
-        "schedule-inspection": 625100
+        "schedule-estimate": 625100
       };
 
       const tagsToMatch = [

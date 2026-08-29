@@ -58,7 +58,7 @@ function parseFirestoreDocument(doc: any): PinType {
     longitude: parseValue(fields.longitude),
     detailedExplanation: parseValue(fields.detailedExplanation) || "",
     aeoAnswers: parseValue(fields.aeoAnswers) || [],
-    clientId: parseValue(fields.clientId) || "generic-tenant",
+    clientId: parseValue(fields.clientId) || "lungrins-lawncare",
   };
 }
 
@@ -98,14 +98,13 @@ export async function getPins(overrideClientId?: string): Promise<PinType[]> {
   const firebaseProjectId = process.env.FIREBASE_PROJECT_ID || "pdm-pindrop-central";
   const supabaseUrl = process.env.SUPABASE_URL;
   const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY;
-  const clientId = overrideClientId || process.env.PDM_CLIENT_ID || "generic-tenant";
+  const clientId = overrideClientId || process.env.PDM_CLIENT_ID || "lungrins-lawncare";
 
   let merged: PinType[] = [];
 
   // Filter static local pins.json to only include pins for this client.
-  // Roofer check-ins are tagged/untagged with 'generic-tenant'.
   const localPins = (pinsData as PinType[]).filter(
-    (p) => (p.clientId || "generic-tenant") === clientId
+    (p) => (p.clientId || "lungrins-lawncare") === clientId
   );
 
   // 1. Try Firebase Firestore REST API (using runQuery to filter by clientId)
@@ -176,7 +175,7 @@ export async function getPins(overrideClientId?: string): Promise<PinType[]> {
   // 3. Fallback to local memory if database calls did not yield pins
   if (merged.length === 0) {
     merged = inMemoryPins.filter(
-      (p) => (p.clientId || "generic-tenant") === clientId
+      (p) => (p.clientId || "lungrins-lawncare") === clientId
     );
   }
 
@@ -199,7 +198,7 @@ export async function addPin(pin: Omit<PinType, "id">): Promise<PinType | null> 
   const firebaseProjectId = process.env.FIREBASE_PROJECT_ID || "pdm-pindrop-central";
   const supabaseUrl = process.env.SUPABASE_URL;
   const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY;
-  const clientId = pin.clientId || process.env.PDM_CLIENT_ID || "generic-tenant";
+  const clientId = pin.clientId || process.env.PDM_CLIENT_ID || "lungrins-lawncare";
   
   const pinId = Date.now().toString();
   const newPin: PinType = {

@@ -14,23 +14,27 @@ export interface CompanyBrand {
   tagline: string;
   logoText: string;
   logoSubtext: string;
-  logoImg: string;
+  logoImg?: string;
 }
 
 export interface CompanyConfig {
   clientId: string;
   companyName: string;
-  portalPasscode: string;
-  reviewUrl: string;
+  rooferPasscode?: string;
+  portalPasscode?: string;
+  googleReviewUrl?: string;
+  reviewUrl?: string;
   mapCenter: [number, number];
   theme?: CompanyTheme;
   brand?: CompanyBrand;
-  authorList: string[];
+  technicians?: string[];
+  authorList?: string[];
   serviceList: string[];
-  cityCoords: Record<string, [number, number]>;
+  cityCoords?: Record<string, [number, number]>;
 }
 
-export const DEFAULT_CONFIG: CompanyConfig = companyConfigMap["generic-tenant"] as unknown as CompanyConfig;
+// This is a standalone app — default to Lungrin's config
+export const DEFAULT_CONFIG: CompanyConfig = companyConfigMap["lungrins-lawncare"] as unknown as CompanyConfig;
 
 export function getCompanyConfigSync(clientIdOverride?: string): CompanyConfig {
   const companyConfig = companyConfigMap as unknown as Record<string, CompanyConfig>;

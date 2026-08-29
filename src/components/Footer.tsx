@@ -32,7 +32,7 @@ function FooterContent() {
               )}
               <div className="logo-text-wrapper">
                 <span className="logo-title" style={{ fontSize: "1.1rem", fontWeight: "700", color: "#fff" }}>
-                  {config.brand?.logoText || config.companyName || "PDM PinDrop"}
+                  {config.brand?.logoText || config.companyName || "Lungrin's Lawncare"}
                 </span>
               </div>
             </Link>
@@ -66,7 +66,7 @@ function FooterContent() {
 
         {/* Bottom bar */}
         <div className="footer-bottom" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "1.5rem", flexWrap: "wrap", gap: "12px", fontSize: "0.75rem", color: "var(--text-muted)" }}>
-          <p>© {new Date().getFullYear()} {config.companyName || "PDM PinDrop"}. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} {config.companyName || "Lungrin's Lawncare"}. All Rights Reserved.</p>
           <div className="footer-legal" style={{ display: "flex", gap: "16px" }}>
             <Link href={getQueryStr("/privacy-policy")} style={{ color: "var(--text-muted)", textDecoration: "none" }}>Privacy Policy</Link>
             <Link href={getQueryStr("/terms-and-conditions")} style={{ color: "var(--text-muted)", textDecoration: "none" }}>Terms &amp; Conditions</Link>
@@ -82,7 +82,7 @@ export default function Footer() {
     <Suspense fallback={
       <footer className="footer">
         <div className="container">
-          <p>© {new Date().getFullYear()} PDM PinDrop. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Lungrin&apos;s Lawncare. All Rights Reserved.</p>
         </div>
       </footer>
     }>

@@ -115,7 +115,7 @@ export default function InteractiveMap({ pins, clientId, fullHeight = false }: I
       if (pin.latitude && pin.longitude) {
         pinCoords = [pin.latitude, pin.longitude];
       } else {
-        const baseCoords = cityCoords[pin.location] || [32.2988, -90.1848]; // default Jackson
+        const baseCoords = cityCoords?.[pin.location] || [32.2988, -90.1848]; // default Jackson, MSckson
         // Stable deterministic jitter using sine/cosine based on id
         const seed = parseInt(pin.id, 10) || 1;
         const latJitter = Math.sin(seed) * 0.016;

@@ -38,7 +38,7 @@ export async function GET(request: Request) {
     const envClientId = process.env.PDM_CLIENT_ID;
     
     // Resolve active client ID (query overrides environment, falling back to generic-tenant)
-    const activeClientId = queryClientId || envClientId || "generic-tenant";
+    const activeClientId = queryClientId || envClientId || "lungrins-lawncare";
     
     let config = (companyConfig as any)[activeClientId];
     
@@ -62,7 +62,7 @@ export async function GET(request: Request) {
     
     if (!config) {
       // Fallback to generic-tenant if resolved config does not exist anywhere
-      const fallbackConfig = (companyConfig as any)["generic-tenant"];
+      const fallbackConfig = (companyConfig as any)["lungrins-lawncare"];
       return NextResponse.json(fallbackConfig, {
         headers: {
           "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",

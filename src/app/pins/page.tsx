@@ -51,7 +51,7 @@ function PinsPageContent() {
 
   const [pins, setPins] = useState<PinType[]>(
     (pinsData as PinType[]).filter(
-      (p) => clientId ? (p.clientId || "generic-tenant") === clientId : true
+      (p) => clientId ? (p.clientId || "lungrins-lawncare") === clientId : true
     )
   );
   const [selectedLocation, setSelectedLocation] = useState("");

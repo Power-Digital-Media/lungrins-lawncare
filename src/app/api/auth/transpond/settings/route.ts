@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const firebaseProjectId = process.env.FIREBASE_PROJECT_ID || "pdm-pindrop-central";
-const clientId = process.env.PDM_CLIENT_ID || "generic-tenant";
+const clientId = process.env.PDM_CLIENT_ID || "lungrins-lawncare";
 const firestoreUrl = `https://firestore.googleapis.com/v1/projects/${firebaseProjectId}/databases/(default)/documents/settings/${clientId}`;
 
 // Helper to mask API key for security (only show first 4 and last 4 characters)
@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const queryClientId = searchParams.get("clientId");
-    const activeClientId = queryClientId || process.env.PDM_CLIENT_ID || "generic-tenant";
+    const activeClientId = queryClientId || process.env.PDM_CLIENT_ID || "lungrins-lawncare";
     const firestoreUrl = `https://firestore.googleapis.com/v1/projects/${firebaseProjectId}/databases/(default)/documents/settings/${activeClientId}`;
 
     let transpondApiKey = "";
@@ -65,7 +65,7 @@ export async function GET(request: NextRequest) {
       transpondApiKey = parseVal(fields.transpondApiKey);
       transpondGroupId = parseVal(fields.transpondGroupId);
       technicians = parseArrayVal(fields.technicians);
-      companyName = parseVal(fields.companyName) || (activeClientId === "generic-tenant" ? "PinDrop Portal" : activeClientId);
+      companyName = parseVal(fields.companyName) || (activeClientId === "lungrins-lawncare" ? "PinDrop Portal" : activeClientId);
       rooferPasscodeConfigured = !!parseVal(fields.rooferPasscode);
       googleReviewUrl = parseVal(fields.googleReviewUrl);
       locations = parseLocations(fields.locations);
@@ -104,7 +104,7 @@ export async function GET(request: NextRequest) {
     }
 
     // C. Fallback to process.env for Transpond keys if blank (ONLY for Generic Tenant)
-    if (!transpondApiKey && activeClientId === "generic-tenant") {
+    if (!transpondApiKey && activeClientId === "lungrins-lawncare") {
       transpondApiKey = process.env.TRANSPOND_API_KEY || "";
       transpondGroupId = process.env.TRANSPOND_GROUP_ID || "";
       if (transpondApiKey) {
@@ -114,7 +114,7 @@ export async function GET(request: NextRequest) {
 
     // D. Fallback to default locations for Generic Tenant
     if (locations.length === 0) {
-      if (activeClientId === "generic-tenant") {
+      if (activeClientId === "lungrins-lawncare") {
         locations = [
           { name: "New York, NY", lat: 40.7128, lng: -74.0060 },
           { name: "Los Angeles, CA", lat: 34.0522, lng: -118.2437 },
@@ -129,7 +129,7 @@ export async function GET(request: NextRequest) {
 
     // E. Fallback to default technicians if Generic Tenant
     if (technicians.length === 0) {
-      if (activeClientId === "generic-tenant") {
+      if (activeClientId === "lungrins-lawncare") {
         technicians = [
           "John Doe",
           "Jane Smith",
@@ -187,7 +187,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     const { apiKey, groupId, technicians, rooferPasscode, companyName, googleReviewUrl, locations, clientId } = body;
-    const activeClientId = clientId || process.env.PDM_CLIENT_ID || "generic-tenant";
+    const activeClientId = clientId || process.env.PDM_CLIENT_ID || "lungrins-lawncare";
     const firestoreUrl = `https://firestore.googleapis.com/v1/projects/${firebaseProjectId}/databases/(default)/documents/settings/${activeClientId}`;
 
     // Read current settings document (so we don't wipe out other fields like Google tokens)
