@@ -5,3 +5,9 @@
 [build.environment]
   NODE_VERSION = "20"
   NPM_FLAGS = "--legacy-peer-deps"
+  NEXT_PUBLIC_PDM_CLIENT_ID = "lungrins-lawncare"
+  PDM_CLIENT_ID = "lungrins-lawncare"
+  FIREBASE_PROJECT_ID = "pdm-pindrop-central"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
