@@ -8,20 +8,20 @@ import Link from "next/link";
 
 
 const serviceList = [
-  "Residential Roofing",
-  "Metal Roofing",
-  "Commercial Roofing",
-  "Roof Inspection & Tarping",
-  "General Remodeling",
-  "Bathroom Remodeling",
-  "Kitchen Remodeling",
-  "Whole House Remodeling",
-  "Painting (Interior/Exterior)",
-  "Fencing & Decking",
-  "Sheetrock & Drywall",
-  "Siding & Gutters",
-  "Custom Cabinets & Carpentry",
-  "Flooring & Tile",
+  "Residential Mowing",
+  "Commercial Mowing",
+  "Edging & Trimming",
+  "Pine Straw Installation",
+  "Mulch Bed Maintenance",
+  "Leaf Removal & Cleanup",
+  "Gutter Cleaning",
+  "Bush & Hedge Trimming",
+  "Overgrowth Recovery",
+  "Pond Perimeter Mowing",
+  "Acreage Mowing",
+  "Subdivision Lot Mowing",
+  "Debris Hauling",
+  "Property Cleanout",
   "Custom Category..."
 ];
 
@@ -777,7 +777,7 @@ export default function DropPinPage() {
       <div className="login-backdrop">
         <div className="double-bezel-wrapper login-card">
           <div className="double-bezel-inner login-inner">
-            <h2 className="title">PDM PinDrop</h2>
+            <h2 className="title">Lungrin&apos;s Lawncare</h2>
             <p className="subtitle">Enter passcode to drop job pins</p>
             <form onSubmit={handleLogin} className="form">
               <input
@@ -873,7 +873,7 @@ export default function DropPinPage() {
               🎓 Take Tour
             </button>
           </span>
-          <h1>{companyName ? `${companyName} PinDrop` : "PDM PinDrop"}</h1>
+          <h1>{companyName ? `${companyName}` : "Lungrin\u0027s Lawncare"}</h1>
           <p className="subtitle">{profileTagline || "Submit recent project photographs and details from the field"}</p>
         </div>
 
