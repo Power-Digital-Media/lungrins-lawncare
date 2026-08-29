@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   trailingSlash: true,
-  assetPrefix: "/pindrop-assets",
   images: {
     formats: ['image/avif', 'image/webp'],
     qualities: [50, 60, 75],
