@@ -1,18 +1,27 @@
 {
   "name": "lungrins-lawncare",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "scrape": "node scrape-facebook-jobs.js",
-    "serve": "powershell -ExecutionPolicy Bypass -File server.ps1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "playwright": "^1.62.1"
+    "@types/leaflet": "^1.9.21",
+    "leaflet": "^1.9.4",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "typescript": "^5"
   }
 }
+
