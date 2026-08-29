@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="mowerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield outline -->
+  <path d="M256 28 C140 28, 52 72, 52 72 L52 240 C52 360, 256 484, 256 484 C256 484, 460 360, 460 240 L460 72 C460 72, 372 28, 256 28Z" 
+        stroke="url(#shieldGrad)" stroke-width="16" fill="none" stroke-linejoin="round"/>
+  <!-- Inner shield fill -->
+  <path d="M256 52 C152 52, 72 90, 72 90 L72 232 C72 340, 256 452, 256 452 C256 452, 440 340, 440 232 L440 90 C440 90, 360 52, 256 52Z" 
+        fill="rgba(34, 120, 60, 0.08)"/>
+  <!-- Zero-turn mower body -->
+  <rect x="170" y="220" width="172" height="60" rx="8" fill="url(#mowerGrad)"/>
+  <!-- Mower deck -->
+  <rect x="150" y="270" width="120" height="24" rx="6" fill="#16a34a"/>
+  <!-- Seat -->
+  <rect x="280" y="186" width="40" height="40" rx="8" fill="url(#mowerGrad)"/>
+  <rect x="275" y="178" width="50" height="14" rx="6" fill="#15803d"/>
+  <!-- Steering handles -->
+  <rect x="230" y="196" width="8" height="36" rx="4" fill="#4ade80" transform="rotate(-15, 234, 214)"/>
+  <rect x="254" y="196" width="8" height="36" rx="4" fill="#4ade80" transform="rotate(15, 258, 214)"/>
+  <!-- Rear wheels (large) -->
+  <circle cx="320" cy="290" r="28" fill="#1a1a1a" stroke="#4ade80" stroke-width="6"/>
+  <circle cx="320" cy="290" r="10" fill="#333"/>
+  <!-- Front caster wheels (small) -->
+  <circle cx="175" cy="300" r="14" fill="#1a1a1a" stroke="#4ade80" stroke-width="4"/>
+  <circle cx="175" cy="300" r="5" fill="#333"/>
+  <!-- Grass lines under mower -->
+  <line x1="140" y1="330" x2="220" y2="330" stroke="#4ade80" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <line x1="150" y1="340" x2="240" y2="340" stroke="#22c55e" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <line x1="160" y1="348" x2="230" y2="348" stroke="#16a34a" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+</svg>
