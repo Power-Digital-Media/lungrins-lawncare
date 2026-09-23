@@ -67,9 +67,11 @@ function FooterContent() {
         {/* Bottom bar */}
         <div className="footer-bottom" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "1.5rem", flexWrap: "wrap", gap: "12px", fontSize: "0.75rem", color: "var(--text-muted)" }}>
           <p>© {new Date().getFullYear()} {config.companyName || "Lungrin's Lawncare"}. All Rights Reserved.</p>
-          <div className="footer-legal" style={{ display: "flex", gap: "16px" }}>
+          <div className="footer-legal" style={{ display: "flex", gap: "16px", alignItems: "center", flexWrap: "wrap" }}>
             <Link href={getQueryStr("/privacy-policy")} style={{ color: "var(--text-muted)", textDecoration: "none" }}>Privacy Policy</Link>
             <Link href={getQueryStr("/terms-and-conditions")} style={{ color: "var(--text-muted)", textDecoration: "none" }}>Terms &amp; Conditions</Link>
+            <span>•</span>
+            <span>Designed &amp; Engineered by <a href="https://powerdigitalmedia.org" target="_blank" rel="noopener noreferrer" style={{ color: "var(--secondary, #e2b047)", textDecoration: "underline" }}>Power Digital Media</a></span>
           </div>
         </div>
       </div>
