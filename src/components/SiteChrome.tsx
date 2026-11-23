@@ -202,6 +202,9 @@ export function SiteFooter() {
                   alt="Lungrin's Lawncare crest"
                   width={44}
                   height={44}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
                   style={{ borderRadius: "10px", objectFit: "cover" }}
                 />
                 <div>

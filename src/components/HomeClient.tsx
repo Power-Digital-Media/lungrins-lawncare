@@ -27,6 +27,12 @@ interface ReviewItem {
   ownerReply?: string;
 }
 
+function toCardWebp(imgPath: string): string {
+  return imgPath.endsWith(".webp") && !imgPath.endsWith("-card.webp")
+    ? `${imgPath.slice(0, -5)}-card.webp`
+    : imgPath;
+}
+
 const BEFORE_AFTER_PAIRS = [
   {
     id: "ba-flora-beds",
@@ -535,7 +541,7 @@ export default function HomeClient() {
       {/* 1. HERO SECTION — FULL-BLEED REAL PROPERTY BACKDROP + FIRST-FOLD SHOWCASE */}
       <section
         className="ll-hero"
-        style={{ "--hero-bg-url": `url(${activeHero.desktopImg})` } as React.CSSProperties}
+        style={{ "--hero-bg-url": `url(${activeHero.mobileImg})` } as React.CSSProperties}
       >
         <div className="ll-hero-bg" aria-hidden="true">
           <div className="ll-hero-bg-desktop-photo" />
@@ -556,7 +562,8 @@ export default function HomeClient() {
               <h1 className="ll-hero-h1">
                 Razor-Sharp Edges,{" "}
                 <span className="ll-hero-h1-accent">Rolled Pine Straw</span>{" "}
-                &amp; Spotless Yards.
+                &amp; Spotless Lawns.
+                <span className="ll-hero-h1-geo">Flora, Madison, Ridgeland &amp; Jackson, MS</span>
               </h1>
 
               <p className="ll-hero-lead">
@@ -640,7 +647,15 @@ export default function HomeClient() {
                     onClick={() => setActiveHeroIdx(idx)}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={slide.thumbImg} alt="" width={180} height={120} />
+                    <img
+                      src={slide.thumbImg}
+                      alt=""
+                      width={180}
+                      height={120}
+                      loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
+                    />
                     <span className="ll-hero-thumb-caption">{slide.thumbLabel}</span>
                   </button>
                 ))}
@@ -784,11 +799,15 @@ export default function HomeClient() {
               {/* AFTER Base Image */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={activeBa.afterImg}
+                src={toCardWebp(activeBa.afterImg)}
+                srcSet={`${toCardWebp(activeBa.afterImg)} 560w, ${activeBa.afterImg} 960w`}
+                sizes="(max-width: 767px) 360px, 760px"
                 alt={`After — ${activeBa.title} in ${activeBa.location}`}
-                width={1400}
-                height={1050}
+                width={960}
+                height={720}
                 loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                 className="ll-ba-img-after"
               />
               <span className="ll-ba-badge ll-ba-badge-after">
@@ -799,11 +818,15 @@ export default function HomeClient() {
               <div className="ll-ba-before-clip" style={{ clipPath: `inset(0 ${100 - sliderPct}% 0 0)` }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={activeBa.beforeImg}
+                  src={toCardWebp(activeBa.beforeImg)}
+                  srcSet={`${toCardWebp(activeBa.beforeImg)} 560w, ${activeBa.beforeImg} 960w`}
+                  sizes="(max-width: 767px) 360px, 760px"
                   alt={`Before — ${activeBa.title} in ${activeBa.location}`}
-                  width={1400}
-                  height={1050}
+                  width={960}
+                  height={720}
                   loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
                   className="ll-ba-img-after"
                 />
                 <span className="ll-ba-badge ll-ba-badge-before">
@@ -911,11 +934,19 @@ export default function HomeClient() {
                     >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src={job.images[0]}
+                        src={toCardWebp(job.images[0])}
+                        srcSet={
+                          toCardWebp(job.images[0]) !== job.images[0]
+                            ? `${toCardWebp(job.images[0])} 560w, ${job.images[0]} 960w`
+                            : undefined
+                        }
+                        sizes="(max-width: 767px) 320px, 370px"
                         alt={`${job.title || job.service} in ${job.location} by Lungrin's Lawncare`}
                         loading="lazy"
-                        width={590}
-                        height={443}
+                        decoding="async"
+                        fetchPriority="low"
+                        width={560}
+                        height={420}
                       />
                       <span className="ll-job-loc-badge">📍 {job.location}</span>
                       {job.images.length > 1 && (
@@ -1297,7 +1328,15 @@ export default function HomeClient() {
                   className="ll-reel-card"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={reel.img} alt={reel.title} loading="lazy" width={540} height={720} />
+                  <img
+                    src={reel.img}
+                    alt={reel.title}
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
+                    width={540}
+                    height={720}
+                  />
                   <div className="ll-reel-shade" />
                   <span
                     aria-hidden="true"
@@ -1401,11 +1440,15 @@ export default function HomeClient() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/jobs/fb-2026/branding-fb/2.webp"
+                src="/images/jobs/fb-2026/branding-fb/2-card.webp"
+                srcSet="/images/jobs/fb-2026/branding-fb/2-card.webp 560w, /images/jobs/fb-2026/branding-fb/2.webp 960w"
+                sizes="(max-width: 767px) 330px, 440px"
                 alt="Lungrin's Lawncare official Flora MS crest — 601-906-1281"
-                width={960}
-                height={640}
+                width={560}
+                height={373}
                 loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                 style={{ width: "100%", height: "auto", borderRadius: "16px", marginBottom: "1.1rem" }}
               />
               <div style={{ fontSize: "1.05rem", fontWeight: 800, color: "#ffffff" }}>
@@ -1443,22 +1486,22 @@ export default function HomeClient() {
 
             <div className="ll-areas-grid">
               {[
-                { town: "Flora, MS", sub: "Home Base • 39071" },
-                { town: "Pocahontas, MS", sub: "Primary Route & Ponds" },
-                { town: "Madison, MS", sub: "Annandale • 39110" },
-                { town: "Gluckstadt, MS", sub: "Subdivisions & Beds" },
-                { town: "Ridgeland, MS", sub: "Estates • 39157" },
-                { town: "Jackson, MS", sub: "North Jackson Routes" },
-                { town: "Bentonia, MS", sub: "Acreage & Clearing • 39040" },
-                { town: "Yazoo County", sub: "Bee Lake & Rural" },
+                { slug: "flora-ms", town: "Flora, MS", sub: "Home Base • 39071" },
+                { slug: "pocahontas-ms", town: "Pocahontas, MS", sub: "Primary Route & Ponds" },
+                { slug: "madison-ms", town: "Madison, MS", sub: "Annandale • 39110" },
+                { slug: "gluckstadt-ms", town: "Gluckstadt, MS", sub: "Subdivisions & Beds" },
+                { slug: "ridgeland-ms", town: "Ridgeland, MS", sub: "Estates • 39157" },
+                { slug: "jackson-ms", town: "Jackson, MS", sub: "North Jackson Routes" },
+                { slug: "bentonia-ms", town: "Bentonia, MS", sub: "Acreage & Clearing • 39040" },
+                { slug: "yazoo-county-ms", town: "Yazoo County", sub: "Bee Lake & Rural" },
               ].map((a) => (
-                <div key={a.town} className="ll-area-tile">
-                  <div style={{ color: "#4ade80", fontSize: "0.82rem", fontWeight: 800 }}>📍 Active Route</div>
+                <Link key={a.slug} href={`/service-areas/${a.slug}/`} className="ll-area-tile">
+                  <div style={{ color: "#4ade80", fontSize: "0.82rem", fontWeight: 800 }}>📍 Active Route →</div>
                   <div style={{ color: "#ffffff", fontWeight: 900, fontSize: "1.02rem", marginTop: "0.2rem" }}>
                     {a.town}
                   </div>
-                  <div style={{ color: "#94a3b8", fontSize: "0.75rem", marginTop: "0.15rem" }}>{a.sub}</div>
-                </div>
+                  <div style={{ color: "#cbd5e1", fontSize: "0.75rem", marginTop: "0.15rem" }}>{a.sub}</div>
+                </Link>
               ))}
             </div>
             <div className="ll-mobile-swipe-hint">← Swipe all 8 active route communities →</div>

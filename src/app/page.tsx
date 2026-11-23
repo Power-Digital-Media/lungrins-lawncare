@@ -3,10 +3,10 @@ import HomeClient from "@/components/HomeClient";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Lungrin's Lawncare | Lawn Care & Pine Straw in Flora, MS",
+    absolute: "Lungrin's Lawncare | Lawn Care in Flora, Madison & Jackson, MS",
   },
   description:
-    "Owner-operated lawn mowing, rolled pine straw, flowerbed cleanups, hedge trimming & clearing in Flora, Madison & Central MS. Call Luke: (601) 906-1281.",
+    "Owner-operated lawn care, rolled pine straw, flowerbed cleanups, hedge trimming & clearing in Flora, Madison & Jackson, MS. Call Luke: (601) 906-1281.",
   alternates: {
     canonical: "/",
   },

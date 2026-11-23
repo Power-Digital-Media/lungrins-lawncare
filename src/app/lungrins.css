@@ -542,6 +542,16 @@
   padding-right: 0.06em;
 }
 
+.ll-hero-h1-geo {
+  display: block;
+  font-size: clamp(0.84rem, 1.35vw, 1.15rem);
+  font-weight: 800;
+  color: #bbf7d0;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+  margin-top: 0.22rem;
+}
+
 .ll-hero-lead {
   font-size: 0.88rem !important;
   line-height: 1.46 !important;
@@ -1778,11 +1788,19 @@
 }
 
 .ll-area-tile {
+  display: block;
+  text-decoration: none;
   background: rgba(15, 38, 24, 0.85);
   border: 1px solid rgba(74, 222, 128, 0.22);
   border-radius: 16px;
   padding: 1rem;
   text-align: center;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.ll-area-tile:hover {
+  border-color: rgba(74, 222, 128, 0.65);
+  transform: translateY(-2px);
 }
 
 /* Reels Strip (1-row native horizontal shelf < 900px, 5-col grid >= 900px) */
