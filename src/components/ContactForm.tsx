@@ -129,16 +129,20 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
 
       // Trigger GA4 event tracking
       if (typeof window !== "undefined") {
-        const win = window as Window & { gtag?: (event: string, action: string, params: Record<string, string | number>) => void };
-        if (win.gtag) {
-          win.gtag("event", "generate_lead", {
-            value: type === "emergency" ? 2.0 : 1.0,
-            currency: "USD",
-            lead_origin: type === "emergency" ? "Emergency Form" : (type === "callback" ? "Callback Form" : "Estimate Form"),
-            appointment_date: type === "estimate" ? date : "",
-            appointment_time: type === "estimate" ? timeSlot : "",
-            schedule_type: type === "estimate" ? scheduleType : ""
-          });
+        const payload = {
+          value: type === "emergency" ? 2.0 : 1.0,
+          currency: "USD",
+          lead_origin: type === "emergency" ? "Emergency Form" : (type === "callback" ? "Callback Form" : "Estimate Form"),
+          appointment_date: type === "estimate" ? date : "",
+          appointment_time: type === "estimate" ? timeSlot : "",
+          schedule_type: type === "estimate" ? scheduleType : "",
+        };
+        if (typeof window.trackLungrinEvent === "function") {
+          window.trackLungrinEvent("form_submit", payload);
+          window.trackLungrinEvent("generate_lead", payload);
+        } else if (window.gtag) {
+          window.gtag("event", "form_submit", payload);
+          window.gtag("event", "generate_lead", payload);
         }
       }
 

@@ -464,11 +464,13 @@ export default function HomeClient() {
     setSubmitting(true);
 
     if (typeof window !== "undefined" && typeof window.trackLungrinEvent === "function") {
-      window.trackLungrinEvent("generate_lead", {
+      const leadParams = {
         service_requested: formService,
         property_location: formAddress.trim(),
         lead_source: "homepage_estimate_form",
-      });
+      };
+      window.trackLungrinEvent("form_submit", leadParams);
+      window.trackLungrinEvent("generate_lead", leadParams);
     }
 
     const smsBody = [
