@@ -34,6 +34,21 @@ export async function generateMetadata({
       siteName: "Lungrin's Lawncare",
       locale: "en_US",
       type: "website",
+      images: [
+        {
+          url: "https://lungrinslawncare.com/images/branding/og-lungrins-crest-v2.jpg",
+          width: 1200,
+          height: 630,
+          type: "image/jpeg",
+          alt: `Lungrin's Lawncare — ${hub.town}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: hub.seoTitle,
+      description: hub.seoDescription,
+      images: ["https://lungrinslawncare.com/images/branding/og-lungrins-crest-v2.jpg"],
     },
   };
 }

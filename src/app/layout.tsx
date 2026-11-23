@@ -35,28 +35,34 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://lungrinslawncare.com/",
     siteName: "Lungrin's Lawncare",
-    title: "Lungrin's Lawncare | Lawn Care & Pine Straw in Flora, MS",
+    title: "Lungrin's Lawncare | Lawn Care in Flora, Madison & Jackson, MS",
     description:
       "Meticulous mowing, rolled longleaf pine straw, flowerbed cleanups, bush trimming & property clearing across Flora, Madison & Central MS.",
     images: [
       {
-        url: "/images/branding/og-lungrins-2026.jpg",
+        url: "https://lungrinslawncare.com/images/branding/og-lungrins-crest-v2.jpg",
         width: 1200,
         height: 630,
-        alt: "Lungrin's Lawncare — Striped lawns and rolled pine straw in Central Mississippi",
+        type: "image/jpeg",
+        alt: "Lungrin's Lawncare — (601) 906-1281 — Mowing, Bush Trimming, Junk Removal & Pine Straw",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lungrin's Lawncare | Lawn Care & Pine Straw in Flora, MS",
+    title: "Lungrin's Lawncare | Lawn Care in Flora, Madison & Jackson, MS",
     description:
       "Owner-operated lawn mowing, rolled pine straw, flowerbed cleanups & property clearing in Flora, Madison & Central MS. Call (601) 906-1281.",
-    images: ["/images/branding/og-lungrins-2026.jpg"],
+    images: ["https://lungrinslawncare.com/images/branding/og-lungrins-crest-v2.jpg"],
   },
   icons: {
-    icon: "/images/logos/lungrins-icon.svg",
-    apple: "/images/logos/favicon.jpg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   verification: {
     google: "nngIaO9iu7ZwZ5Ly8i3QX8fDtLPi2difMR4RugmEm_I",

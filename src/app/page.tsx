@@ -10,6 +10,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  openGraph: {
+    type: "website",
+    url: "https://lungrinslawncare.com/",
+    siteName: "Lungrin's Lawncare",
+    title: "Lungrin's Lawncare | Lawn Care in Flora, Madison & Jackson, MS",
+    description:
+      "Owner-operated lawn care, rolled pine straw, flowerbed cleanups, hedge trimming & clearing in Flora, Madison & Jackson, MS. Call Luke: (601) 906-1281.",
+    images: [
+      {
+        url: "https://lungrinslawncare.com/images/branding/og-lungrins-crest-v2.jpg",
+        width: 1200,
+        height: 630,
+        type: "image/jpeg",
+        alt: "Lungrin's Lawncare — (601) 906-1281 — Mowing, Bush Trimming, Junk Removal & Pine Straw",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lungrin's Lawncare | Lawn Care in Flora, Madison & Jackson, MS",
+    description:
+      "Owner-operated lawn care, rolled pine straw, flowerbed cleanups & property clearing in Flora, Madison & Jackson, MS. Call (601) 906-1281.",
+    images: ["https://lungrinslawncare.com/images/branding/og-lungrins-crest-v2.jpg"],
+  },
 };
 
 const jsonLd = {
