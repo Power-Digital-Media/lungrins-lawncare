@@ -33,18 +33,9 @@ function toCardWebp(imgPath: string): string {
     : imgPath;
 }
 
+const INITIAL_BA_SLIDER_PCT = 8;
+
 const BEFORE_AFTER_PAIRS = [
-  {
-    id: "ba-flora-beds",
-    tabLabel: "Flora Flowerbeds (Nov 2026)",
-    location: "Flora, MS",
-    date: "Nov 10, 2026",
-    title: "Front Elevation & Porch Flowerbed Reclamation",
-    summary: "Pulled waist-high late-season weeds by the root, cleared around evergreens, and restored clean bed lines.",
-    beforeImg: "/images/jobs/fb-2026/nov10-flora-beds/1.webp",
-    afterImg: "/images/jobs/fb-2026/nov10-flora-beds/2.webp",
-    pinId: "lungrin-2026-1110",
-  },
   {
     id: "ba-madison-straw",
     tabLabel: "Madison Shrub & Pine Straw",
@@ -57,17 +48,6 @@ const BEFORE_AFTER_PAIRS = [
     pinId: "lungrin-2026-1022",
   },
   {
-    id: "ba-jackson-fence",
-    tabLabel: "Jackson Fence Clearing",
-    location: "Jackson, MS",
-    date: "Oct 20, 2026",
-    title: "Overhanging Limb & Invasive Vine Fence Reclamation",
-    summary: "Trimmed heavy overhanging canopy limbs, stripped out thick vines choking the wood fence, and hauled off all brush.",
-    beforeImg: "/images/jobs/fb-2026/oct20-jackson-fenceline/3.webp",
-    afterImg: "/images/jobs/fb-2026/oct20-jackson-fenceline/4.webp",
-    pinId: "lungrin-2026-1020",
-  },
-  {
     id: "ba-annandale",
     tabLabel: "Annandale Curb Appeal",
     location: "Annandale • Madison, MS",
@@ -77,6 +57,28 @@ const BEFORE_AFTER_PAIRS = [
     beforeImg: "/images/jobs/fb-2026/jul27-annandale-beds/1.webp",
     afterImg: "/images/jobs/fb-2026/jul27-annandale-beds/2.webp",
     pinId: "lungrin-2026-0727",
+  },
+  {
+    id: "ba-flora-beds",
+    tabLabel: "Flora Flowerbeds (Nov 2026)",
+    location: "Flora, MS",
+    date: "Nov 10, 2026",
+    title: "Front Elevation & Porch Flowerbed Reclamation",
+    summary: "Pulled waist-high late-season weeds by the root, cleared around evergreens, and restored clean bed lines.",
+    beforeImg: "/images/jobs/fb-2026/nov10-flora-beds/1.webp",
+    afterImg: "/images/jobs/fb-2026/nov10-flora-beds/2.webp",
+    pinId: "lungrin-2026-1110",
+  },
+  {
+    id: "ba-jackson-fence",
+    tabLabel: "Jackson Fence Clearing",
+    location: "Jackson, MS",
+    date: "Oct 20, 2026",
+    title: "Overhanging Limb & Invasive Vine Fence Reclamation",
+    summary: "Trimmed heavy overhanging canopy limbs, stripped out thick vines choking the wood fence, and hauled off all brush.",
+    beforeImg: "/images/jobs/fb-2026/oct20-jackson-fenceline/2.webp",
+    afterImg: "/images/jobs/fb-2026/oct20-jackson-fenceline/4.webp",
+    pinId: "lungrin-2026-1020",
   },
   {
     id: "ba-pocahontas-pond",
@@ -368,7 +370,7 @@ export default function HomeClient() {
   const [activeHeroIdx, setActiveHeroIdx] = useState(0);
   const activeHero = HERO_SHOWCASE_SLIDES[activeHeroIdx];
   const [activeBaIdx, setActiveBaIdx] = useState(0);
-  const [sliderPct, setSliderPct] = useState(50);
+  const [sliderPct, setSliderPct] = useState(INITIAL_BA_SLIDER_PCT);
   const baViewportRef = useRef<HTMLDivElement | null>(null);
   const draggingRef = useRef(false);
 
@@ -378,7 +380,7 @@ export default function HomeClient() {
     const el = baViewportRef.current;
     if (!el) return;
     const rect = el.getBoundingClientRect();
-    const pct = Math.max(3, Math.min(97, ((clientX - rect.left) / rect.width) * 100));
+    const pct = Math.max(7, Math.min(96, ((clientX - rect.left) / rect.width) * 100));
     setSliderPct(pct);
   };
 
@@ -760,7 +762,7 @@ export default function HomeClient() {
                 className={`ll-ba-tab ${activeBaIdx === idx ? "active" : ""}`}
                 onClick={() => {
                   setActiveBaIdx(idx);
-                  setSliderPct(50);
+                  setSliderPct(INITIAL_BA_SLIDER_PCT);
                 }}
               >
                 {pair.tabLabel}
@@ -796,13 +798,13 @@ export default function HomeClient() {
                 draggingRef.current = false;
               }}
             >
-              {/* AFTER Base Image */}
+              {/* BEFORE Base Image (Starts visible across the frame) */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={toCardWebp(activeBa.afterImg)}
-                srcSet={`${toCardWebp(activeBa.afterImg)} 560w, ${activeBa.afterImg} 960w`}
+                src={toCardWebp(activeBa.beforeImg)}
+                srcSet={`${toCardWebp(activeBa.beforeImg)} 560w, ${activeBa.beforeImg} 960w`}
                 sizes="(max-width: 767px) 360px, 760px"
-                alt={`After — ${activeBa.title} in ${activeBa.location}`}
+                alt={`Before — ${activeBa.title} in ${activeBa.location}`}
                 width={960}
                 height={720}
                 loading="lazy"
@@ -810,18 +812,18 @@ export default function HomeClient() {
                 fetchPriority="low"
                 className="ll-ba-img-after"
               />
-              <span className="ll-ba-badge ll-ba-badge-after">
-                After<span className="ll-ba-badge-extra"> • Lungrin&apos;s Care</span>
+              <span className="ll-ba-badge ll-ba-badge-before">
+                Before<span className="ll-ba-badge-extra"> • Overgrown</span>
               </span>
 
-              {/* BEFORE Clipped Layer */}
+              {/* AFTER Clipped Reveal Layer (Sweeps left-to-right as user slides to After) */}
               <div className="ll-ba-before-clip" style={{ clipPath: `inset(0 ${100 - sliderPct}% 0 0)` }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={toCardWebp(activeBa.beforeImg)}
-                  srcSet={`${toCardWebp(activeBa.beforeImg)} 560w, ${activeBa.beforeImg} 960w`}
+                  src={toCardWebp(activeBa.afterImg)}
+                  srcSet={`${toCardWebp(activeBa.afterImg)} 560w, ${activeBa.afterImg} 960w`}
                   sizes="(max-width: 767px) 360px, 760px"
-                  alt={`Before — ${activeBa.title} in ${activeBa.location}`}
+                  alt={`After — ${activeBa.title} in ${activeBa.location}`}
                   width={960}
                   height={720}
                   loading="lazy"
@@ -829,8 +831,8 @@ export default function HomeClient() {
                   fetchPriority="low"
                   className="ll-ba-img-after"
                 />
-                <span className="ll-ba-badge ll-ba-badge-before">
-                  Before<span className="ll-ba-badge-extra"> • Overgrown</span>
+                <span className="ll-ba-badge ll-ba-badge-after">
+                  After<span className="ll-ba-badge-extra"> • Lungrin&apos;s Care</span>
                 </span>
               </div>
 
@@ -840,6 +842,12 @@ export default function HomeClient() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M8 7l-5 5 5 5M16 7l5 5-5 5" />
                   </svg>
+                  <span
+                    className="ll-ba-slide-cue"
+                    style={{ opacity: sliderPct <= 14 ? 1 : 0 }}
+                  >
+                    Slide to After →
+                  </span>
                 </div>
               </div>
             </div>
@@ -866,16 +874,24 @@ export default function HomeClient() {
                 <div style={{ fontWeight: 800, color: "#0f172a", fontSize: "1rem" }}>{activeBa.title}</div>
                 <div style={{ fontSize: "0.85rem", color: "#475569" }}>{activeBa.summary}</div>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-                <input
-                  type="range"
-                  min={5}
-                  max={95}
-                  value={Math.round(sliderPct)}
-                  aria-label="Adjust before and after comparison slider"
-                  onChange={(e) => setSliderPct(Number(e.target.value))}
-                  style={{ accentColor: "#16a34a", width: "110px", cursor: "pointer" }}
-                />
+              <div style={{ display: "flex", alignItems: "center", gap: "0.65rem", flexWrap: "wrap" }}>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
+                  <span style={{ fontSize: "0.72rem", fontWeight: 800, color: "#475569", textTransform: "uppercase" }}>
+                    Before
+                  </span>
+                  <input
+                    type="range"
+                    min={7}
+                    max={96}
+                    value={Math.round(sliderPct)}
+                    aria-label="Slide from before to after transformation"
+                    onChange={(e) => setSliderPct(Number(e.target.value))}
+                    style={{ accentColor: "#16a34a", width: "104px", cursor: "pointer" }}
+                  />
+                  <span style={{ fontSize: "0.72rem", fontWeight: 800, color: "#15803d", textTransform: "uppercase" }}>
+                    After
+                  </span>
+                </div>
                 <Link
                   href={`/pin-page/?id=${activeBa.pinId}`}
                   style={{ fontSize: "0.84rem", fontWeight: 800, color: "#15803d", textDecoration: "none" }}

@@ -1071,6 +1071,7 @@
 .ll-ba-before-clip {
   position: absolute;
   inset: 0;
+  z-index: 10;
   overflow: hidden;
   pointer-events: none;
 }
@@ -1094,13 +1095,15 @@
 }
 
 .ll-ba-badge-before {
-  left: 0.65rem;
+  right: 0.65rem;
+  z-index: 5;
   background: rgba(15, 23, 42, 0.88);
   color: #f8fafc;
 }
 
 .ll-ba-badge-after {
-  right: 0.65rem;
+  left: 0.65rem;
+  z-index: 15;
   background: #15803d;
   color: #ffffff;
 }
@@ -1116,10 +1119,10 @@
     display: inline;
   }
   .ll-ba-badge-before {
-    left: 1rem;
+    right: 1rem;
   }
   .ll-ba-badge-after {
-    right: 1rem;
+    left: 1rem;
   }
 }
 
@@ -1149,6 +1152,25 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+.ll-ba-slide-cue {
+  position: absolute;
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(5, 46, 22, 0.92);
+  border: 1.5px solid #4ade80;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  padding: 0.32rem 0.68rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
 }
 
 /* Filter Pills & Project Cards Grid */
