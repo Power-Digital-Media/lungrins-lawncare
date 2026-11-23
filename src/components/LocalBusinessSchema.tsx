@@ -15,7 +15,7 @@ function LocalBusinessSchemaContent({ pageTitle, pageDescription, path = "" }: S
   const clientId = searchParams.get("clientId") || undefined;
   const { config } = useCompanyConfig(clientId);
 
-  const host = typeof window !== "undefined" ? window.location.origin : "";
+  const host = "https://lungrinslawncare.com";
   const currentUrl = `${host}${path}`;
 
   const schema = {

@@ -179,7 +179,7 @@ export async function getPins(overrideClientId?: string): Promise<PinType[]> {
     );
   }
 
-  // Deduplicate and sort by ID descending (newest first)
+  // Deduplicate and sort chronologically newest-first (fallback to numeric ID)
   const seen = new Set();
   const unique = merged.filter((p) => {
     const duplicate = seen.has(p.id);
@@ -188,6 +188,9 @@ export async function getPins(overrideClientId?: string): Promise<PinType[]> {
   });
 
   return unique.sort((a, b) => {
+    const dateA = Date.parse(a.date || "") || 0;
+    const dateB = Date.parse(b.date || "") || 0;
+    if (dateB !== dateA) return dateB - dateA;
     const numA = Number(a.id) || 0;
     const numB = Number(b.id) || 0;
     return numB - numA;

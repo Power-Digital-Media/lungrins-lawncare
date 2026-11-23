@@ -5,39 +5,54 @@
     "rooferPasscode": "Lungrin2026",
     "googlePlaceId": "ChIJvYxgYy-ipy0ReT6NyUfsbCM",
     "googleReviewUrl": "https://search.google.com/local/writereview?placeid=ChIJvYxgYy-ipy0ReT6NyUfsbCM",
+    "facebookUrl": "https://www.facebook.com/LungrinsLawncare",
+    "messengerUrl": "https://www.facebook.com/messages/t/LungrinsLawncare/",
     "mapCenter": [
-      32.5432,
-      -89.8013
+      32.5250,
+      -90.0200
     ],
     "theme": {
-      "primaryRgb": "34, 120, 60",
-      "secondaryRgb": "139, 90, 43",
-      "accentRgb": "76, 175, 80",
-      "bgRgb": "11, 12, 16",
-      "cardBgRgb": "21, 23, 30"
+      "primaryRgb": "22, 163, 74",
+      "secondaryRgb": "74, 222, 128",
+      "accentRgb": "217, 119, 6",
+      "bgRgb": "10, 22, 15",
+      "cardBgRgb": "16, 33, 23"
     },
     "brand": {
       "phone": "(601) 906-1281",
+      "phoneSecondary": "(601) 906-1282",
       "email": "",
-      "tagline": "Flora & Madison County Lawn Care",
+      "logoImg": "/images/logos/lungrins-logo.webp",
+      "tagline": "Locally Owned & Operated Lawn Care in Flora, Madison & Central MS",
       "logoText": "Lungrin's",
-      "logoSubtext": "Lawncare"
+      "logoSubtext": "Lawncare • Flora, MS"
     },
     "technicians": [
       "Luke Lungrin"
     ],
+    "serviceAreas": [
+      "Flora, MS",
+      "Pocahontas, MS",
+      "Madison, MS",
+      "Gluckstadt, MS",
+      "Ridgeland, MS",
+      "Jackson, MS",
+      "Bentonia, MS",
+      "Yazoo County, MS"
+    ],
     "serviceList": [
       "Residential Mowing",
       "Commercial Mowing",
+      "Acreage Mowing",
       "Edging & Trimming",
-      "Pine Straw Installation",
+      "Pine Straw & Beds",
+      "Flowerbed Cleanup",
       "Mulch Bed Maintenance",
+      "Bush & Hedge Trimming",
       "Leaf Removal & Cleanup",
       "Gutter Cleaning",
-      "Bush & Hedge Trimming",
       "Overgrowth Recovery",
-      "Pond Perimeter Mowing",
-      "Acreage Mowing",
+      "Pond Perimeter",
       "Bush Hogging",
       "Fence Line Clearing",
       "Debris Hauling",

@@ -5,34 +5,40 @@ import { CompanyConfig, getCompanyConfigSync } from "@/lib/companyConfig";
 
 export type { CompanyConfig, CompanyTheme, CompanyBrand } from "@/lib/companyConfig";
 
+const configPromiseCache = new Map<string, Promise<CompanyConfig | null>>();
+
 export function useCompanyConfig(clientId?: string) {
   const [config, setConfig] = useState<CompanyConfig>(() => getCompanyConfigSync(clientId));
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    // Use synchronous fallback immediately
+    const targetCid = clientId || "";
     const syncConfig = getCompanyConfigSync(clientId);
     setConfig(syncConfig);
 
-    // Fetch dynamic config from API
-    const targetCid = clientId || "";
-    fetch(`/api/config?clientId=${targetCid}`)
-      .then((res) => {
-        if (res.ok) return res.json();
-        throw new Error("Failed to fetch config");
-      })
+    let pending = configPromiseCache.get(targetCid);
+    if (!pending) {
+      pending = fetch(`/api/config/?clientId=${encodeURIComponent(targetCid)}`)
+        .then((res) => (res.ok ? res.json() : null))
+        .catch(() => null);
+      configPromiseCache.set(targetCid, pending);
+    }
+
+    let cancelled = false;
+    setLoading(true);
+    pending
       .then((data) => {
-        if (data && data.clientId) {
+        if (!cancelled && data && data.clientId) {
           setConfig(data);
         }
       })
-      .catch((err) => {
-        console.error("Failed to load company config dynamically:", err);
-      })
       .finally(() => {
-        setLoading(false);
+        if (!cancelled) setLoading(false);
       });
+
+    return () => {
+      cancelled = true;
+    };
   }, [clientId]);
 
   return { config, loading };

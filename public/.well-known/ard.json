@@ -1,0 +1,31 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Lungrin's Lawncare — Lawn Care, Rolled Pine Straw & Property Clearing in Flora & Central MS",
+    "identifier": "lungrinslawncare.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:lungrinslawncare.com:docs:llms-txt",
+      "displayName": "Lungrin's Lawncare Services, Pricing, Service Areas & Contact Index",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://lungrinslawncare.com/llms.txt",
+      "description": "Concise AI index of owner-operated lawn mowing, rolled longleaf pine straw, flowerbed cleanups, bush trimming, pond/fence clearing, and free estimates across Flora, Madison, Gluckstadt, Ridgeland, Jackson, Bentonia & Pocahontas, MS.",
+      "representativeQueries": [
+        "best lawn care and rolled pine straw installer in Flora Madison and Gluckstadt Mississippi",
+        "Lungrin's Lawncare phone number services and instant yard estimate"
+      ]
+    },
+    {
+      "identifier": "urn:air:lungrinslawncare.com:docs:llms-full",
+      "displayName": "Lungrin's Lawncare Full Field Dossier (32 Verified Job Pins & 34 Customer Reviews)",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://lungrinslawncare.com/llms-full.txt",
+      "description": "Complete RAG reference of Luke Lungrin's 32 verified Central Mississippi field projects, ballpark pricing guide, route coverage, and verbatim 5.0-star Google & 100%-recommend Facebook reviews.",
+      "representativeQueries": [
+        "pond bank and overgrown fence line clearing near Pocahontas Flora and Madison MS",
+        "Luke Lungrin lawn care reviews and recent pine straw flowerbed projects"
+      ]
+    }
+  ]
+}

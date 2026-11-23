@@ -11,7 +11,7 @@ const InteractiveMap = dynamic(() => import("@/components/InteractiveMap"), {
   loading: () => (
     <div className="double-bezel-wrapper" style={{ width: "100%", marginBottom: "3rem" }}>
       <div className="double-bezel-inner" style={{ height: "280px", display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(255,255,255,0.01)", borderRadius: "16px" }}>
-        <h4 style={{ color: "var(--text-muted)" }}>Loading Interactive Map...</h4>
+        <div style={{ color: "var(--text-muted)", fontWeight: 700 }}>Loading Interactive Map...</div>
       </div>
     </div>
   )
@@ -58,7 +58,7 @@ function PinsPageContent() {
   const [selectedService, setSelectedService] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeMapPin, setActiveMapPin] = useState<PinType | null>(null);
-  const [visibleCount, setVisibleCount] = useState(12);
+  const [visibleCount, setVisibleCount] = useState(6);
 
   useEffect(() => {
     const params = clientId ? `?clientId=${clientId}&t=${Date.now()}` : `?t=${Date.now()}`;
@@ -99,7 +99,7 @@ function PinsPageContent() {
   }, [pins, selectedLocation, selectedService, searchQuery]);
 
   useEffect(() => {
-    setVisibleCount(12);
+    setVisibleCount(6);
   }, [selectedLocation, selectedService, searchQuery]);
 
   const paginatedPins = useMemo(() => {
@@ -108,17 +108,6 @@ function PinsPageContent() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="pins-hero">
-        <div className="container pins-hero-inner scroll-reveal">
-          <span className="eyebrow" style={{ color: "var(--secondary)" }}>Live Job Feed</span>
-          <h1>Local Project Pins</h1>
-          <p className="hero-subtext">
-            Real jobs, real photos, real locations. See our quality work at properties near you.
-          </p>
-        </div>
-      </section>
-
       {/* Filtering Section */}
       <section className="filter-section">
         <div className="container filter-container">
@@ -183,6 +172,9 @@ function PinsPageContent() {
       {/* Grid List of Pins */}
       <section className="section pins-grid-section">
         <div className="container">
+          <h2 style={{ position: "absolute", width: "1px", height: "1px", overflow: "hidden", clip: "rect(0,0,0,0)" }}>
+            Verified Central Mississippi Field Projects &amp; Satellite Map
+          </h2>
           
           {/* Interactive Leaflet Map showing current pins */}
           <InteractiveMap pins={filteredPins} />
@@ -196,6 +188,9 @@ function PinsPageContent() {
             </div>
           ) : (
             <div className="animate-fade-in">
+              <div className="pins-mobile-swipe-hint">
+                ← Swipe project cards ({paginatedPins.length} shown) or tap any green map pin above →
+              </div>
               <div className="pins-grid-2col">
                 {paginatedPins.map((pin) => (
                   <div key={pin.id} className="double-bezel-wrapper">
@@ -204,11 +199,11 @@ function PinsPageContent() {
                       {/* Header */}
                       <div className="pin-feed-header">
                         <div className="pin-feed-author">
-                          <h4>{pin.author}</h4>
+                          <h3>{pin.author}</h3>
                           <span className="pin-feed-date">{pin.date}</span>
                         </div>
                         <span className="pin-service-tag">
-                          {pin.service.length > 15 ? pin.service.substring(0, 15) : pin.service}
+                          {pin.service}
                         </span>
                       </div>
 
@@ -231,7 +226,10 @@ function PinsPageContent() {
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                               src={pin.images[0]}
-                              alt={pin.service}
+                              alt={`${pin.service} in ${pin.location} by Lungrin's Lawncare`}
+                              width={590}
+                              height={443}
+                              loading="lazy"
                               className="pin-feed-main-img"
                             />
                             {/* Secondary Preview Thumbnails */}
@@ -242,7 +240,10 @@ function PinsPageContent() {
                                   <img
                                     key={idx}
                                     src={img}
-                                    alt="thumbnail"
+                                    alt={`${pin.service} photo ${idx + 2}`}
+                                    width={100}
+                                    height={80}
+                                    loading="lazy"
                                     className="pin-feed-thumb"
                                   />
                                 ))}
@@ -268,11 +269,11 @@ function PinsPageContent() {
               {filteredPins.length > visibleCount && (
                 <div style={{ display: "flex", justifyContent: "center", marginTop: "3.5rem" }}>
                   <button
-                    onClick={() => setVisibleCount((prev) => prev + 12)}
+                    onClick={() => setVisibleCount((prev) => prev + 6)}
                     className="btn btn-outline"
                     style={{ padding: "0.9rem 2.2rem", fontSize: "0.9rem", fontWeight: 700 }}
                   >
-                    Load More Projects
+                    Load More Projects ({filteredPins.length - visibleCount} more)
                   </button>
                 </div>
               )}
@@ -289,12 +290,22 @@ function PinsPageContent() {
       
       <style jsx>{`
         .pins-hero {
-          background-image: linear-gradient(rgba(10, 12, 16, 0.90), rgba(10, 12, 16, 0.95));
+          background-image: linear-gradient(155deg, #061b0e 0%, #0d311b 55%, #06180d 100%);
           background-size: cover;
           background-position: center;
           color: #ffffff;
-          padding: 8.5rem 0 6.5rem;
+          padding: 4rem 0 3.5rem;
           text-align: center;
+          border-bottom: 1px solid rgba(74, 222, 128, 0.22);
+        }
+
+        .pins-mobile-swipe-hint {
+          display: none;
+          text-align: center;
+          font-size: 0.78rem;
+          font-weight: 700;
+          color: #86efac;
+          margin: -1.25rem 0 1rem;
         }
 
         .pins-hero-inner {
@@ -392,7 +403,7 @@ function PinsPageContent() {
           padding-bottom: 1rem;
         }
 
-        .pin-feed-author h4 {
+        .pin-feed-author h3 {
           font-size: 1.15rem;
           font-weight: 800;
           color: var(--primary);
@@ -524,7 +535,11 @@ function PinsPageContent() {
 
         @media (max-width: 768px) {
           .pins-hero {
-            padding: 6rem 0 2.5rem;
+            padding: 2.35rem 0 1.85rem;
+          }
+
+          .pins-mobile-swipe-hint {
+            display: block;
           }
 
           .pins-hero h1 {
@@ -532,11 +547,11 @@ function PinsPageContent() {
           }
 
           .hero-subtext {
-            font-size: 1rem;
+            font-size: 0.96rem;
           }
 
           .filter-section {
-            padding: 1.5rem 0;
+            padding: 1.25rem 0;
           }
 
           .filter-container {
@@ -545,7 +560,7 @@ function PinsPageContent() {
 
           .filter-inputs {
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 0.65rem;
           }
 
           .filter-group-item {
@@ -557,7 +572,7 @@ function PinsPageContent() {
           }
 
           .pins-grid-section {
-            overflow-x: hidden;
+            overflow-x: clip;
           }
 
           .pins-grid-section .container {
@@ -566,25 +581,40 @@ function PinsPageContent() {
           }
 
           .pins-grid-2col {
-            gap: 1.5rem;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-padding-inline: 1rem;
+            gap: 1rem;
+            margin: 0 -1rem;
+            padding: 0.25rem 1rem 0.75rem;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+          }
+
+          .pins-grid-2col::-webkit-scrollbar {
+            display: none;
           }
 
           .pins-grid-2col .double-bezel-wrapper {
-            max-width: 100%;
+            flex: 0 0 86%;
+            max-width: 340px;
+            scroll-snap-align: start;
             overflow: hidden;
           }
 
           .pin-feed-card {
-            padding: 1.25rem !important;
+            padding: 1.15rem !important;
             overflow: hidden;
             max-width: 100%;
           }
 
           .pin-feed-header {
-            margin-bottom: 1rem;
-            padding-bottom: 0.75rem;
+            margin-bottom: 0.85rem;
+            padding-bottom: 0.7rem;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.45rem;
           }
 
           .pin-feed-author {
@@ -592,28 +622,27 @@ function PinsPageContent() {
             flex: 1;
           }
 
-          .pin-feed-author h4 {
-            font-size: 1rem;
+          .pin-feed-author h3 {
+            font-size: 0.98rem;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
           }
 
           .pin-service-tag {
-            font-size: 0.65rem;
-            padding: 3px 8px;
+            font-size: 0.64rem;
+            padding: 3px 9px;
             white-space: nowrap;
             flex-shrink: 0;
-            max-width: 120px;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            max-width: none;
           }
 
           .pin-feed-desc {
-            font-size: 0.9rem;
-            margin: 0 0 1.25rem;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
+            font-size: 0.86rem;
+            margin: 0 0 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
             overflow: hidden;
           }
 
@@ -644,12 +673,36 @@ function PinsPageContent() {
 
 export default function PinsPage() {
   return (
-    <Suspense fallback={
-      <div style={{ padding: "6rem 0", textAlign: "center", color: "var(--text-muted)" }}>
-        <h4>Loading Project Pins...</h4>
-      </div>
-    }>
-      <PinsPageContent />
-    </Suspense>
+    <>
+      <section
+        style={{
+          backgroundImage: "linear-gradient(155deg, #061b0e 0%, #0d311b 55%, #06180d 100%)",
+          color: "#ffffff",
+          padding: "clamp(2.35rem, 5vw, 4rem) 0 clamp(1.85rem, 4vw, 3.5rem)",
+          textAlign: "center",
+          borderBottom: "1px solid rgba(74, 222, 128, 0.22)",
+        }}
+      >
+        <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <span className="eyebrow" style={{ color: "var(--secondary)" }}>Live Job Feed</span>
+          <h1 style={{ color: "#ffffff", margin: "0.5rem 0 0.85rem", fontSize: "clamp(1.85rem, 4vw, 2.75rem)" }}>
+            Local Project Pins
+          </h1>
+          <p style={{ color: "#cbd5e1", fontSize: "clamp(0.96rem, 2vw, 1.12rem)", maxWidth: "600px", margin: "0 auto" }}>
+            Real jobs, real photos, real locations across Flora, Madison, Gluckstadt, Ridgeland, Jackson, Bentonia &amp; Pocahontas.
+          </p>
+        </div>
+      </section>
+
+      <Suspense
+        fallback={
+          <div style={{ padding: "4rem 0", textAlign: "center", color: "var(--text-muted)", fontWeight: 700 }}>
+            Loading Project Pins...
+          </div>
+        }
+      >
+        <PinsPageContent />
+      </Suspense>
+    </>
   );
 }

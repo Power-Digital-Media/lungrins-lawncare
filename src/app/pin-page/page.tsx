@@ -160,7 +160,7 @@ function PinDetailContent() {
             </div>
             
             <p className="detail-footer-note" style={{ marginTop: "3rem" }}>
-              {"This project is a testament to our commitment to craftsmanship and durability. Whether it's complex commercial grade roofs or local residential repairs, we treat every home with absolute integrity."}
+              {"Every property Luke services receives owner-operated attention to detail — from razor-sharp concrete edges and tightly rolled pine straw borders to spotless driveway blow-offs across Flora, Madison, and Central Mississippi."}
             </p>
           </div>
           

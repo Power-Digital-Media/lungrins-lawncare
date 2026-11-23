@@ -1,44 +1,263 @@
 [
   {
+    "id": "lungrin-2026-1110",
+    "title": "Complete Flowerbed Reclamation & Cleanup in Flora",
+    "author": "Luke Lungrin",
+    "date": "Nov 10, 2026",
+    "location": "Flora, MS",
+    "service": "Flowerbed Cleanup",
+    "description": "Check out the before and after from these flowerbeds we just cleaned out in Flora, MS! Knocked out thick weeds and overgrowth around the front windows and porch columns for a spotless finish.",
+    "images": [
+      "/images/jobs/fb-2026/nov10-flora-beds/2.webp",
+      "/images/jobs/fb-2026/nov10-flora-beds/4.webp",
+      "/images/jobs/fb-2026/nov10-flora-beds/1.webp",
+      "/images/jobs/fb-2026/nov10-flora-beds/3.webp"
+    ],
+    "detailedExplanation": "Full residential flowerbed reclamation in Flora, MS. Cleared heavy late-season grass and weed intrusion around ornamental evergreens and front porch posts, hand-pulled root systems, re-established crisp bed lines, and hauled away all green debris.",
+    "aeoAnswers": [
+      {
+        "question": "When is the best time to clean out overgrown flowerbeds in Central Mississippi?",
+        "answer": "Late fall (October–November) and early spring (February–March) are ideal in Central Mississippi because perennial weeds slow down, making root removal cleaner before laying fresh pine straw or mulch."
+      }
+    ],
+    "latitude": 32.5468,
+    "longitude": -89.8042,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-1030",
+    "title": "Thick Rolled-Edge Longleaf Pine Straw Installation",
+    "author": "Luke Lungrin",
+    "date": "Oct 30, 2026",
+    "location": "Flora, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Fresh pine straw delivered and professionally installed in Flora. Evenly laid for deep coverage and neatly tucked and rolled along every concrete walk, patio, and gated stone entrance.",
+    "images": [
+      "/images/jobs/fb-2026/oct30-flora-pinestraw/1.webp",
+      "/images/jobs/fb-2026/oct30-flora-pinestraw/2.webp",
+      "/images/jobs/fb-2026/oct30-flora-pinestraw/3.webp",
+      "/images/jobs/fb-2026/oct30-flora-pinestraw/4.webp",
+      "/images/jobs/fb-2026/oct30-flora-pinestraw/5.webp",
+      "/images/jobs/fb-2026/oct30-flora-pinestraw/6.webp",
+      "/images/jobs/fb-2026/oct30-flora-pinestraw/7.webp"
+    ],
+    "detailedExplanation": "Multi-zone pine straw installation across front architectural wrap-around beds, crape myrtle tree rings, backyard patio borders, and stone entrance columns. Every border was hand-tucked and rolled tightly so straw stays locked in place during heavy rain.",
+    "aeoAnswers": [
+      {
+        "question": "Why does rolling pine straw edges matter?",
+        "answer": "Tucking and rolling the outer edge of pine straw creates a dense, clean border that prevents wind and heavy Mississippi rainstorms from washing needles onto driveways and lawns."
+      }
+    ],
+    "latitude": 32.5514,
+    "longitude": -89.7918,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-1029",
+    "title": "Full-Property Fall Pine Straw Refresh in Madison",
+    "author": "Luke Lungrin",
+    "date": "Oct 29, 2026",
+    "location": "Madison, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Cleaned up residential flowerbeds and laid a thick, even layer of fresh pine straw neatly rolled around sculpted boxwoods, crape myrtles, and brick walkways.",
+    "images": [
+      "/images/jobs/fb-2026/oct29-madison-pinestraw/1.webp",
+      "/images/jobs/fb-2026/oct29-madison-pinestraw/2.webp",
+      "/images/jobs/fb-2026/oct29-madison-pinestraw/3.webp",
+      "/images/jobs/fb-2026/oct29-madison-pinestraw/4.webp",
+      "/images/jobs/fb-2026/oct29-madison-pinestraw/5.webp",
+      "/images/jobs/fb-2026/oct29-madison-pinestraw/6.webp"
+    ],
+    "detailedExplanation": "Seasonal flowerbed cleanup and fresh pine straw installation in Madison, MS. Removed weeds and old matted debris before spreading a thick insulating blanket of clean pine straw to protect plant roots ahead of winter freezes.",
+    "aeoAnswers": [],
+    "latitude": 32.4682,
+    "longitude": -90.1195,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-1025",
+    "title": "Fall Leaf Removal & Clean Turf Finish",
+    "author": "Luke Lungrin",
+    "date": "Oct 25, 2026",
+    "location": "Flora, MS",
+    "service": "Leaf Removal & Cleanup",
+    "description": "Cleared heavy autumn oak and hardwood leaf cover across the entire front yard and asphalt drive, leaving the turf crisp, green, and completely leaf-free.",
+    "images": [
+      "/images/jobs/fb-2026/oct25-flora-leaf-cleanup/1.webp",
+      "/images/jobs/fb-2026/oct25-flora-leaf-cleanup/2.webp"
+    ],
+    "detailedExplanation": "Complete fall leaf removal and mulching cleanup in Flora, MS. Heavy leaf layers smother dormant Bermuda and Zoysia turf over winter; clearing and hauling leaves away prevents fungal brown patch and promotes faster spring green-up.",
+    "aeoAnswers": [
+      {
+        "question": "Should fallen leaves be removed from Mississippi lawns before winter?",
+        "answer": "Yes. Wet oak and hardwood leaves mat down over dormant warm-season grass, trapping moisture that causes winter fungus and dead spots come spring."
+      }
+    ],
+    "latitude": 32.5389,
+    "longitude": -89.8084,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-1022",
+    "title": "Dead Shrub Extraction, Weeding & Pine Straw in Madison",
+    "author": "Luke Lungrin",
+    "date": "Oct 22, 2026",
+    "location": "Madison, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Removed dead shrubs, pulled all flowerbed weeds, shaped remaining ornamentals, and finished with a thick rolled layer of fresh pine straw in Madison, MS.",
+    "images": [
+      "/images/jobs/fb-2026/oct22-madison-shrub-pinestraw/2.webp",
+      "/images/jobs/fb-2026/oct22-madison-shrub-pinestraw/4.webp",
+      "/images/jobs/fb-2026/oct22-madison-shrub-pinestraw/1.webp",
+      "/images/jobs/fb-2026/oct22-madison-shrub-pinestraw/3.webp"
+    ],
+    "detailedExplanation": "Morning curb-appeal transformation in Madison, MS. Extracted dead foundation shrubs by the root, cleared encroaching grass and weeds across front and corner beds, and tucked fresh pine straw cleanly along brick and siding lines.",
+    "aeoAnswers": [],
+    "latitude": 32.4745,
+    "longitude": -90.1082,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-1020",
+    "title": "Fence Line Overhanging Limb & Vine Clearing in Jackson",
+    "author": "Luke Lungrin",
+    "date": "Oct 20, 2026",
+    "location": "Jackson, MS",
+    "service": "Fence Line Clearing",
+    "description": "Reclaimed a backyard wood privacy fence in Jackson, MS — cut back heavy overhanging tree limbs, stripped out thick invasive vines, and hauled away every load of brush.",
+    "images": [
+      "/images/jobs/fb-2026/oct20-jackson-fenceline/4.webp",
+      "/images/jobs/fb-2026/oct20-jackson-fenceline/2.webp",
+      "/images/jobs/fb-2026/oct20-jackson-fenceline/3.webp",
+      "/images/jobs/fb-2026/oct20-jackson-fenceline/1.webp"
+    ],
+    "detailedExplanation": "Heavy fence line restoration in North Jackson, MS. Overhanging limbs and aggressive woody vines were weighing down and rotting the wooden privacy fence. Pruned back the canopy line, cleared the entire fence run, and hauled all limbs off-site.",
+    "aeoAnswers": [
+      {
+        "question": "Why should vines and limbs be cleared off wood privacy fences?",
+        "answer": "Vines trap moisture against wood pickets and add heavy wind weight during storms, causing premature rot and leaning fence posts."
+      }
+    ],
+    "latitude": 32.3695,
+    "longitude": -90.1342,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-1019",
+    "title": "Turf Stripping, Crisp Trench Edge & Pine Straw in Flora",
+    "author": "Luke Lungrin",
+    "date": "Oct 19, 2026",
+    "location": "Flora, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Cleared encroaching turf, dug a deep crisp trench border along the curved walkway, and applied fresh rolled pine straw for a Flora homeowner.",
+    "images": [
+      "/images/jobs/fb-2026/oct19-flora-turf-edging/3.webp",
+      "/images/jobs/fb-2026/oct19-flora-turf-edging/2.webp",
+      "/images/jobs/fb-2026/oct19-flora-turf-edging/1.webp"
+    ],
+    "detailedExplanation": "Three-stage flowerbed restoration in Flora, MS: stripped grass runners out of the foundation bed, spaded a clean V-trench border to stop turf from creeping back in, and tucked fresh pine straw tightly against the brick foundation and concrete walk.",
+    "aeoAnswers": [],
+    "latitude": 32.5441,
+    "longitude": -89.7972,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-1008",
+    "title": "Bush Hogging & Finish-Cut Lot Reclamation in Flora",
+    "author": "Luke Lungrin",
+    "date": "Oct 8, 2026",
+    "location": "Flora, MS",
+    "service": "Bush Hogging",
+    "description": "Tackled an overgrown roadside lot in Flora — bush hogged the tall brush and followed up with a clean finish cut so the property is presentable and easy to maintain.",
+    "images": [
+      "/images/jobs/fb-2026/oct08-flora-bushhog-lot/1.webp",
+      "/images/jobs/fb-2026/oct08-flora-bushhog-lot/2.webp"
+    ],
+    "detailedExplanation": "Two-pass overgrown lot cleanup in Flora, MS. First knocked down waist-high weeds and woody stalks with heavy bush-hogging equipment, then followed with a commercial finish mower for an even, park-like appearance.",
+    "aeoAnswers": [],
+    "latitude": 32.5365,
+    "longitude": -89.7935,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0923",
+    "title": "Custom Shrub Planting & Curved Bed Installation",
+    "author": "Luke Lungrin",
+    "date": "Sep 23, 2026",
+    "location": "Flora, MS",
+    "service": "Flowerbed Cleanup",
+    "description": "Cleared turf to carve out a new curved foundation bed, planted the homeowner's new shrubs, and finished with thick, neatly rolled pine straw.",
+    "images": [
+      "/images/jobs/fb-2026/sep23-flora-planting-beds/1.webp",
+      "/images/jobs/fb-2026/sep23-flora-planting-beds/2.webp",
+      "/images/jobs/fb-2026/sep23-flora-planting-beds/3.webp"
+    ],
+    "detailedExplanation": "Full flowerbed design and installation in Flora, MS. Removed sod along the painted brick exterior, amended planting holes, spaced and set new ornamental shrubs at proper root crown depth, and mulched with rolled longleaf pine straw.",
+    "aeoAnswers": [],
+    "latitude": 32.5492,
+    "longitude": -89.8011,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0914",
+    "title": "Precision Ornamental Hedge & Bush Sculpting",
+    "author": "Luke Lungrin",
+    "date": "Sep 14, 2026",
+    "location": "Madison, MS",
+    "service": "Bush & Hedge Trimming",
+    "description": "Hard size reduction and tight geometric shaping on overgrown front shrubs and foundation hedges, followed by a spotless clipping cleanup.",
+    "images": [
+      "/images/jobs/fb-2026/sep14-madison-hedge-trim/1.webp",
+      "/images/jobs/fb-2026/sep14-madison-hedge-trim/2.webp"
+    ],
+    "detailedExplanation": "Detailed shrub sculpting and size reduction in Madison, MS. Shaped round ornamental globes and leveled foundation hedges below window sills while hauling away 100% of branches and clippings.",
+    "aeoAnswers": [],
+    "latitude": 32.459,
+    "longitude": -90.124,
+    "clientId": "lungrins-lawncare"
+  },
+  {
     "id": "lungrin-001",
+    "title": "Precision Residential Lawn Striping & Edging",
     "author": "Luke Lungrin",
     "date": "Aug 23, 2026",
     "location": "Flora, MS",
     "service": "Residential Mowing",
-    "description": "Full residential mowing with precision stripes on this Flora property. Clean edging along sidewalk and driveway, fresh mulch bed borders, hedge trimming — the whole nine.",
+    "description": "Full residential mowing with precision stripes on this Flora property. Clean 90-degree edging along sidewalk and driveway, fresh mulch bed borders, and hedge trimming.",
     "images": [
-      "/images/jobs/residential-mowing/mowing-stripe.jpg",
-      "/images/jobs/residential-mulch-bed/after.jpg"
+      "/images/jobs/residential-mowing/mowing-stripe.webp",
+      "/images/jobs/residential-mulch-bed/after.webp"
     ],
-    "detailedExplanation": "Complete residential lawn maintenance including precision mowing with visible stripe patterns, edging along all hardscape borders, mulch bed cleanup with fresh borders, and hedge trimming. This Flora property showcases the full-service Lungrin's treatment.",
+    "detailedExplanation": "Complete residential lawn maintenance in Flora, MS including commercial zero-turn stripe patterns, vertical steel-blade edging along concrete hardscapes, bed border detailing, and full blower cleanup.",
     "aeoAnswers": [
       {
         "question": "How often should I mow my lawn in Mississippi?",
-        "answer": "During peak growing season (April–October), Mississippi lawns should be mowed every 7–10 days. Bermuda and Zoysia grasses grow aggressively in our heat and humidity."
+        "answer": "During peak growing season (April–October), Mississippi Bermuda and Zoysia lawns should be mowed every 7–10 days so no more than one-third of the grass blade is removed per cut."
       }
     ],
-    "latitude": 32.5460,
-    "longitude": -89.7950,
+    "latitude": 32.546,
+    "longitude": -89.795,
     "clientId": "lungrins-lawncare"
   },
   {
     "id": "lungrin-002",
+    "title": "Gated Entrance Overgrowth Recovery & Pine Straw",
     "author": "Luke Lungrin",
     "date": "Aug 21, 2026",
     "location": "Flora, MS",
     "service": "Pine Straw & Beds",
-    "description": "Cleaned up this entrance area in Flora. Knocked out all the overgrowth, recovered the flowerbed areas, and put out fresh pine straw to get it looking fresh.",
+    "description": "Cleaned up this entrance area in Flora — knocked out all the overgrowth, recovered the flowerbed areas, and put out fresh pine straw to get it looking sharp again.",
     "images": [
-      "/images/jobs/job-02/3.jpg",
-      "/images/jobs/job-02/4.jpg",
-      "/images/jobs/job-02/5.jpg",
-      "/images/jobs/job-02/6.jpg"
+      "/images/jobs/job-02/3.webp",
+      "/images/jobs/job-02/4.webp",
+      "/images/jobs/job-02/5.webp",
+      "/images/jobs/job-02/6.webp"
     ],
-    "detailedExplanation": "Full entrance area cleanup including overgrowth removal, flowerbed recovery, and fresh pine straw installation. Transformed the property entrance from overgrown to clean and professional.",
+    "detailedExplanation": "Property entrance restoration in Flora, MS including heavy weed removal around stone signage, bed border recovery, and thick longleaf pine straw installation.",
     "aeoAnswers": [
       {
         "question": "How often should pine straw be replaced in Mississippi?",
-        "answer": "Pine straw should be refreshed once or twice per year. The first application in early spring sets the tone, and a fall touch-up keeps beds looking fresh. Each application should be 3 to 4 inches deep."
+        "answer": "Pine straw should be refreshed twice per year — once in early spring and once in fall — at a 3 to 4 inch tucked depth to block weeds and hold soil moisture."
       }
     ],
     "latitude": 32.5432,
@@ -47,138 +266,393 @@
   },
   {
     "id": "lungrin-003",
+    "title": "Full-Service Turf Mowing, Edging & Bed Detailing",
     "author": "Luke Lungrin",
     "date": "Aug 20, 2026",
     "location": "Flora, MS",
     "service": "Residential Mowing",
-    "description": "Full service mowing and edging on this beautiful Flora home. Lungrin's yard sign in the front — the stripes speak for themselves.",
+    "description": "Detail-focused mowing, edging, and pine straw bed maintenance on a Flora residence — no rushed or sloppy work, crisp borders from curb to porch.",
     "images": [
-      "/images/jobs/job-03/1.jpg",
-      "/images/jobs/job-03/2.jpg",
-      "/images/jobs/job-03/3.jpg",
-      "/images/jobs/job-03/4.jpg"
+      "/images/jobs/job-03/1.webp",
+      "/images/jobs/job-03/2.webp",
+      "/images/jobs/job-03/3.webp",
+      "/images/jobs/job-03/4.webp"
     ],
-    "detailedExplanation": "Professional mowing with clean stripes, precision edging along driveway and sidewalk, and mulch bed maintenance. Lungrin's Lawncare yard sign displayed at the property.",
+    "detailedExplanation": "Routine full-service property care in Flora, MS featuring clean turf stripes, crisp driveway and walkway edging, and manicured pine straw beds.",
     "aeoAnswers": [],
-    "latitude": 32.5450,
+    "latitude": 32.545,
     "longitude": -89.7985,
     "clientId": "lungrins-lawncare"
   },
   {
     "id": "lungrin-004",
+    "title": "Brush Pile & Yard Debris Haul-Away in Flora",
     "author": "Luke Lungrin",
     "date": "Aug 17, 2026",
     "location": "Flora, MS",
-    "service": "Debris Cleanup",
-    "description": "Hauled away a pile of brush and yard debris after finishing daily mows. Complete site cleanup and haul-off.",
+    "service": "Debris Hauling",
+    "description": "Loaded and hauled away a large pile of cut brush and limbs after daily mowing routes in Flora, leaving the homeowner's lawn completely clear.",
     "images": [
-      "/images/jobs/job-04/1.jpg",
-      "/images/jobs/job-04/2.jpg",
-      "/images/jobs/job-04/3.jpg"
+      "/images/jobs/job-04/1.webp",
+      "/images/jobs/job-04/2.webp",
+      "/images/jobs/job-04/3.webp"
     ],
-    "detailedExplanation": "After completing regular mowing routes, hauled away accumulated brush piles and yard debris. Full cleanup service ensuring the property is left spotless.",
+    "detailedExplanation": "Dedicated trailer load-out and off-site disposal of stacked tree limbs, brush, and yard waste in Flora, MS.",
     "aeoAnswers": [],
-    "latitude": 32.5410,
-    "longitude": -89.8050,
+    "latitude": 32.541,
+    "longitude": -89.805,
     "clientId": "lungrins-lawncare"
   },
   {
     "id": "lungrin-005",
+    "title": "Residential Overgrowth Recovery & Mulch Bed Transformation",
     "author": "Luke Lungrin",
     "date": "Aug 15, 2026",
     "location": "Flora, MS",
     "service": "Overgrowth Recovery",
-    "description": "Full overgrowth recovery on this residential property. Before and after tells the whole story — from waist-high weeds to a clean, maintained yard.",
+    "description": "Full overgrowth recovery transformation — took a neglected yard with tall weeds in every sidewalk joint back to a clean, manicured lawn with dark mulch beds.",
     "images": [
-      "/images/jobs/residential-mulch-bed/before.jpg",
-      "/images/jobs/residential-mulch-bed/after.jpg"
+      "/images/jobs/residential-mulch-bed/after.webp",
+      "/images/jobs/residential-mulch-bed/before.webp"
     ],
-    "detailedExplanation": "Complete overgrowth recovery transformation. Property went from severely neglected with waist-high weeds and overgrown sidewalk cracks to a pristine lawn with clean mulch beds, trimmed hedges, and defined borders.",
+    "detailedExplanation": "Complete residential yard reclamation in Flora, MS: cleared overgrown turf and walkway cracks, trimmed shrubs, installed fresh dark hardwood mulch, and established crisp borders.",
     "aeoAnswers": [
       {
         "question": "Can an overgrown yard be recovered to a normal lawn?",
-        "answer": "Yes. Most overgrown properties can be fully recovered in 2 to 3 mow cycles. The first pass knocks everything down, the second levels it, and by the third mow you're on a normal schedule."
+        "answer": "Yes. Most overgrown Mississippi lawns can be recovered within 2 to 3 staged cuts — knocking down heavy growth first, leveling height on the second visit, and locking into a weekly schedule."
       }
     ],
-    "latitude": 32.5420,
-    "longitude": -89.7960,
+    "latitude": 32.542,
+    "longitude": -89.796,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0812-bentonia",
+    "title": "Heavy Fence Line & Driveway Brush Clearing in Bentonia",
+    "author": "Luke Lungrin",
+    "date": "Aug 12, 2026",
+    "location": "Bentonia, MS",
+    "service": "Fence Line Clearing",
+    "description": "Uncovered a homeowner's wooden fence and opened up their entire driveway in Bentonia by cutting out and hauling off thick brush that had taken over.",
+    "images": [
+      "/images/jobs/fb-2026/aug12-bentonia-fenceline/2.webp",
+      "/images/jobs/fb-2026/aug12-bentonia-fenceline/4.webp",
+      "/images/jobs/fb-2026/aug12-bentonia-fenceline/1.webp",
+      "/images/jobs/fb-2026/aug12-bentonia-fenceline/3.webp"
+    ],
+    "detailedExplanation": "Heavy brush and briar removal in Bentonia, MS. Reclaimed several feet of usable concrete driveway width and exposed the buried fence line from end to end.",
+    "aeoAnswers": [],
+    "latitude": 32.6412,
+    "longitude": -90.3638,
     "clientId": "lungrins-lawncare"
   },
   {
     "id": "lungrin-006",
-    "author": "Luke Lungrin",
-    "date": "Aug 12, 2026",
-    "location": "Flora, MS",
-    "service": "Pine Straw & Beds",
-    "description": "Entrance area cleanup at this gated property. Cleared overgrowth around the stone entry, laid fresh pine straw, and got it looking sharp.",
-    "images": [
-      "/images/jobs/job-06/1.jpg",
-      "/images/jobs/job-06/2.jpg",
-      "/images/jobs/job-06/3.jpg",
-      "/images/jobs/job-06/4.jpg",
-      "/images/jobs/job-06/5.jpg",
-      "/images/jobs/job-06/6.jpg"
-    ],
-    "detailedExplanation": "Major entrance area restoration at a gated property. Cleared heavy overgrowth around stone pillars and entry gate, removed weeds from gravel drive edges, and installed fresh pine straw for clean, professional curb appeal.",
-    "aeoAnswers": [],
-    "latitude": 32.5475,
-    "longitude": -89.8080,
-    "clientId": "lungrins-lawncare"
-  },
-  {
-    "id": "lungrin-007",
+    "title": "Stone Pillar Gate Cleanup & Pine Straw in Flora",
     "author": "Luke Lungrin",
     "date": "Aug 10, 2026",
     "location": "Flora, MS",
     "service": "Pine Straw & Beds",
-    "description": "Pine straw refresh and entrance cleanup at this neighborhood gate. Fresh straw around the sign, planters looking clean.",
+    "description": "Cleared weeds around stone entrance pillars and gravel drive edges, then tucked fresh pine straw for crisp curb appeal.",
     "images": [
-      "/images/jobs/job-01/1.jpg",
-      "/images/jobs/job-01/2.jpg",
-      "/images/jobs/job-01/3.jpg"
+      "/images/jobs/job-06/1.webp",
+      "/images/jobs/job-06/2.webp",
+      "/images/jobs/job-06/3.webp",
+      "/images/jobs/job-06/4.webp"
     ],
-    "detailedExplanation": "Entrance area pine straw installation and cleanup at a gated subdivision entrance. Fresh pine straw around stone entry walls and landscaping, with complete weed removal and bed definition.",
+    "detailedExplanation": "Gated property entrance cleanup in Flora, MS with complete weed extraction along gravel borders and fresh pine straw installation.",
     "aeoAnswers": [],
-    "latitude": 32.5500,
-    "longitude": -89.8030,
+    "latitude": 32.5475,
+    "longitude": -89.808,
     "clientId": "lungrins-lawncare"
   },
   {
     "id": "lungrin-008",
+    "title": "Backyard Outbuilding Brush Reclamation",
     "author": "Luke Lungrin",
     "date": "Aug 8, 2026",
     "location": "Flora, MS",
     "service": "Overgrowth Recovery",
-    "description": "Overgrowth recovery on this backyard area. Bushes had taken over behind the outbuilding — cleared it all out and got it back under control.",
+    "description": "Heavy brush and volunteer saplings had swallowed the area behind this residential outbuilding — cleared it down to clean, usable ground.",
     "images": [
-      "/images/jobs/job-08/1.jpg",
-      "/images/jobs/job-08/2.jpg"
+      "/images/jobs/job-08/2.webp",
+      "/images/jobs/job-08/1.webp"
     ],
-    "detailedExplanation": "Heavy-duty overgrowth recovery behind a residential outbuilding. Cut through thick brush and overgrown vegetation to restore the area to usable, maintained condition.",
+    "detailedExplanation": "Cleared thick brush, tall weeds, and tangled vegetation behind a residential storage building in Flora, MS.",
     "aeoAnswers": [],
     "latitude": 32.5395,
-    "longitude": -89.8100,
+    "longitude": -89.81,
     "clientId": "lungrins-lawncare"
   },
   {
     "id": "lungrin-009",
+    "title": "Full Pond Perimeter Clearing & Shoreline Transformation",
     "author": "Luke Lungrin",
     "date": "Aug 5, 2026",
     "location": "Pocahontas, MS",
     "service": "Pond Perimeter",
-    "description": "Pond perimeter cleanup in Pocahontas. Cleared heavy overgrowth and briars along the water's edge so the owner can actually see and access their pond again.",
+    "description": "Cleaned up around this pond in Pocahontas — cut through stumps, vines, and chest-high briars so the homeowner can see and walk their entire shoreline again.",
     "images": [
-      "/images/jobs/job-09/1.jpg"
+      "/images/jobs/fb-2026/aug05-pocahontas-pond/3.webp",
+      "/images/jobs/fb-2026/aug05-pocahontas-pond/4.webp",
+      "/images/jobs/fb-2026/aug05-pocahontas-pond/1.webp",
+      "/images/jobs/fb-2026/aug05-pocahontas-pond/2.webp"
     ],
-    "detailedExplanation": "Comprehensive pond perimeter cleanup. Removed thick vegetation, briars, and overgrowth from around the entire pond edge, restoring visibility and access to the waterline.",
+    "detailedExplanation": "360-degree pond bank reclamation in Pocahontas, MS. Removed dense willow saplings, briars, and vines right down to the water's edge and around the wooden pier.",
     "aeoAnswers": [
       {
         "question": "How do you maintain a pond perimeter in Mississippi?",
-        "answer": "Pond perimeters need regular clearing of brush, briars, and overgrowth — typically every 4 to 6 weeks during growing season. This keeps the waterline accessible and prevents vegetation from choking the pond edge."
+        "answer": "Pond banks should be trimmed every 4 to 6 weeks during warm months to stop woody saplings, briars, and vines from taking root along the dam and shoreline."
       }
     ],
-    "latitude": 32.5590,
+    "latitude": 32.559,
     "longitude": -89.8395,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0803",
+    "title": "Rolled-Edge Concrete Border Pine Straw in Gluckstadt",
+    "author": "Luke Lungrin",
+    "date": "Aug 3, 2026",
+    "location": "Gluckstadt, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Installed thick longleaf pine straw with tight rolled edges along exposed-aggregate driveways and brick front porches in Gluckstadt.",
+    "images": [
+      "/images/jobs/fb-2026/aug03-gluckstadt-pinestraw/1.webp",
+      "/images/jobs/fb-2026/aug03-gluckstadt-pinestraw/4.webp",
+      "/images/jobs/fb-2026/aug03-gluckstadt-pinestraw/2.webp",
+      "/images/jobs/fb-2026/aug03-gluckstadt-pinestraw/3.webp"
+    ],
+    "detailedExplanation": "Precision flowerbed weeding and rolled pine straw installation across multiple front beds and tree rings in Gluckstadt, MS.",
+    "aeoAnswers": [],
+    "latitude": 32.5178,
+    "longitude": -90.0962,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0729",
+    "title": "Estate Acreage Striping & Meticulous Edging in Ridgeland",
+    "author": "Luke Lungrin",
+    "date": "Jul 29, 2026",
+    "location": "Ridgeland, MS",
+    "service": "Residential Mowing",
+    "description": "Laser-straight mowing stripes and razor-sharp driveway edges across a spacious Ridgeland property — meticulous down to the smallest detail.",
+    "images": [
+      "/images/jobs/fb-2026/jul29-ridgeland-striping/2.webp",
+      "/images/jobs/fb-2026/jul29-ridgeland-striping/3.webp",
+      "/images/jobs/fb-2026/jul29-ridgeland-striping/1.webp",
+      "/images/jobs/fb-2026/jul29-ridgeland-striping/4.webp"
+    ],
+    "detailedExplanation": "Large-lot residential turf striping in Ridgeland, MS with commercial zero-turn equipment, crisp concrete edging, and full hardscape blow-off.",
+    "aeoAnswers": [],
+    "latitude": 32.4312,
+    "longitude": -90.1365,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0727",
+    "title": "Annandale Front Elevation Shrub Redesign & Pine Straw",
+    "author": "Luke Lungrin",
+    "date": "Jul 27, 2026",
+    "location": "Madison, MS",
+    "service": "Bush & Hedge Trimming",
+    "description": "Removed overcrowded front shrubs, sculpted the remaining evergreens, and tucked fresh pine straw in Annandale — opening up the architecture of the home.",
+    "images": [
+      "/images/jobs/fb-2026/jul27-annandale-beds/2.webp",
+      "/images/jobs/fb-2026/jul27-annandale-beds/1.webp"
+    ],
+    "detailedExplanation": "Curb-appeal refresh in the Annandale community of Madison, MS: selective shrub removal to open up brick arches and windows, precision shaping, and fresh pine straw.",
+    "aeoAnswers": [],
+    "latitude": 32.5194,
+    "longitude": -90.1582,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0718",
+    "title": "Shade-Tree & Front Porch Rolled Pine Straw in Flora",
+    "author": "Luke Lungrin",
+    "date": "Jul 18, 2026",
+    "location": "Flora, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Crisp tucked edges along concrete walkways and a fluffy rolled front border around mature shade trees and timber porch columns.",
+    "images": [
+      "/images/jobs/fb-2026/jul18-flora-rolled-straw/1.webp",
+      "/images/jobs/fb-2026/jul18-flora-rolled-straw/2.webp"
+    ],
+    "detailedExplanation": "Residential pine straw refresh in Flora, MS protecting shallow shade-tree roots and framing the front porch walkway.",
+    "aeoAnswers": [],
+    "latitude": 32.5535,
+    "longitude": -89.8058,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0716",
+    "title": "Weekly Route Turf Striping & Bed Maintenance",
+    "author": "Luke Lungrin",
+    "date": "Jul 16, 2026",
+    "location": "Madison, MS",
+    "service": "Residential Mowing",
+    "description": "More than just a mow — deep green turf striping, trimmed borders, and spotless walkways for a recurring Madison County route client.",
+    "images": [
+      "/images/jobs/fb-2026/jul16-madison-maintenance/3.webp",
+      "/images/jobs/fb-2026/jul16-madison-maintenance/1.webp",
+      "/images/jobs/fb-2026/jul16-madison-maintenance/2.webp"
+    ],
+    "detailedExplanation": "Consistent weekly lawn maintenance in Madison County featuring alternating mowing directions to prevent turf ruts and produce bold stripe contrast.",
+    "aeoAnswers": [],
+    "latitude": 32.482,
+    "longitude": -90.112,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0708",
+    "title": "Raised Garden Bed Removal & Soil Grading in Flora",
+    "author": "Luke Lungrin",
+    "date": "Jul 8, 2026",
+    "location": "Flora, MS",
+    "service": "Property Cleanout",
+    "description": "Excavated and hauled out tons of heavy soil from old raised beds in Flora using compact loader equipment, leaving a smooth, level yard.",
+    "images": [
+      "/images/jobs/fb-2026/jul08-flora-raised-beds/2.webp",
+      "/images/jobs/fb-2026/jul08-flora-raised-beds/3.webp",
+      "/images/jobs/fb-2026/jul08-flora-raised-beds/1.webp"
+    ],
+    "detailedExplanation": "Dismantled old timber raised garden beds, excavated and hauled soil mounds with a mini track loader, and graded the backyard smooth for turf recovery.",
+    "aeoAnswers": [],
+    "latitude": 32.548,
+    "longitude": -89.7905,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0608",
+    "title": "Acreage Lawn Striping & Recurring Property Care",
+    "author": "Luke Lungrin",
+    "date": "Jun 8, 2026",
+    "location": "Flora, MS",
+    "service": "Acreage Mowing",
+    "description": "Wide-open acreage mowing with clean diagonal stripes and detailed trimming around trees and outbuildings in Flora.",
+    "images": [
+      "/images/jobs/fb-2026/jun08-flora-turf-care/1.webp",
+      "/images/jobs/fb-2026/jun08-flora-turf-care/2.webp"
+    ],
+    "detailedExplanation": "Recurring acreage turf maintenance in Flora, MS with commercial wide-deck zero-turn equipment.",
+    "aeoAnswers": [],
+    "latitude": 32.561,
+    "longitude": -89.788,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0603",
+    "title": "Sidewalk Overgrowth Vertical Edge Restoration in Madison",
+    "author": "Luke Lungrin",
+    "date": "Jun 3, 2026",
+    "location": "Madison, MS",
+    "service": "Residential Mowing",
+    "description": "Cut back thick grass runners that had crept inches over the concrete sidewalk in Madison, restoring razor-sharp 90-degree curb and walkway lines.",
+    "images": [
+      "/images/jobs/fb-2026/jun03-madison-sidewalk-edge/2.webp",
+      "/images/jobs/fb-2026/jun03-madison-sidewalk-edge/1.webp"
+    ],
+    "detailedExplanation": "Precision steel-blade sidewalk edging and lawn striping in Madison, MS — reclaiming full concrete width and blowing every clipping clean.",
+    "aeoAnswers": [],
+    "latitude": 32.464,
+    "longitude": -90.1055,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0516",
+    "title": "Foundation Shrub & Ornamental Tree Shaping",
+    "author": "Luke Lungrin",
+    "date": "May 16, 2026",
+    "location": "Flora, MS",
+    "service": "Bush & Hedge Trimming",
+    "description": "Before-and-after bush trimming in Flora — leveled front window hedges, shaped ornamental feature shrubs, and hauled off all trimmings.",
+    "images": [
+      "/images/jobs/fb-2026/may16-flora-bush-trim/1.webp",
+      "/images/jobs/fb-2026/may16-flora-bush-trim/2.webp",
+      "/images/jobs/fb-2026/may16-flora-bush-trim/3.webp"
+    ],
+    "detailedExplanation": "Spring shrub pruning and hedge leveling in Flora, MS to improve airflow, sunlight, and front curb appeal.",
+    "aeoAnswers": [],
+    "latitude": 32.5402,
+    "longitude": -89.7995,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0427",
+    "title": "Spring Pergola Bed Makeover & Picket-Fence Striping",
+    "author": "Luke Lungrin",
+    "date": "Apr 27, 2026",
+    "location": "Gluckstadt, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Full spring refresh featuring striped turf inside a white picket fence, sculpted shrubs, and fresh pine straw around a backyard pergola.",
+    "images": [
+      "/images/jobs/fb-2026/apr27-gluckstadt-spring-beds/1.webp",
+      "/images/jobs/fb-2026/apr27-gluckstadt-spring-beds/2.webp",
+      "/images/jobs/fb-2026/apr27-gluckstadt-spring-beds/4.webp",
+      "/images/jobs/fb-2026/apr27-gluckstadt-spring-beds/3.webp"
+    ],
+    "detailedExplanation": "Spring lawn striping, hedge reduction, and backyard pergola bed pine straw installation in Gluckstadt, MS.",
+    "aeoAnswers": [],
+    "latitude": 32.513,
+    "longitude": -90.089,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0320",
+    "title": "Living Privacy Fence Tree Installation in Bentonia",
+    "author": "Luke Lungrin",
+    "date": "Mar 20, 2026",
+    "location": "Bentonia, MS",
+    "service": "Pine Straw & Beds",
+    "description": "Excavated and planted a full row of evergreen trees for a living privacy screen in Bentonia, plus striped acreage mowing.",
+    "images": [
+      "/images/jobs/fb-2026/mar20-bentonia-privacy-trees/1.webp",
+      "/images/jobs/fb-2026/mar20-bentonia-privacy-trees/2.webp",
+      "/images/jobs/fb-2026/mar20-bentonia-privacy-trees/3.webp"
+    ],
+    "detailedExplanation": "Used compact excavator equipment to dig uniform tree pits along the property boundary in Bentonia, MS and installed evergreen privacy trees.",
+    "aeoAnswers": [],
+    "latitude": 32.6365,
+    "longitude": -90.359,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2026-0212",
+    "title": "Pre-Spring Leaf & Winter Pine Needle Yard Cleanup",
+    "author": "Luke Lungrin",
+    "date": "Feb 12, 2026",
+    "location": "Flora, MS",
+    "service": "Leaf Removal & Cleanup",
+    "description": "Cleaned up and hauled away a thick winter blanket of fallen leaves and pine needles in Flora to get this lawn ready for spring green-up.",
+    "images": [
+      "/images/jobs/fb-2026/feb12-flora-winter-cleanup/2.webp",
+      "/images/jobs/fb-2026/feb12-flora-winter-cleanup/1.webp"
+    ],
+    "detailedExplanation": "Pre-spring yard cleanup in Flora, MS removing matted winter oak leaves and pine straw so sunlight warms the soil for early turf emergence.",
+    "aeoAnswers": [],
+    "latitude": 32.5378,
+    "longitude": -89.8025,
+    "clientId": "lungrins-lawncare"
+  },
+  {
+    "id": "lungrin-2025-0717",
+    "title": "Yazoo County Lakefront & Dam Shoreline Reclamation",
+    "author": "Luke Lungrin",
+    "date": "Jul 17, 2025",
+    "location": "Yazoo County, MS",
+    "service": "Pond Perimeter",
+    "description": "Major before-and-after cleanup along an overgrown lake dam and shoreline in Yazoo County — opened up the entire water view and bank access.",
+    "images": [
+      "/images/jobs/fb-2026/jul17-yazoo-lakefront/2.webp",
+      "/images/jobs/fb-2026/jul17-yazoo-lakefront/4.webp",
+      "/images/jobs/fb-2026/jul17-yazoo-lakefront/1.webp",
+      "/images/jobs/fb-2026/jul17-yazoo-lakefront/3.webp"
+    ],
+    "detailedExplanation": "Cleared steep lake dam slopes and shoreline brush in Yazoo County, MS, restoring full sightlines and fishing access along the water.",
+    "aeoAnswers": [],
+    "latitude": 32.785,
+    "longitude": -90.312,
     "clientId": "lungrins-lawncare"
   }
 ]

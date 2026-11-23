@@ -1,0 +1,173 @@
+{
+  "summary": {
+    "googleRating": 5.0,
+    "googleReviewCount": 20,
+    "googleReviewUrl": "https://search.google.com/local/writereview?placeid=ChIJvYxgYy-ipy0ReT6NyUfsbCM",
+    "googleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJvYxgYy-ipy0ReT6NyUfsbCM",
+    "facebookRecommendPercent": 100,
+    "facebookReviewCount": 14,
+    "facebookFollowers": 526,
+    "facebookUrl": "https://www.facebook.com/LungrinsLawncare",
+    "facebookReviewsUrl": "https://www.facebook.com/LungrinsLawncare/reviews",
+    "messengerUrl": "https://www.facebook.com/messages/t/LungrinsLawncare/"
+  },
+  "reviews": [
+    {
+      "id": "fb-adam-taylor",
+      "author": "Adam Taylor",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Nov 2026",
+      "serviceTag": "Lawn & Property Care",
+      "text": "Luke was a great communicator. He asked the right question and gave a clear explanation of what he was going to do. He did a fantastic job for us. My wife and I will be working with him in the future."
+    },
+    {
+      "id": "goog-krissy-beattie",
+      "author": "Krissy Beattie",
+      "source": "google",
+      "rating": 5,
+      "date": "Oct 2026",
+      "serviceTag": "Flowerbed Makeover",
+      "text": "I can't recommend Luke enough! He did an amazing job on my flower beds and made the whole process so easy. He responded quickly, got me an estimate the same day, and showed up ready to work. His attention to detail is incredible."
+    },
+    {
+      "id": "fb-esther-turner",
+      "author": "Esther Turner",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Aug 2026",
+      "serviceTag": "Pond Perimeter Clearing",
+      "text": "Highly recommend! Luke & team took on a pond edge cleanup that was not for the faint of heart. Completely overgrown with stumps and vines. He went above and beyond to finish the job, the outcome exceeded expectations. Professional, responsive, shows up on time. Attention to detail is top notch too!"
+    },
+    {
+      "id": "fb-denise-ashley",
+      "author": "Denise Ashley",
+      "source": "facebook",
+      "rating": 5,
+      "date": "2026",
+      "serviceTag": "Routine Lawn Care",
+      "text": "Highly recommend Luke for your lawn care needs. He shows up, does a beautiful job, and cleans up anything left behind in a professional manner."
+    },
+    {
+      "id": "goog-amy-passons-steib",
+      "author": "Amy Passons-Steib",
+      "source": "google",
+      "rating": 5,
+      "date": "2026",
+      "serviceTag": "Full-Service Lawn Care",
+      "text": "Excellent service, communication, and pricing. Is willing to go above and beyond and work with you if more than the basic mowing package is desired. Extremely clear pricing, and makes sure you are satisfied with the job!"
+    },
+    {
+      "id": "fb-crisler-adams",
+      "author": "Crisler Adams",
+      "source": "facebook",
+      "rating": 5,
+      "date": "2026",
+      "serviceTag": "Ongoing Maintenance",
+      "text": "Luke is so professional and does such an amazing job on my lawn needs. He communicates well and I feel confident knowing that my yard will be maintained by the best around! Pays attention to the details and my yard always looks so nice!!"
+    },
+    {
+      "id": "fb-brittany-anderson",
+      "author": "Brittany Anderson",
+      "source": "facebook",
+      "rating": 5,
+      "date": "2026",
+      "serviceTag": "Residential Lawn Care",
+      "text": "They do wonderful work! Shows up on time and very reasonably priced! You won't be disappointed!"
+    },
+    {
+      "id": "goog-gloria-martin",
+      "author": "Gloria Martin",
+      "source": "google",
+      "rating": 5,
+      "date": "2026",
+      "serviceTag": "Property Maintenance",
+      "text": "Luke is always very professional. He does exactly what I need him to do. He always goes above and beyond and makes sure I am totally satisfied with the work he has done."
+    },
+    {
+      "id": "fb-josh-neal",
+      "author": "Josh Neal",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Verified Client",
+      "serviceTag": "Landscaping Projects",
+      "text": "Luke has taken care of some landscaping needs for me a handful of times and every time I've been more than happy with the outcome of his work. He's great at communicating back and forth, being there when he says he's going to be, and he's a perfectionist when it comes to the quality of his work. 10/10 I highly encourage Luke for all of your landscaping needs."
+    },
+    {
+      "id": "fb-marymargaret-kinney",
+      "author": "MaryMargaret Kinney",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Verified Client",
+      "serviceTag": "Pine Straw, Mowing & Washing",
+      "text": "Luke has been helping us around the property for the last couple months and has done an incredible job. From spreading hay or pine straw to general mowing, power washing and maintenance, Luke has done a great job. Hard worker, honest, on time, and reasonably priced. Could not be happier with Luke and the quality of his work."
+    },
+    {
+      "id": "fb-teresa-turner-logan",
+      "author": "Teresa Turner Logan",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Verified Client",
+      "serviceTag": "Landscaping & Cleanup",
+      "text": "Luke did some landscaping for us and did an amazing job. He was punctual and very meticulous about the finished results. His work is professional and very reasonably priced. We are so happy with the job he did and highly recommend his services. Very nice, hardworking young man."
+    },
+    {
+      "id": "fb-jamie-shelby",
+      "author": "Jamie Shelby",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Verified Client",
+      "serviceTag": "Yard Transformation",
+      "text": "Luke does a wonderful job making things look improved. His talent is taking away the ugly and making it look beautiful. He does what he says he will do and is a pleasure to have around."
+    },
+    {
+      "id": "fb-lauren-saxton",
+      "author": "Lauren Saxton",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Nov 2025",
+      "serviceTag": "Lawn Maintenance",
+      "text": "I highly recommend! Did a great job, very dependable and his work looked great!",
+      "ownerReply": "Thanks so much!"
+    },
+    {
+      "id": "fb-harriet-sims",
+      "author": "Harriet Sims",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Sep 2024",
+      "serviceTag": "Outdoor Property Project",
+      "text": "Very highly recommend this young man! Recently had him help with a covering for my patio, involved some very long, heavy pieces of wood. Not only did he get them in place but he figured the angles, etc. Luke's honesty, integrity and work ethic are top notch!",
+      "ownerReply": "Thanks so much!"
+    },
+    {
+      "id": "fb-don-grayson",
+      "author": "Don Grayson",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Aug 2024",
+      "serviceTag": "Residential Yard Work",
+      "text": "Very conscientious worker. Did a wonderful job at our house. I'll be calling him again.",
+      "ownerReply": "Thank you for your business, it was a pleasure."
+    },
+    {
+      "id": "fb-christie-saxton",
+      "author": "Christie Saxton",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Verified Client",
+      "serviceTag": "Yard Cleanup",
+      "text": "Luke did an amazing job on some yard work around our house. He's a hard worker and very dependable!! Highly recommend"
+    },
+    {
+      "id": "fb-malissa-robinson-jones",
+      "author": "Malissa Robinson Jones",
+      "source": "facebook",
+      "rating": 5,
+      "date": "Verified Client",
+      "serviceTag": "Bush & Hedge Trimming",
+      "text": "Luke did an amazing job on my bushes! Very nice and professional. Will definitely use him again.",
+      "ownerReply": "Thank you so much!"
+    }
+  ]
+}

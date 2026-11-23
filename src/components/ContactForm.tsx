@@ -40,20 +40,17 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
     const selectedDate = new Date(date + "T00:00:00");
     const day = selectedDate.getDay(); // 0 = Sunday, 1 = Monday, etc.
 
-    if (day === 0 || day === 6) {
-      return ["Closed on weekends"];
+    if (day === 0) {
+      return ["Closed on Sunday"];
     } else {
-      // Monday - Friday: 8:00 AM - 5:00 PM
+      // Monday - Saturday: 7:30 AM - 5:30 PM
       return [
-        "8:00 AM - 9:00 AM",
-        "9:00 AM - 10:00 AM",
-        "10:00 AM - 11:00 AM",
-        "11:00 AM - 12:00 PM",
-        "12:00 PM - 1:00 PM",
-        "1:00 PM - 2:00 PM",
-        "2:00 PM - 3:00 PM",
-        "3:00 PM - 4:00 PM",
-        "4:00 PM - 5:00 PM"
+        "7:30 AM - 9:00 AM",
+        "9:00 AM - 10:30 AM",
+        "10:30 AM - 12:00 PM",
+        "1:00 PM - 2:30 PM",
+        "2:30 PM - 4:00 PM",
+        "4:00 PM - 5:30 PM"
       ];
     }
   }, [date]);
@@ -77,13 +74,13 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
       const selectedDate = new Date(date + "T00:00:00");
       const day = selectedDate.getDay();
 
-      if (day === 0 || day === 6) {
-        setError("We are closed on weekends. Please pick a Monday through Friday appointment.");
+      if (day === 0) {
+        setError("We are closed on Sundays. Please pick a Monday through Saturday appointment.");
         return;
       }
 
-      if (timeSlot === "Closed on weekends") {
-        setError("Cannot book an estimate on a closed day.");
+      if (timeSlot === "Closed on Sunday") {
+        setError("Cannot book an estimate on Sunday.");
         return;
       }
     } else if (type === "emergency") {
@@ -162,7 +159,7 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
       setMessage("");
     } catch (err) {
       console.error("Form error:", err);
-      setError("Something went wrong. Please call us at (601) 573-6178.");
+      setError("Something went wrong. Please call or text Luke directly at (601) 906-1281.");
     } finally {
       setSubmitting(false);
     }
@@ -225,7 +222,7 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
                     className="form-input"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="(601) 573-6178"
+                    placeholder="(601) 555-0192"
                     required
                   />
                 </div>
@@ -251,7 +248,7 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
                   className="form-input"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="(601) 573-6178"
+                  placeholder="(601) 555-0192"
                   required
                 />
               </div>
@@ -378,11 +375,14 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
                       required
                     >
                       <option value="">Select a service...</option>
-                      <option value="Residential Mowing">Residential Mowing</option>
-                      <option value="Pine Straw Installation">Pine Straw Installation</option>
+                      <option value="Residential & Acreage Mowing">Residential &amp; Acreage Mowing</option>
+                      <option value="Rolled Pine Straw & Mulch">Rolled Pine Straw &amp; Mulch</option>
+                      <option value="Flowerbed Cleanup & Planting">Flowerbed Cleanup &amp; Planting</option>
+                      <option value="Bush & Hedge Trimming">Bush &amp; Hedge Trimming</option>
+                      <option value="Leaf Removal & Cleanup">Leaf Removal &amp; Cleanup</option>
+                      <option value="Pond Bank / Fence Clearing">Pond Bank / Fence Clearing</option>
                       <option value="Gutter Cleaning">Gutter Cleaning</option>
-                      <option value="Overgrowth Recovery">Overgrowth Recovery</option>
-                      <option value="Property Cleanout">Property Cleanout</option>
+                      <option value="Junk & Debris Removal">Junk &amp; Debris Removal</option>
                     </select>
                   </div>
                 </div>

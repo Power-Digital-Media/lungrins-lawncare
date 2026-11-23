@@ -1,14 +1,14 @@
 /* E:\AntiGravity\pindrop-saas\src\app\globals.css */
 
 :root {
-  /* Brand Color Tokens (Refined for $10k+ Luxe Aesthetic) */
-  --primary-rgb: 46, 49, 145;       /* Royal Blue #2E3191 */
-  --secondary-rgb: 209, 164, 83;   /* Bronze Gold #D1A453 */
-  --accent-rgb: 58, 206, 216;       /* Vibrant Cyan #3ACED8 */
+  /* Lungrin's Lawncare Brand Color Tokens (Turf Green, Fresh Leaf & Pine Straw Amber) */
+  --primary-rgb: 22, 163, 74;
+  --secondary-rgb: 74, 222, 128;
+  --accent-rgb: 217, 119, 6;
   
-  /* Forced Dark Mode — Deep Midnight Navy & Gold */
-  --bg-rgb: 11, 12, 16;
-  --card-bg-rgb: 18, 20, 28;
+  /* Deep Forest Backdrop for Map & PinDrop Cards */
+  --bg-rgb: 10, 22, 15;
+  --card-bg-rgb: 16, 33, 23;
   --text-rgb: 241, 243, 245;
   --text-muted-rgb: 158, 164, 176;
   --border-rgb: 255, 255, 255;
