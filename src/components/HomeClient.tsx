@@ -99,7 +99,9 @@ const HERO_SHOWCASE_SLIDES = [
     tag: "✓ Real Flora, MS Property",
     title: "Curved Longleaf Pine Straw Beds & Fresh Turf",
     location: "Flora, MS • Oct 30, 2026",
-    mainImg: "/images/jobs/fb-2026/oct30-flora-pinestraw/2.webp",
+    mobileImg: "/images/jobs/fb-2026/hero/flora-curved-640.webp",
+    desktopImg: "/images/jobs/fb-2026/hero/flora-curved-1200.webp",
+    thumbImg: "/images/jobs/fb-2026/hero/flora-curved-thumb.webp",
     gallery: [
       "/images/jobs/fb-2026/oct30-flora-pinestraw/2.webp",
       "/images/jobs/fb-2026/oct30-flora-pinestraw/1.webp",
@@ -112,7 +114,9 @@ const HERO_SHOWCASE_SLIDES = [
     tag: "✓ Hand-Tucked 90° Corner",
     title: "Thick Rolled-Edge Longleaf Pine Straw",
     location: "Flora, MS • Oct 30, 2026",
-    mainImg: "/images/jobs/fb-2026/oct30-flora-pinestraw/1.webp",
+    mobileImg: "/images/jobs/fb-2026/hero/flora-corner-640.webp",
+    desktopImg: "/images/jobs/fb-2026/hero/flora-corner-1200.webp",
+    thumbImg: "/images/jobs/fb-2026/hero/flora-corner-thumb.webp",
     gallery: [
       "/images/jobs/fb-2026/oct30-flora-pinestraw/1.webp",
       "/images/jobs/fb-2026/oct30-flora-pinestraw/2.webp",
@@ -125,7 +129,9 @@ const HERO_SHOWCASE_SLIDES = [
     tag: "✓ Ridgeland, MS Route",
     title: "Laser-Straight Zero-Turn Striping & Edging",
     location: "Ridgeland, MS • Jul 29, 2026",
-    mainImg: "/images/jobs/fb-2026/jul29-ridgeland-striping/2.webp",
+    mobileImg: "/images/jobs/fb-2026/hero/ridgeland-stripes-640.webp",
+    desktopImg: "/images/jobs/fb-2026/hero/ridgeland-stripes-1200.webp",
+    thumbImg: "/images/jobs/fb-2026/hero/ridgeland-stripes-thumb.webp",
     gallery: [
       "/images/jobs/fb-2026/jul29-ridgeland-striping/2.webp",
       "/images/jobs/fb-2026/jul29-ridgeland-striping/3.webp",
@@ -138,7 +144,9 @@ const HERO_SHOWCASE_SLIDES = [
     tag: "✓ Pocahontas, MS Clearing",
     title: "360° Pond Perimeter & Shoreline Reclamation",
     location: "Pocahontas, MS • Aug 5, 2026",
-    mainImg: "/images/jobs/fb-2026/aug05-pocahontas-pond/3.webp",
+    mobileImg: "/images/jobs/fb-2026/hero/pocahontas-pond-640.webp",
+    desktopImg: "/images/jobs/fb-2026/hero/pocahontas-pond-1200.webp",
+    thumbImg: "/images/jobs/fb-2026/hero/pocahontas-pond-thumb.webp",
     gallery: [
       "/images/jobs/fb-2026/aug05-pocahontas-pond/3.webp",
       "/images/jobs/fb-2026/aug05-pocahontas-pond/4.webp",
@@ -525,16 +533,12 @@ export default function HomeClient() {
   return (
     <div className="ll-page">
       {/* 1. HERO SECTION — FULL-BLEED REAL PROPERTY BACKDROP + FIRST-FOLD SHOWCASE */}
-      <section className="ll-hero">
+      <section
+        className="ll-hero"
+        style={{ "--hero-bg-url": `url(${activeHero.desktopImg})` } as React.CSSProperties}
+      >
         <div className="ll-hero-bg" aria-hidden="true">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={activeHero.mainImg}
-            alt=""
-            width={1400}
-            height={1050}
-            fetchPriority="high"
-          />
+          <div className="ll-hero-bg-desktop-photo" />
           <div className="ll-hero-scrim" />
         </div>
 
@@ -608,10 +612,12 @@ export default function HomeClient() {
                 <span className="ll-hero-zoom-tag">🔍 Full Photo</span>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={activeHero.mainImg}
+                  src={activeHero.mobileImg}
+                  srcSet={`${activeHero.mobileImg} 640w, ${activeHero.desktopImg} 1200w`}
+                  sizes="(max-width: 767px) 320px, 560px"
                   alt={`${activeHero.title} — ${activeHero.location} by Lungrin's Lawncare`}
-                  width={1400}
-                  height={1050}
+                  width={640}
+                  height={480}
                   fetchPriority="high"
                 />
                 <div className="ll-hero-photo-overlay">
@@ -624,19 +630,17 @@ export default function HomeClient() {
                 </div>
               </div>
 
-              <div className="ll-hero-thumb-strip" role="tablist" aria-label="Switch real local project photo">
+              <div className="ll-hero-thumb-strip" aria-label="Switch real local project photo">
                 {HERO_SHOWCASE_SLIDES.map((slide, idx) => (
                   <button
                     key={slide.id}
                     type="button"
-                    role="tab"
-                    aria-selected={activeHeroIdx === idx}
-                    aria-label={slide.title}
+                    aria-pressed={activeHeroIdx === idx}
                     className={`ll-hero-thumb-btn ${activeHeroIdx === idx ? "active" : ""}`}
                     onClick={() => setActiveHeroIdx(idx)}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={slide.mainImg} alt={slide.thumbLabel} width={280} height={210} />
+                    <img src={slide.thumbImg} alt="" width={180} height={120} />
                     <span className="ll-hero-thumb-caption">{slide.thumbLabel}</span>
                   </button>
                 ))}

@@ -777,7 +777,7 @@ export default function DropPinPage() {
       <div className="login-backdrop">
         <div className="double-bezel-wrapper login-card">
           <div className="double-bezel-inner login-inner">
-            <h2 className="title">Lungrin&apos;s Lawncare</h2>
+            <h1 className="title">Lungrin&apos;s Lawncare</h1>
             <p className="subtitle">Enter passcode to drop job pins</p>
             <form onSubmit={handleLogin} className="form">
               <input

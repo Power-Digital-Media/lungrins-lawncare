@@ -303,11 +303,26 @@ function PinDetailContent() {
 
 export default function PinDetailPage() {
   return (
-    <Suspense fallback={
-      <div style={{ textAlign: "center", padding: "8rem 0", background: "var(--bg)" }}>
-        <h3 className="skeleton" style={{ display: "inline-block", padding: "10px 20px", borderRadius: "8px" }}>Loading project details...</h3>
-      </div>
-    }>
+    <Suspense
+      fallback={
+        <section
+          style={{
+            textAlign: "center",
+            padding: "5rem 1.25rem",
+            background: "linear-gradient(155deg, #061b0e 0%, #0d311b 55%, #06180d 100%)",
+            color: "#ffffff",
+          }}
+        >
+          <span style={{ color: "#4ade80", fontWeight: 800, fontSize: "0.78rem", textTransform: "uppercase", letterSpacing: "0.06em" }}>
+            Project Gallery
+          </span>
+          <h1 style={{ color: "#ffffff", fontSize: "2.1rem", fontWeight: 900, margin: "0.6rem 0 0.5rem" }}>
+            Verified Central MS Field Project
+          </h1>
+          <p style={{ color: "#cbd5e1", fontSize: "0.95rem" }}>Loading full-resolution job photos and location details...</p>
+        </section>
+      }
+    >
       <PinDetailContent />
     </Suspense>
   );

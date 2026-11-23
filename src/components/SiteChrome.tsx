@@ -425,9 +425,9 @@ export function SiteFooter() {
             justifyContent: "center",
             padding: "0.65rem 0.5rem",
             borderRadius: "10px",
-            background: "#16a34a",
-            color: "#ffffff",
-            fontWeight: 800,
+            background: "#4ade80",
+            color: "#052e16",
+            fontWeight: 900,
             fontSize: "0.78rem",
             textDecoration: "none",
           }}

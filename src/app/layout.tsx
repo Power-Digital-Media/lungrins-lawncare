@@ -86,13 +86,6 @@ export default function RootLayout({
       <head>
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <link
-          rel="preload"
-          as="image"
-          href="/images/jobs/fb-2026/oct30-flora-pinestraw/2.webp"
-          type="image/webp"
-          fetchPriority="high"
-        />
         <link rel="ard" href="/.well-known/ard.json" />
         <script
           dangerouslySetInnerHTML={{
@@ -124,7 +117,7 @@ export default function RootLayout({
                   window.addEventListener(ev, loadGtm, { once: true, passive: true });
                 });
                 window.addEventListener('load', function() {
-                  setTimeout(loadGtm, 3500);
+                  setTimeout(loadGtm, 6500);
                 });
               })();
             `,
