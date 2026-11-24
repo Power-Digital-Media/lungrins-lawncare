@@ -166,10 +166,10 @@ const HERO_SHOWCASE_SLIDES = [
 const CALC_SERVICES = [
   { id: "mowing", shortLabel: "Mowing & Edging", label: "Mowing, Edging & Blow-Off", sub: "Stripe cut, trim, 90° concrete edge", addon: [0, 0] as [number, number] },
   { id: "pinestraw", shortLabel: "Pine Straw / Mulch", label: "Rolled Pine Straw / Mulch", sub: "Thick coverage & tucked borders", addon: [70, 135] as [number, number] },
-  { id: "beds", shortLabel: "Bed Weeding", label: "Flowerbed Weeding & Planting", sub: "Root pull, trenching & new plants", addon: [55, 110] as [number, number] },
+  { id: "beds", shortLabel: "Bed Weeding", label: "Flowerbed Weeding & Tear-Out", sub: "Root pull, trenching & bed resets", addon: [55, 110] as [number, number] },
+  { id: "planting", shortLabel: "Shrub / Tree Plant", label: "Shrub & Privacy Tree Planting", sub: "Boxwoods, evergreens & new beds", addon: [75, 160] as [number, number] },
   { id: "shrubs", shortLabel: "Bush Trimming", label: "Bush & Hedge Trimming", sub: "Crisp shaping + clipping haul-off", addon: [40, 80] as [number, number] },
-  { id: "leaf", shortLabel: "Leaf Cleanup", label: "Leaf Removal & Cleanup", sub: "Full yard leaf clearing & haul-away", addon: [50, 95] as [number, number] },
-  { id: "gutters", shortLabel: "Gutter Cleaning", label: "Gutter Cleaning & Flushing", sub: "Hand-cleared valleys & downspouts", addon: [55, 100] as [number, number] },
+  { id: "leaf", shortLabel: "Leaf Cleanup", label: "Fall & Winter Leaf Cleanup", sub: "Full yard leaf clearing & haul-away", addon: [50, 95] as [number, number] },
   { id: "clearing", shortLabel: "Pond / Fence Clear", label: "Pond Bank / Fence Clearing", sub: "Brush, vines, briars & bush hogging", addon: [65, 130] as [number, number] },
   { id: "junk", shortLabel: "Junk Haul-Away", label: "Junk & Brush Haul-Away", sub: "Trailer load-out & off-site disposal", addon: [60, 120] as [number, number] },
 ];
@@ -247,6 +247,10 @@ const FAQ_ITEMS = [
   {
     q: "Do I need to be home when you service my property?",
     a: "Not at all. As long as backyard gates are unlocked and pets are safely indoors, Luke handles the entire job, blows off every porch, walkway, and driveway, and texts you if anything needs your attention.",
+  },
+  {
+    q: "What yard and property services do you offer during fall and winter?",
+    a: "When grass goes dormant from November through February, we stay busy full-time with rolled longleaf pine straw and mulch installs, fall and winter oak leaf cleanups, dormant fence-line and pond-bank brush clearing, bush hogging, shrub pruning, privacy tree planting, and trailer junk/debris haul-aways.",
   },
   {
     q: "What payment methods do you accept?",
@@ -1247,33 +1251,39 @@ export default function HomeClient() {
             {[
               {
                 title: "Residential & Acreage Mowing",
+                href: "/services/lawn-mowing-edging-striping/",
                 desc: "Commercial zero-turn turf striping at healthy blade height, string trimming around obstacles, vertical steel-blade concrete edging, and spotless driveway blow-offs.",
-                bullets: ["Alternating stripe patterns", "90° sidewalk & curb edging", "Weekly & bi-weekly routes"],
+                bullets: ["Alternating stripe patterns", "90° sidewalk & curb edging", "Weekly, bi-weekly & acreage routes"],
               },
               {
                 title: "Rolled Longleaf Pine Straw & Mulch",
-                desc: "Our signature service — thorough bed weeding, deep spaded trench borders, thick even coverage, and tightly hand-tucked rolled fronts that stay put in heavy rain.",
+                href: "/services/pine-straw-mulch-installation/",
+                desc: "Our signature fall, winter & spring service — thorough bed weeding, deep spaded trench borders, thick coverage, and tightly hand-tucked rolled fronts.",
                 bullets: ["Clean longleaf pine straw delivery", "Dark hardwood & black mulch", "Neatly rolled concrete borders"],
               },
               {
                 title: "Flowerbed Makeovers & Planting",
+                href: "/services/flowerbed-cleanup-shrub-tree-planting/",
                 desc: "Sod stripping for brand-new curved beds, dead shrub root extraction, custom ornamental shrub & privacy tree installation, and seasonal bed resets.",
                 bullets: ["New flowerbed design & turf removal", "Shrub & living privacy tree planting", "Root-level weed extraction"],
               },
               {
                 title: "Bush, Hedge & Small Tree Trimming",
-                desc: "From light seasonal shaping to hard size reductions and overhanging fence-line limb pruning — sculpted level and hauled completely clean.",
+                href: "/services/bush-hedge-trimming/",
+                desc: "From winter structural pruning to spring/fall shaping and overhanging fence-line limb clearance — sculpted level and hauled completely clean.",
                 bullets: ["Foundation hedge leveling", "Ornamental bush sculpting", "100% branch & clipping haul-away"],
               },
               {
                 title: "Pond Perimeters, Fence Lines & Bush Hogging",
-                desc: "Heavy clearing where ordinary lawn crews stop: overgrown pond dams, lakefront banks, vine-choked privacy fences, and bush-hogged rural lots.",
+                href: "/services/pond-bank-fence-line-bush-hogging/",
+                desc: "Peak winter & year-round heavy clearing where ordinary crews stop: overgrown pond dams, lakefront banks, vine-choked privacy fences, and bush-hogged rural lots.",
                 bullets: ["360° pond & lake shoreline clearing", "Fence-line vine & briar removal", "Bush hogging + finish-cut mowing"],
               },
               {
-                title: "Leaf Cleanups, Gutters & Junk Removal",
-                desc: "Full-yard fall and spring leaf haul-aways, hand-cleared roof gutters and downspouts, raised-bed excavation, and trailer junk/debris cleanouts.",
-                bullets: ["Fall & pre-spring leaf removal", "Gutter & downspout flushing", "Garage, shed & yard junk hauling"],
+                title: "Fall/Winter Leaf Cleanups & Junk Removal",
+                href: "/services/leaf-removal-winter-yard-cleanup/",
+                desc: "Full-yard fall and winter oak leaf haul-aways, pre-spring pine-needle resets, raised-bed excavation, storm limb cleanup, and trailer junk/debris hauling.",
+                bullets: ["Nov–Feb leaf & pine-needle removal", "Raised-bed & storm limb tear-outs", "Garage, shed & yard junk hauling"],
               },
             ].map((svc) => (
               <div key={svc.title} className="ll-service-card">
@@ -1282,7 +1292,11 @@ export default function HomeClient() {
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                   </svg>
                 </div>
-                <h3 style={{ fontSize: "1.22rem", fontWeight: 800, marginBottom: "0.55rem" }}>{svc.title}</h3>
+                <h3 style={{ fontSize: "1.22rem", fontWeight: 800, marginBottom: "0.55rem" }}>
+                  <Link href={svc.href} style={{ color: "inherit", textDecoration: "none" }}>
+                    {svc.title}
+                  </Link>
+                </h3>
                 <p style={{ fontSize: "0.9rem", color: "#475569" }}>{svc.desc}</p>
                 <ul className="ll-service-list">
                   {svc.bullets.map((b) => (
@@ -1292,9 +1306,23 @@ export default function HomeClient() {
                     </li>
                   ))}
                 </ul>
+                <div style={{ marginTop: "0.9rem", paddingTop: "0.75rem", borderTop: "1px solid #f1f5f9" }}>
+                  <Link
+                    href={svc.href}
+                    style={{ fontSize: "0.86rem", fontWeight: 800, color: "#15803d", textDecoration: "none" }}
+                  >
+                    Explore Service Details →
+                  </Link>
+                </div>
               </div>
             ))}
           </MobileCarouselRow>
+
+          <div style={{ textAlign: "center", marginTop: "1.6rem" }}>
+            <Link href="/services/" className="ll-btn ll-btn-outline">
+              View All 8 Year-Round &amp; Winter Services →
+            </Link>
+          </div>
 
           {/* Real Facebook Reels Video Strip */}
           <div
@@ -2074,12 +2102,12 @@ export default function HomeClient() {
                         className="ll-select"
                       >
                         <option value="Regular Lawn Mowing & Edging">Regular Lawn Mowing &amp; Edging</option>
+                        <option value="Acreage Mowing & Overgrowth Recovery">Acreage Mowing &amp; Overgrowth Recovery</option>
                         <option value="Pine Straw & Mulch Installation">Rolled Pine Straw &amp; Mulch Installation</option>
-                        <option value="Flowerbed Cleanup & Planting">Flowerbed Cleanup &amp; Planting</option>
+                        <option value="Flowerbed Cleanup & Shrub/Tree Planting">Flowerbed Cleanup &amp; Shrub/Tree Planting</option>
                         <option value="Bush & Hedge Trimming">Bush, Hedge &amp; Tree Trimming</option>
-                        <option value="Leaf Removal & Seasonal Cleanup">Leaf Removal &amp; Seasonal Cleanup</option>
+                        <option value="Fall & Winter Leaf Removal">Fall &amp; Winter Leaf Removal</option>
                         <option value="Pond Bank / Fence Line / Bush Hogging">Pond Bank / Fence Line / Bush Hogging</option>
-                        <option value="Gutter Cleaning & Flushing">Gutter Cleaning &amp; Flushing</option>
                         <option value="Junk & Yard Debris Removal">Junk &amp; Yard Debris Removal</option>
                       </select>
                     </div>

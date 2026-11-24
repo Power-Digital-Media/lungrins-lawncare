@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import pinsData from "@/data/pins.json";
 import { SERVICE_AREA_HUBS, getServiceAreaBySlug } from "@/data/serviceAreas";
+import { YEAR_ROUND_SERVICES, getPinHref, type PinRecord } from "@/data/services";
 
 export const dynamicParams = false;
 
@@ -51,16 +52,6 @@ export async function generateMetadata({
       images: ["https://lungrinslawncare.com/images/branding/og-lungrins-crest-v2.jpg"],
     },
   };
-}
-
-interface PinRecord {
-  id: string;
-  title?: string;
-  date: string;
-  location: string;
-  service: string;
-  description: string;
-  images: string[];
 }
 
 function toCardWebp(imgPath: string): string {
@@ -123,7 +114,10 @@ export default async function ServiceAreaHubPage({
           { "@type": "City", name: hub.cityShort },
           { "@type": "AdministrativeArea", name: hub.county },
         ],
-        sameAs: ["https://www.facebook.com/profile.php?id=100083356506669"],
+        sameAs: [
+          "https://www.facebook.com/LungrinsLawncare",
+          "https://www.google.com/maps/place/?q=place_id:ChIJvYxgYy-ipy0ReT6NyUfsbCM",
+        ],
       },
       {
         "@type": "BreadcrumbList",
@@ -216,7 +210,7 @@ export default async function ServiceAreaHubPage({
               const cardImg = toCardWebp(rawImg);
               return (
                 <article key={job.id} className="ll-job-card">
-                  <Link href={`/pin-page/?id=${encodeURIComponent(job.id)}`} style={{ textDecoration: "none", color: "inherit" }}>
+                  <Link href={getPinHref(job)} style={{ textDecoration: "none", color: "inherit" }}>
                     <div className="ll-job-media">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -273,14 +267,14 @@ export default async function ServiceAreaHubPage({
           >
             <div className="ll-form-box">
               <h3 style={{ fontSize: "1.1rem", fontWeight: 800, marginBottom: "0.5rem" }}>
-                Core Lawn &amp; Bed Services in {hub.cityShort}
+                Year-Round Services in {hub.cityShort}
               </h3>
               <ul style={{ margin: 0, paddingLeft: "1.2rem", color: "#334155", lineHeight: 1.75 }}>
                 <li>Weekly &amp; bi-weekly residential &amp; acreage mowing</li>
                 <li>Hand-rolled longleaf pine straw &amp; hardwood mulch installs</li>
-                <li>Overgrown flowerbed cleanups, weeding &amp; steel-blade edging</li>
-                <li>Ornamental shrub shaping, pond banks &amp; fence-line clearing</li>
-                <li>Gutter cleaning, fall leaf hauling &amp; storm debris removal</li>
+                <li>Fall &amp; winter oak leaf removal &amp; pre-spring cleanups</li>
+                <li>Overgrown flowerbed cleanups, shrub &amp; privacy tree planting</li>
+                <li>Pond banks, vine-choked fence lines, bush hogging &amp; junk hauling</li>
               </ul>
             </div>
 
@@ -293,6 +287,32 @@ export default async function ServiceAreaHubPage({
                   <li key={n}>{n}</li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          <div className="ll-form-box" style={{ marginBottom: "1.5rem", textAlign: "center" }}>
+            <div style={{ fontSize: "0.82rem", fontWeight: 800, color: "#15803d", marginBottom: "0.65rem", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+              Summer &amp; Winter Services Available in {hub.town}
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0.45rem" }}>
+              {YEAR_ROUND_SERVICES.map((svc) => (
+                <Link
+                  key={svc.slug}
+                  href={`/services/${svc.slug}/`}
+                  style={{
+                    padding: "0.42rem 0.85rem",
+                    borderRadius: "999px",
+                    border: "1px solid #bbf7d0",
+                    fontSize: "0.82rem",
+                    fontWeight: 700,
+                    color: "#14532d",
+                    textDecoration: "none",
+                    background: "#f0fdf4",
+                  }}
+                >
+                  {svc.shortTitle}
+                </Link>
+              ))}
             </div>
           </div>
 

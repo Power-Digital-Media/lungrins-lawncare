@@ -71,7 +71,7 @@ export async function POST(request: NextRequest) {
         "Residential Mowing",
         "Edging & Trimming",
         "Pine Straw Installation",
-        "Gutter Cleaning",
+        "Leaf Removal & Cleanup",
         "Overgrowth Recovery"
       ]
     };

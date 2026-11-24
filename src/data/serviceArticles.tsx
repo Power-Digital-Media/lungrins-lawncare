@@ -56,18 +56,18 @@ const serviceArticles: Record<string, ServiceArticle> = {
       }
     ]
   },
-  "gutter-cleaning": {
-    title: "Gutter Cleaning & Maintenance",
-    subtitle: "Preventing Water Damage Before It Starts",
-    intro: "Clogged gutters cause water to overflow against your foundation, rot your fascia boards, and create breeding grounds for mosquitoes. Regular gutter cleaning is one of the most important — and most neglected — maintenance tasks for Mississippi homeowners.",
+  "leaf-removal-cleanup": {
+    title: "Fall & Winter Leaf Removal & Seasonal Cleanups",
+    subtitle: "Protecting Dormant Mississippi Turf Before Spring Green-Up",
+    intro: "Heavy oak, sweetgum, and pine needle blankets smother dormant Bermuda and Zoysia grass over winter, trapping moisture and triggering spring fungus. Full-yard fall and winter leaf removal keeps your property crisp all winter.",
     faqs: [
       {
-        heading: "How often should gutters be cleaned in Mississippi?",
-        body: "At minimum, <strong>twice per year</strong> — once in late fall after leaves drop and once in late spring. Properties surrounded by pine trees may need <strong>quarterly cleaning</strong> because pine needles accumulate fast and pack tightly in gutter channels."
+        heading: "When should fallen leaves be cleared in Central Mississippi?",
+        body: "Oak and hardwood trees in Central Mississippi drop leaves from <strong>late October through January</strong>. Clearing matted leaves in fall and mid-winter prevents brown patch fungus and bare dead spots in spring."
       },
       {
-        heading: "What happens if gutters aren't cleaned regularly?",
-        body: "Clogged gutters cause water to <strong>pool against your foundation</strong>, leading to basement leaks, soil erosion around the home, and even foundation cracking. In Mississippi's heavy rain season, a single clogged downspout can dump hundreds of gallons against your house in one storm."
+        heading: "Do you haul leaves and branches completely off-site?",
+        body: "Yes. We blow out all foundation beds and hardscapes, collect leaves and twigs across the entire yard, and <strong>haul all debris away on our trailer</strong>."
       }
     ]
   },

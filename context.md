@@ -21,7 +21,7 @@ This document is the persistent single source of truth for **Lungrin's Lawncare*
   7. Bentonia, MS (`39040`) — `/service-areas/bentonia-ms/`
   8. Yazoo County & Bee Lake, MS (`39040`, `39194`) — `/service-areas/yazoo-county-ms/`
 - **Facebook Page:** `https://www.facebook.com/profile.php?id=100083356506669`
-- **Core Services:** Residential & acreage mowing/striping, hand-rolled longleaf pine straw & mulch, flowerbed weeding & reclamation, bush/hedge shaping, pond-bank & fence-line clearing / bush hogging, gutter cleaning, fall leaf cleanup, and trailer junk/brush haul-away.
+- **Core Services:** Residential & acreage mowing/striping, hand-rolled longleaf pine straw & mulch, fall & winter leaf removal, flowerbed weeding & reclamation, shrub & privacy tree planting, bush/hedge shaping, pond-bank & fence-line clearing / bush hogging, and trailer junk/brush haul-away *(Note: Gutter cleaning removed — Luke does not offer gutter cleaning).*
 
 ---
 
@@ -92,15 +92,15 @@ Update `LOT_OPTIONS`, `CALC_SERVICES`, `FREQ_OPTIONS`, and `estimateCalc` in `sr
 2. **Weekly Mowing Rates by Lot Size:** Under 1/4 acre (currently `$40–$55`), 1/4–1/2 acre (`$55–$75`), 1/2–1 acre (`$75–$110`), 1–2+ acres (`$110–$185` or per-acre rate).
 3. **Bi-Weekly & Overgrown / One-Time Multipliers:** Bi-weekly upcharge (currently `+15%`) and one-time / tall first-cut upcharge (currently `+30%`).
 4. **Pine Straw & Mulch:** Installed price **per bale** + minimum bale count (consider adding an optional bale-count selector when Pine Straw is checked so 20–30 bale jobs don't under-quote at `$70–$135`), plus mulch per-bag/per-yard installed rate.
-5. **Project Add-On Ranges:** Confirm/adjust starting ranges (and confirm he still wants Gutter Cleaning listed) for flowerbed weeding (`$55–$110`), bush trimming (`$40–$80`), leaf cleanup (`$50–$95`), gutter cleaning (`$55–$100`), pond/fence clearing & bush hogging (`$65–$130`), and trailer junk/brush haul-away (`$60–$120`).
+5. **Project Add-On Ranges:** Confirm/adjust starting ranges for flowerbed weeding (`$55–$110`), shrub & privacy tree planting (`$75–$160`), bush trimming (`$40–$80`), fall & winter leaf cleanup (`$50–$95`), pond/fence clearing & bush hogging (`$65–$130`), and trailer junk/brush haul-away (`$60–$120`).
 6. **Out-of-Area Travel Minimums:** Any higher minimum for Jackson, Ridgeland, Madison, or Bee Lake vs. Flora/Pocahontas.
 
 ### [ ] 3. Provision Luke's PinDrop™ Field Login (`/admin/drop-pin/`)
 - Create Luke's user credentials for `/admin/drop-pin/` (`pdm-pindrop-central`) and ensure upload/auth env vars are present on Netlify so he can snap and publish new GPS job pins from his phone.
 
-### [ ] 4. Final 2-Minute Search Console, Site Intelligence & Social Profile Links
-- **Google Search Console:** Click **Verify** on `sc-domain:lungrinslawncare.com` (DNS `TXT` is live) and submit `https://lungrinslawncare.com/sitemap.xml`.
-- **PDM Site Intelligence (`site_lungrins_lawncare`):** Bind Google OAuth to GA4 Property **`565570733`** + GSC **`sc-domain:lungrinslawncare.com`** so automated reports pull live clicks, impressions, and GA4 Key Events.
+### [x] 4. Search Console, Site Intelligence & Social Profile Links (GSC & SI 100% Connected!)
+- **Google Search Console (`sc-domain:lungrinslawncare.com`):** ✅ Verified (`siteOwner` via Netlify DNS `TXT`) and `https://lungrinslawncare.com/sitemap.xml` submitted (`Status: Success`, `12` discovered pages).
+- **PDM Site Intelligence (`site_lungrins_lawncare`):** ✅ `overallStatus: "connected"` — bound to GSC **`sc-domain:lungrinslawncare.com`** (`siteOwner`) + 4-way verified GA4 Property **`565570733`** (`G-6C0PTHBTTY` / `GTM-T5FWSFSW`), `7d/28d/90d` sync active (`lastSyncStatus: "ok"`, `0` open issues).
 - **Google Business Profile & Facebook Page:** Set `https://lungrinslawncare.com/` as the official website URL on both profiles.
 - **Optional Later — Meta Pixel:** Add Meta Pixel ID when running paid Facebook Reels / Lead Ads (lifts Stage 1 Conversion score from `90` → `100/100`).
 

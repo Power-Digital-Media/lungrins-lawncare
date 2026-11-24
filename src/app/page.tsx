@@ -60,7 +60,7 @@ const jsonLd = {
         "https://lungrinslawncare.com/images/jobs/fb-2026/jul29-ridgeland-striping/2.webp",
       ],
       description:
-        "Locally owned and operated lawn care and landscaping company based in Flora, MS providing residential and acreage mowing, rolled longleaf pine straw, mulch, flowerbed cleanups, bush trimming, pond bank clearing, fence line clearing, gutter cleaning, and debris hauling.",
+        "Locally owned and operated lawn care and landscaping company based in Flora, MS providing residential and acreage mowing, rolled longleaf pine straw, mulch, fall and winter leaf cleanups, flowerbed makeovers, shrub and privacy tree planting, bush trimming, pond bank clearing, fence line clearing, bush hogging, and junk/debris hauling.",
       telephone: "+1-601-906-1281",
       contactPoint: [
         {

@@ -5,6 +5,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useSearchParams } from "next/navigation";
 import pinsData from "@/data/pins.json";
+import { getPinHref } from "@/data/services";
 
 const InteractiveMap = dynamic(() => import("@/components/InteractiveMap"), {
   ssr: false,
@@ -256,7 +257,7 @@ function PinsPageContent() {
 
                       {/* View Details Button */}
                       <div className="pin-feed-footer-btn">
-                        <Link href={`/pin-page/?id=${pin.id}${clientId ? `&clientId=${clientId}` : ""}`} className="btn btn-outline pin-btn">
+                        <Link href={getPinHref(pin.id, clientId)} className="btn btn-outline pin-btn">
                           View Full Details
                         </Link>
                       </div>

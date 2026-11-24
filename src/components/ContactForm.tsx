@@ -381,12 +381,11 @@ export default function ContactForm({ type = "estimate" }: { type?: "estimate" |
                       <option value="">Select a service...</option>
                       <option value="Residential & Acreage Mowing">Residential &amp; Acreage Mowing</option>
                       <option value="Rolled Pine Straw & Mulch">Rolled Pine Straw &amp; Mulch</option>
-                      <option value="Flowerbed Cleanup & Planting">Flowerbed Cleanup &amp; Planting</option>
+                      <option value="Flowerbed Cleanup & Shrub/Tree Planting">Flowerbed Cleanup &amp; Shrub/Tree Planting</option>
                       <option value="Bush & Hedge Trimming">Bush &amp; Hedge Trimming</option>
-                      <option value="Leaf Removal & Cleanup">Leaf Removal &amp; Cleanup</option>
-                      <option value="Pond Bank / Fence Clearing">Pond Bank / Fence Clearing</option>
-                      <option value="Gutter Cleaning">Gutter Cleaning</option>
-                      <option value="Junk & Debris Removal">Junk &amp; Debris Removal</option>
+                      <option value="Fall & Winter Leaf Removal">Fall &amp; Winter Leaf Removal</option>
+                      <option value="Pond Bank / Fence Clearing / Bush Hogging">Pond Bank / Fence Clearing / Bush Hogging</option>
+                      <option value="Junk & Yard Debris Removal">Junk &amp; Yard Debris Removal</option>
                     </select>
                   </div>
                 </div>

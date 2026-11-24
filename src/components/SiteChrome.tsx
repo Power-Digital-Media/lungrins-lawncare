@@ -76,7 +76,7 @@ export function SiteHeader() {
           </Link>
 
           <nav className="ll-nav-desktop" aria-label="Primary Navigation">
-            <a href={sec("#services")} className="ll-nav-item">Services</a>
+            <Link href="/services/" className="ll-nav-item">Services</Link>
             <a href={sec("#calculator")} className="ll-nav-item">Estimate</a>
             <a href={sec("#gallery")} className="ll-nav-item">Before &amp; After</a>
             <Link href="/pins/" className="ll-nav-item ll-nav-pins-pill">
@@ -131,10 +131,10 @@ export function SiteHeader() {
         {menuOpen && (
           <div className="ll-mobile-drawer">
             <div className="ll-mobile-drawer-links">
-              <a href={sec("#services")} className="ll-mobile-drawer-link" onClick={() => setMenuOpen(false)}>
-                <span>Lawn &amp; Landscaping Services</span>
+              <Link href="/services/" className="ll-mobile-drawer-link" onClick={() => setMenuOpen(false)}>
+                <span>Year-Round Lawn &amp; Winter Services</span>
                 <span>→</span>
-              </a>
+              </Link>
               <a href={sec("#calculator")} className="ll-mobile-drawer-link" onClick={() => setMenuOpen(false)}>
                 <span>Instant Estimate Calculator</span>
                 <span>→</span>
@@ -217,7 +217,7 @@ export function SiteFooter() {
                 </div>
               </div>
               <p style={{ fontSize: "0.85rem", color: "#94a3b8", lineHeight: 1.65, marginBottom: "1.1rem" }}>
-                Premium, meticulous lawn maintenance, longleaf pine straw installation, bush trimming, flowerbed cleanups, pond &amp; fence clearing, gutter cleaning, and debris hauling without the inflated price.
+                Premium, meticulous lawn maintenance, rolled longleaf pine straw, fall &amp; winter leaf cleanups, bush trimming, flowerbed makeovers, pond &amp; fence clearing, and junk/debris hauling without the inflated price.
               </p>
               <div style={{ display: "flex", gap: "0.65rem", alignItems: "center" }}>
                 <a
@@ -284,15 +284,17 @@ export function SiteFooter() {
             {/* Services Column */}
             <div>
               <div style={{ color: "#ffffff", fontWeight: 800, fontSize: "0.86rem", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.95rem" }}>
-                Core Services
+                Year-Round Services
               </div>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "0.55rem" }}>
-                <li><a href={sec("#services")} className="ll-footer-link">Residential &amp; Acreage Mowing</a></li>
-                <li><a href={sec("#services")} className="ll-footer-link">Rolled Longleaf Pine Straw &amp; Mulch</a></li>
-                <li><a href={sec("#services")} className="ll-footer-link">Flowerbed Design &amp; Cleanups</a></li>
-                <li><a href={sec("#services")} className="ll-footer-link">Bush, Hedge &amp; Tree Trimming</a></li>
-                <li><a href={sec("#services")} className="ll-footer-link">Pond Bank &amp; Fence Line Clearing</a></li>
-                <li><a href={sec("#services")} className="ll-footer-link">Gutter Cleaning &amp; Junk Removal</a></li>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "0.52rem" }}>
+                <li><Link href="/services/pine-straw-mulch-installation/" className="ll-footer-link">Rolled Longleaf Pine Straw &amp; Mulch</Link></li>
+                <li><Link href="/services/leaf-removal-winter-yard-cleanup/" className="ll-footer-link">Fall &amp; Winter Leaf Removal</Link></li>
+                <li><Link href="/services/pond-bank-fence-line-bush-hogging/" className="ll-footer-link">Pond Bank, Fence &amp; Bush Hogging</Link></li>
+                <li><Link href="/services/junk-removal-yard-debris-hauling/" className="ll-footer-link">Junk &amp; Yard Debris Haul-Away</Link></li>
+                <li><Link href="/services/flowerbed-cleanup-shrub-tree-planting/" className="ll-footer-link">Flowerbed Cleanups &amp; Planting</Link></li>
+                <li><Link href="/services/bush-hedge-trimming/" className="ll-footer-link">Bush &amp; Hedge Trimming</Link></li>
+                <li><Link href="/services/lawn-mowing-edging-striping/" className="ll-footer-link">Residential Lawn Mowing &amp; Striping</Link></li>
+                <li><Link href="/services/acreage-mowing-overgrowth-recovery/" className="ll-footer-link">Acreage &amp; Overgrowth Recovery</Link></li>
               </ul>
             </div>
 
@@ -301,13 +303,15 @@ export function SiteFooter() {
               <div style={{ color: "#ffffff", fontWeight: 800, fontSize: "0.86rem", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.95rem" }}>
                 Service Areas
               </div>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "0.55rem" }}>
-                <li><Link href="/pins/" className="ll-footer-link">Flora &amp; Pocahontas, MS</Link></li>
-                <li><Link href="/pins/" className="ll-footer-link">Madison &amp; Annandale, MS</Link></li>
-                <li><Link href="/pins/" className="ll-footer-link">Gluckstadt &amp; Ridgeland, MS</Link></li>
-                <li><Link href="/pins/" className="ll-footer-link">North Jackson, MS</Link></li>
-                <li><Link href="/pins/" className="ll-footer-link">Bentonia &amp; Yazoo County, MS</Link></li>
-                <li><Link href="/pins/" className="ll-footer-link">📍 View All 32 Project Pins</Link></li>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "0.52rem" }}>
+                <li><Link href="/service-areas/flora-ms/" className="ll-footer-link">Flora, MS (39071)</Link></li>
+                <li><Link href="/service-areas/madison-ms/" className="ll-footer-link">Madison &amp; Annandale, MS</Link></li>
+                <li><Link href="/service-areas/gluckstadt-ms/" className="ll-footer-link">Gluckstadt, MS</Link></li>
+                <li><Link href="/service-areas/ridgeland-ms/" className="ll-footer-link">Ridgeland, MS</Link></li>
+                <li><Link href="/service-areas/jackson-ms/" className="ll-footer-link">North Jackson, MS</Link></li>
+                <li><Link href="/service-areas/pocahontas-ms/" className="ll-footer-link">Pocahontas, MS</Link></li>
+                <li><Link href="/service-areas/bentonia-ms/" className="ll-footer-link">Bentonia, MS</Link></li>
+                <li><Link href="/service-areas/yazoo-county-ms/" className="ll-footer-link">Yazoo County &amp; Bee Lake, MS</Link></li>
               </ul>
             </div>
 
