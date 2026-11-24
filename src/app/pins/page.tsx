@@ -695,6 +695,81 @@ export default function PinsPage() {
         </div>
       </section>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "https://lungrinslawncare.com/#website",
+                name: "Lungrin's Lawncare",
+                alternateName: "Luke Lungrin's Lawn Care Services",
+                url: "https://lungrinslawncare.com/",
+              },
+              {
+                "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+                "@id": "https://lungrinslawncare.com/#business",
+                name: "Lungrin's Lawncare",
+                url: "https://lungrinslawncare.com/",
+                telephone: "+1-601-906-1281",
+                image:
+                  "https://lungrinslawncare.com/images/branding/og-lungrins-crest-v2.jpg",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Flora",
+                  addressRegion: "MS",
+                  postalCode: "39071",
+                  addressCountry: "US",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 32.5432,
+                  longitude: -89.8013,
+                },
+                openingHoursSpecification: [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday",
+                    ],
+                    opens: "07:00",
+                    closes: "18:30",
+                  },
+                ],
+                sameAs: [
+                  "https://www.facebook.com/LungrinsLawncare",
+                  "https://www.google.com/maps/place/?q=place_id:ChIJvYxgYy-ipy0ReT6NyUfsbCM",
+                ],
+              },
+              {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: "https://lungrinslawncare.com/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Local Project Pins",
+                    item: "https://lungrinslawncare.com/pins/",
+                  },
+                ],
+              },
+            ],
+          }),
+        }}
+      />
+
       <Suspense
         fallback={
           <div style={{ padding: "4rem 0", textAlign: "center", color: "var(--text-muted)", fontWeight: 700 }}>

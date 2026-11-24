@@ -84,7 +84,6 @@ const jsonLd = {
       },
       address: {
         "@type": "PostalAddress",
-        streetAddress: "101 Mansker Dr",
         addressLocality: "Flora",
         addressRegion: "MS",
         postalCode: "39071",

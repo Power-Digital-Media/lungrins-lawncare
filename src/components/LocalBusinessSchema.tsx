@@ -27,6 +27,7 @@ function LocalBusinessSchemaContent({ pageTitle, pageDescription, path = "" }: S
     "publisher": {
       "@type": "Organization",
       "name": config.companyName,
+      "url": host,
       "logo": config.brand?.logoImg ? `${host}${config.brand.logoImg}` : undefined
     }
   };

@@ -94,6 +94,7 @@ export default async function ServiceDetailPage({
         "@type": "WebSite",
         "@id": "https://lungrinslawncare.com/#website",
         name: "Lungrin's Lawncare",
+        alternateName: "Luke Lungrin's Lawn Care Services",
         url: "https://lungrinslawncare.com/",
       },
       {
@@ -111,6 +112,26 @@ export default async function ServiceDetailPage({
           postalCode: "39071",
           addressCountry: "US",
         },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 32.5432,
+          longitude: -89.8013,
+        },
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+            ],
+            opens: "07:00",
+            closes: "18:30",
+          },
+        ],
         sameAs: [
           "https://www.facebook.com/LungrinsLawncare",
           "https://www.google.com/maps/place/?q=place_id:ChIJvYxgYy-ipy0ReT6NyUfsbCM",
@@ -129,18 +150,6 @@ export default async function ServiceDetailPage({
         areaServed: SERVICE_AREA_HUBS.map((area) => ({
           "@type": "City",
           name: area.town,
-        })),
-      },
-      {
-        "@type": "FAQPage",
-        "@id": `${pageUrl}#faq`,
-        mainEntity: svc.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.q,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.a,
-          },
         })),
       },
       {
